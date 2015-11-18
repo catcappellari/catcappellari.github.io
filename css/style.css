@@ -1,0 +1,266 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 4, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 6, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 10, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 18, ../scss/style.scss */
+body {
+  background: #cdcdcd;
+}
+
+/* line 22, ../scss/style.scss */
+header {
+  background: #000000;
+  padding: 15px;
+}
+/* line 26, ../scss/style.scss */
+header img {
+  margin: 0 auto;
+  display: block;
+  height: 75px;
+}
+/* line 32, ../scss/style.scss */
+header ul {
+  display: block;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 39, ../scss/style.scss */
+header li {
+  list-style: none;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 46, ../scss/style.scss */
+header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+/* line 51, ../scss/style.scss */
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 58, ../scss/style.scss */
+h1, h2, h3, h4, h5, p {
+  font-family: "Helvetica", serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* line 64, ../scss/style.scss */
+a {
+  color: #000000;
+}
+
+/* line 68, ../scss/style.scss */
+h1 {
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+/* line 74, ../scss/style.scss */
+h3 {
+  text-decoration: underline;
+}
+
+/* line 78, ../scss/style.scss */
+h5 {
+  font-style: italic;
+  margin: 0;
+}
+
+/* line 83, ../scss/style.scss */
+.open {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 87, ../scss/style.scss */
+.arvo {
+  font-family: 'Arvo', serif;
+}
+
+/* line 92, ../scss/style.scss */
+.package .font {
+  background: #efefef;
+  border-radius: 3px;
+  padding: 12px 15px;
+  margin: 10px;
+}
+
+/* line 100, ../scss/style.scss */
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 10px 5px #888888;
+}
+
+/* line 109, ../scss/style.scss */
+.img_box {
+  float: left;
+  width: 100%;
+}
+/* line 112, ../scss/style.scss */
+.img_box img {
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 200px;
+  display: block;
+}
+
+/* line 120, ../scss/style.scss */
+.text_box {
+  float: right;
+  width: 100%;
+}
+
+/* line 125, ../scss/style.scss */
+.text {
+  padding: 15px;
+}
+
+/* line 129, ../scss/style.scss */
+.layr_dd {
+  display: block;
+  border-top: 1px solid #dadada;
+  padding-top: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 136, ../scss/style.scss */
+.layr_dd h1, .layr_dd h2, .layr_dd h3, .layr_dd h4, .layr_dd h5, .layr_dd p {
+  font-size: 0.9em;
+}
+/* line 140, ../scss/style.scss */
+.layr_dd h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 146, ../scss/style.scss */
+.layr_dd.hidden {
+  opacity: 0;
+  height: 0;
+}
+
+/* line 151, ../scss/style.scss */
+.package {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #dadada;
+  padding: 15px;
+  border-radius: 3px;
+}
+/* line 158, ../scss/style.scss */
+.package img {
+  margin: 15 auto;
+  display: block;
+  max-height: 200px;
+  max-width: 90%;
+}
+/* line 164, ../scss/style.scss */
+.package p {
+  margin: 0;
+}
+
+@media (min-width: 400px) {
+  /* line 173, ../scss/style.scss */
+  header img {
+    float: left;
+  }
+  /* line 177, ../scss/style.scss */
+  header nav {
+    float: right;
+    vertical-align: top;
+  }
+  /* line 182, ../scss/style.scss */
+  header li {
+    display: inline-block;
+    padding: 10px;
+    text-align: right;
+  }
+  /* line 188, ../scss/style.scss */
+  header ul {
+    text-align: right;
+  }
+
+  /* line 193, ../scss/style.scss */
+  .img_box {
+    width: 65%;
+  }
+
+  /* line 197, ../scss/style.scss */
+  .text_box {
+    float: right;
+    margin-top: 20px;
+    padding-top: 0;
+  }
+
+  /* line 204, ../scss/style.scss */
+  .card.layr, .card.one_col {
+    background-size: auto 65%;
+    background-position: 5% 50%;
+  }
+}
+@media (min-width: 500px) {
+  /* line 212, ../scss/style.scss */
+  .text {
+    padding-top: 7%;
+  }
+
+  /* line 217, ../scss/style.scss */
+  .about .text, .contact .text {
+    padding: 20px;
+  }
+}
+@media (min-width: 650px) {
+  /* line 226, ../scss/style.scss */
+  .card.layr, .card.one_col {
+    float: left;
+    width: 46%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  /* line 233, ../scss/style.scss */
+  .card.about, .card.contact {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+
+  /* line 240, ../scss/style.scss */
+  .img_box {
+    width: 100%;
+  }
+  /* line 242, ../scss/style.scss */
+  .img_box img {
+    margin: 0 auto;
+  }
+
+  /* line 247, ../scss/style.scss */
+  .move {
+    padding-left: 5%;
+  }
+}

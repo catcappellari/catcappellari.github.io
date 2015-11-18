@@ -1,0 +1,258 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+
+body {
+	background: #cdcdcd;
+}
+
+header {
+	background: #000000;
+	padding: 15px;
+
+	img {
+		margin: 0 auto;
+		display: block;
+    	height: 75px;
+	}
+
+	ul {
+		display: block;
+		padding: 0;
+		width: 100%;
+    	text-align: center;
+	}
+
+	li {
+		list-style: none;
+		display: block;
+		margin-top: 5px;
+    	margin-bottom: 5px;
+	}
+
+	h2 {
+		margin: 0;
+		font-weight: bold;
+	}
+
+	a {
+		color: #ffffff;
+    	text-decoration: none;
+    	display: block;
+	}
+}
+
+h1, h2, h3, h4, h5, p {
+	font-family: "Helvetica", serif;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+a {
+	color: #000000;
+}
+
+h1 {
+	font-weight: bold;
+	color: #000000;
+	margin: 0;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+h5 {
+	font-style: italic;
+	margin: 0;
+}
+
+.open {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.arvo {
+	font-family: 'Arvo', serif;
+}
+
+.package {
+	.font {
+		background: #efefef;
+	    border-radius: 3px;
+	    padding: 12px 15px;
+	    margin: 10px;	
+	}
+}
+
+.card {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 10px 5px #888888;
+}
+
+.img_box {
+	float: left;
+	width: 100%;
+	img { 
+		max-width: 100%;
+    	margin: 0 auto;
+    	max-height: 200px;
+    	display: block;
+	}
+}
+
+.text_box {
+	float: right;
+	width: 100%;
+}
+
+.text {
+	padding: 15px;
+}
+
+.layr_dd {
+	display: block;
+	border-top: 1px solid #dadada;
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+	
+	h1, h2, h3, h4, h5, p {
+		font-size: 0.9em;
+	}
+
+	h2 {
+		font-weight: bold;
+		font-style: italic;
+	}
+}
+
+.layr_dd.hidden {
+	opacity: 0;
+    height: 0;
+}
+
+.package {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #dadada;
+    padding: 15px;
+    border-radius: 3px;
+	img {
+		margin: 15 auto;
+		display: block;
+		max-height: 200px;
+    	max-width: 90%;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+@media (min-width: 400px) {
+
+	header {
+
+		img {
+			float: left;
+		}
+
+		nav {
+			float: right;
+    		vertical-align: top;
+		}
+
+		li {
+			display: inline-block;
+			padding: 10px;
+			text-align: right;
+		}
+
+		ul {
+			text-align: right;
+		}
+	}
+
+	.img_box {
+	    width: 65%;
+	}
+
+	.text_box {
+	    float: right;
+	    margin-top: 20px;
+	    padding-top: 0;
+	}
+
+	.card {
+		&.layr, &.one_col {
+		    background-size: auto 65%;
+		    background-position: 5% 50%; 
+    	}
+    } 
+}
+
+@media (min-width: 500px) {
+	.text {
+	    padding-top: 7%;
+	}
+
+	.about, .contact {
+		.text {
+			padding: 20px;
+		}
+	}
+}
+
+
+@media (min-width: 650px) {
+	.card {
+		&.layr, &.one_col {
+			float: left;
+		    width: 46%;
+		    margin-right: 2%;
+		    margin-left: 2%;
+		}
+
+		&.about, &.contact {
+			margin-left: 2%;
+		    margin-right: 2%;
+		    width: 96%;
+		}
+	}
+
+	.img_box {
+    	width: 100%;
+    	img {
+    		margin: 0 auto;
+    	}
+	}
+
+	.move {
+		padding-left: 5%;
+	}
+}
+
+
+
+
+
+
+
+
