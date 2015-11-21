@@ -55,6 +55,11 @@ header {
 	}
 }
 
+footer {
+	height: 100px;
+	background: #000000;
+}
+
 h1, h2, h3, h4, h5, p {
 	font-family: "Helvetica", serif;
 	font-weight: normal;
@@ -100,8 +105,10 @@ h5 {
 .card {
 	margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     float: right;
-    width: 100%;
     background: #ffffff;
     box-shadow: 0px 10px 5px #888888;
 }
@@ -166,6 +173,16 @@ h5 {
 	}
 }
 
+@media (min-width: 200px) {
+	header li {
+	    display: inline-block;
+	    margin: 15px;
+	    margin-bottom: 5px;
+	    margin-top: 5px;
+	    border-bottom: solid #ffffff 2px;
+	}
+}
+
 @media (min-width: 400px) {
 
 	header {
@@ -176,12 +193,11 @@ h5 {
 
 		nav {
 			float: right;
-    		vertical-align: top;
+    		margin-top: 10px;
 		}
 
 		li {
 			display: inline-block;
-			padding: 10px;
 			text-align: right;
 		}
 
@@ -246,6 +262,10 @@ h5 {
 
 	.move {
 		padding-left: 5%;
+	}
+
+	.text_box {
+		 min-height: 370px;
 	}
 }
 

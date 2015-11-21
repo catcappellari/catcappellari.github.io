@@ -59,46 +59,52 @@ header a {
 }
 
 /* line 58, ../scss/style.scss */
+footer {
+  height: 100px;
+  background: #000000;
+}
+
+/* line 63, ../scss/style.scss */
 h1, h2, h3, h4, h5, p {
   font-family: "Helvetica", serif;
   font-weight: normal;
   font-size: 1em;
 }
 
-/* line 64, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 a {
   color: #000000;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 h1 {
   font-weight: bold;
   color: #000000;
   margin: 0;
 }
 
-/* line 74, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 h3 {
   text-decoration: underline;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 h5 {
   font-style: italic;
   margin: 0;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .open {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 87, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .arvo {
   font-family: 'Arvo', serif;
 }
 
-/* line 92, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 .package .font {
   background: #efefef;
   border-radius: 3px;
@@ -106,22 +112,24 @@ h5 {
   margin: 10px;
 }
 
-/* line 100, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 .card {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   float: right;
-  width: 100%;
   background: #ffffff;
   box-shadow: 0px 10px 5px #888888;
 }
 
-/* line 109, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .img_box {
   float: left;
   width: 100%;
 }
-/* line 112, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .img_box img {
   max-width: 100%;
   margin: 0 auto;
@@ -129,18 +137,18 @@ h5 {
   display: block;
 }
 
-/* line 120, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .text_box {
   float: right;
   width: 100%;
 }
 
-/* line 125, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .text {
   padding: 15px;
 }
 
-/* line 129, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .layr_dd {
   display: block;
   border-top: 1px solid #dadada;
@@ -148,23 +156,23 @@ h5 {
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 136, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 .layr_dd h1, .layr_dd h2, .layr_dd h3, .layr_dd h4, .layr_dd h5, .layr_dd p {
   font-size: 0.9em;
 }
-/* line 140, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .layr_dd h2 {
   font-weight: bold;
   font-style: italic;
 }
 
-/* line 146, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 .layr_dd.hidden {
   opacity: 0;
   height: 0;
 }
 
-/* line 151, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .package {
   text-align: left;
   margin-top: 20px;
@@ -173,94 +181,108 @@ h5 {
   padding: 15px;
   border-radius: 3px;
 }
-/* line 158, ../scss/style.scss */
+/* line 165, ../scss/style.scss */
 .package img {
   margin: 15 auto;
   display: block;
   max-height: 200px;
   max-width: 90%;
 }
-/* line 164, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .package p {
   margin: 0;
 }
 
+@media (min-width: 200px) {
+  /* line 177, ../scss/style.scss */
+  header li {
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-bottom: solid #ffffff 2px;
+  }
+}
 @media (min-width: 400px) {
-  /* line 173, ../scss/style.scss */
+  /* line 190, ../scss/style.scss */
   header img {
     float: left;
   }
-  /* line 177, ../scss/style.scss */
+  /* line 194, ../scss/style.scss */
   header nav {
     float: right;
-    vertical-align: top;
+    margin-top: 10px;
   }
-  /* line 182, ../scss/style.scss */
+  /* line 199, ../scss/style.scss */
   header li {
     display: inline-block;
-    padding: 10px;
     text-align: right;
   }
-  /* line 188, ../scss/style.scss */
+  /* line 204, ../scss/style.scss */
   header ul {
     text-align: right;
   }
 
-  /* line 193, ../scss/style.scss */
+  /* line 209, ../scss/style.scss */
   .img_box {
     width: 65%;
   }
 
-  /* line 197, ../scss/style.scss */
+  /* line 213, ../scss/style.scss */
   .text_box {
     float: right;
     margin-top: 20px;
     padding-top: 0;
   }
 
-  /* line 204, ../scss/style.scss */
+  /* line 220, ../scss/style.scss */
   .card.layr, .card.one_col {
     background-size: auto 65%;
     background-position: 5% 50%;
   }
 }
 @media (min-width: 500px) {
-  /* line 212, ../scss/style.scss */
+  /* line 228, ../scss/style.scss */
   .text {
     padding-top: 7%;
   }
 
-  /* line 217, ../scss/style.scss */
+  /* line 233, ../scss/style.scss */
   .about .text, .contact .text {
     padding: 20px;
   }
 }
 @media (min-width: 650px) {
-  /* line 226, ../scss/style.scss */
+  /* line 242, ../scss/style.scss */
   .card.layr, .card.one_col {
     float: left;
     width: 46%;
     margin-right: 2%;
     margin-left: 2%;
   }
-  /* line 233, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   .card.about, .card.contact {
     margin-left: 2%;
     margin-right: 2%;
     width: 96%;
   }
 
-  /* line 240, ../scss/style.scss */
+  /* line 256, ../scss/style.scss */
   .img_box {
     width: 100%;
   }
-  /* line 242, ../scss/style.scss */
+  /* line 258, ../scss/style.scss */
   .img_box img {
     margin: 0 auto;
   }
 
-  /* line 247, ../scss/style.scss */
+  /* line 263, ../scss/style.scss */
   .move {
     padding-left: 5%;
+  }
+
+  /* line 267, ../scss/style.scss */
+  .text_box {
+    min-height: 370px;
   }
 }
