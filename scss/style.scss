@@ -56,8 +56,11 @@ header {
 }
 
 footer {
-	height: 100px;
+	height: 50px;
+	width: 100%;
+	margin-top: 15px;
 	background: #000000;
+	float: right;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -93,6 +96,18 @@ h5 {
 	font-family: 'Arvo', serif;
 }
 
+.banner {
+	background: #6d6d6d;
+	width: 100%;
+    text-align: center;
+    h1 {
+    	color: #ffffff;
+    	font-weight: normal;
+    	font-size: 1.2em;
+    	padding: 15px;
+    }
+}
+
 .package {
 	.font {
 		background: #efefef;
@@ -113,6 +128,13 @@ h5 {
     box-shadow: 0px 10px 5px #888888;
 }
 
+.intro_img {
+	width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
 .img_box {
 	float: left;
 	width: 100%;
@@ -127,6 +149,25 @@ h5 {
 .text_box {
 	float: right;
 	width: 100%;
+}
+
+.info_box {
+	float: right;
+	margin: 20px 15px;
+	img {
+		width: 90%;
+	    margin: 0 auto;
+	    display: block;
+	}
+
+	h2 {
+		font-weight: bold;
+	}
+
+	h3 {
+		font-style: italic;
+		text-decoration: none;
+	}
 }
 
 .text {
