@@ -34,6 +34,7 @@ header {
 		padding: 0;
 		width: 100%;
     	text-align: center;
+    	margin-bottom: 0;
 	}
 
 	li {
@@ -102,13 +103,12 @@ p {
 .banner {
 	width: 100%;
     text-align: center;
-    float: left;
+    box-shadow: 0px 7px 5px #888888;
    
     h1 {
-    	border-top: #024862 solid 1px;
-    	border-bottom: #024862 solid 1px;
-    	font-weight: 100;
+    	font-weight: 400;
     	color: #ffffff;
+    	background: #2c2c2c;
     	font-size: 1.1em;
     	padding: 15px;
     }
@@ -127,7 +127,7 @@ p {
 	margin: 20px;
     display: block;
     background: #ffffff;
-    box-shadow: 0px 10px 5px #888888;
+    box-shadow: 0px 7px 5px #888888;
 }
 
 .intro_img {
@@ -190,7 +190,6 @@ section {
 	    margin: 15px;
 	    margin-bottom: 5px;
 	    margin-top: 5px;
-	   // border-bottom: solid #ffffff 2px;
 	}
 }
 
@@ -198,7 +197,8 @@ section {
 
 	header {
 
-		padding: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 
 		img {
 			float: left;
@@ -206,7 +206,6 @@ section {
 
 		nav {
 			float: right;
-    		margin-top: 10px;
 		}
 
 		li {
@@ -217,10 +216,6 @@ section {
 		ul {
 			text-align: right;
 		}
-	}
-
-	.banner {
-		margin-top: 20px;
 	}
 
 	.img_box {
@@ -235,10 +230,6 @@ section {
 
 	.card {
 		margin: 30px;
-		&.layr, &.one_col {
-		    background-size: auto 65%;
-		    background-position: 5% 50%; 
-    	}
     } 
 
     .info_box {
@@ -357,7 +348,8 @@ section {
 	}
 
 	header {
-		padding: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}	
 }
 
