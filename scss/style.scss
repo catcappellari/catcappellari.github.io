@@ -130,6 +130,21 @@ p {
     box-shadow: 0px 7px 5px #888888;
 }
 
+.source {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	background: #2c2c2c;
+	 h1 {
+    	text-align: center;
+    	margin-top: 10px;
+    }
+    a {
+    	color: #ffffff;
+    	font-size: 1em;
+    	font-weight: normal;
+    }
+}
+
 .intro_img {
 	width: 90%;
     display: block;
@@ -239,6 +254,14 @@ section {
 	.text {
 	    padding: 30px;
 	}
+
+	.source {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	    a {
+	    	font-size: 1.1em;
+	    }
+	}
 }
 
 @media (min-width: 500px) {
@@ -335,6 +358,12 @@ section {
 	.intro_img{
 		&.work {
 			width: 65%;
+		}
+	}
+
+	.source {
+		a {
+			font-size: 1.2em;
 		}
 	}
 }
