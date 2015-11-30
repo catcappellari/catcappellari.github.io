@@ -964,10 +964,25 @@ h3 {
 /* line 910, ../scss/style.scss */
 footer {
   background: #000000;
-  height: 50px;
 }
 
-/* line 915, ../scss/style.scss */
+/* line 914, ../scss/style.scss */
+.attribution {
+  padding: 15px;
+}
+/* line 916, ../scss/style.scss */
+.attribution h1 {
+  color: #ffffff;
+  padding-left: 0;
+  font-size: .8em;
+}
+/* line 921, ../scss/style.scss */
+.attribution a {
+  font-size: .8em;
+  color: #dadada;
+}
+
+/* line 927, ../scss/style.scss */
 .circle {
   border-radius: 50%;
   width: 100px;
@@ -976,7 +991,7 @@ footer {
   text-align: center;
   margin: 0 auto;
 }
-/* line 923, ../scss/style.scss */
+/* line 935, ../scss/style.scss */
 .circle h1 {
   padding: 0;
   padding-top: 33px;
@@ -984,21 +999,21 @@ footer {
   position: relative;
   top: 7px;
 }
-/* line 931, ../scss/style.scss */
+/* line 943, ../scss/style.scss */
 .circle a {
   color: #dadada;
 }
-/* line 935, ../scss/style.scss */
+/* line 947, ../scss/style.scss */
 .circle a:hover {
   padding-top: 25px;
 }
 
-/* line 940, ../scss/style.scss */
+/* line 952, ../scss/style.scss */
 .end {
   border-radius: 0 0 3px 3px;
   padding: 20px;
 }
-/* line 943, ../scss/style.scss */
+/* line 955, ../scss/style.scss */
 .end #hours, .end #messages {
   display: block;
   margin: 0 auto;
@@ -1007,32 +1022,32 @@ footer {
   border: none;
   padding: 12px 15px;
 }
-/* line 951, ../scss/style.scss */
+/* line 963, ../scss/style.scss */
 .end h3 {
   font-size: 1em;
   text-align: center;
 }
-/* line 955, ../scss/style.scss */
+/* line 967, ../scss/style.scss */
 .end .button {
   background: #ef4a04;
   display: block;
   margin: 0 auto;
   margin-top: 15px;
 }
-/* line 961, ../scss/style.scss */
+/* line 973, ../scss/style.scss */
 .end.messages {
   background: #268dd6;
 }
-/* line 965, ../scss/style.scss */
+/* line 977, ../scss/style.scss */
 .end .inset h3 {
   padding-bottom: 5px;
 }
-/* line 968, ../scss/style.scss */
+/* line 980, ../scss/style.scss */
 .end .inset .button {
   color: #ffffff;
 }
 
-/* line 976, ../scss/style.scss */
+/* line 988, ../scss/style.scss */
 .messages h1 {
   display: inline-block;
   color: #ffffff;
@@ -1040,169 +1055,169 @@ footer {
   top: -10px;
   margin-bottom: 0;
 }
-/* line 984, ../scss/style.scss */
+/* line 996, ../scss/style.scss */
 .messages h3 {
   padding-bottom: 0;
   font-weight: bold;
 }
-/* line 989, ../scss/style.scss */
+/* line 1001, ../scss/style.scss */
 .messages .message {
   border-radius: 3px;
 }
-/* line 991, ../scss/style.scss */
+/* line 1003, ../scss/style.scss */
 .messages .message h3 {
   font-weight: normal;
   line-height: 1.5em;
 }
-/* line 997, ../scss/style.scss */
+/* line 1009, ../scss/style.scss */
 .messages .date {
   text-align: right;
   color: #828282;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 1004, ../scss/style.scss */
+/* line 1016, ../scss/style.scss */
 .messages label {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
-/* line 1010, ../scss/style.scss */
+/* line 1022, ../scss/style.scss */
 .messages .email_upload {
   display: inline-block;
   padding: 15px;
   padding-bottom: 0;
 }
-/* line 1015, ../scss/style.scss */
+/* line 1027, ../scss/style.scss */
 .messages .email_upload h1 {
   top: -3px;
   font-size: .8em;
 }
-/* line 1021, ../scss/style.scss */
+/* line 1033, ../scss/style.scss */
 .messages img {
   height: 20px;
 }
 
-/* line 1026, ../scss/style.scss */
+/* line 1038, ../scss/style.scss */
 .check {
   margin: 0 auto;
   margin-top: 20px;
   display: block;
 }
 
-/* line 1032, ../scss/style.scss */
+/* line 1044, ../scss/style.scss */
 .dropdown_project {
   background: #efefef;
   padding: 20px;
 }
-/* line 1035, ../scss/style.scss */
+/* line 1047, ../scss/style.scss */
 .dropdown_project .card {
   padding: 0;
 }
-/* line 1039, ../scss/style.scss */
+/* line 1051, ../scss/style.scss */
 .dropdown_project header {
   background: #268dd6;
 }
-/* line 1041, ../scss/style.scss */
+/* line 1053, ../scss/style.scss */
 .dropdown_project header img {
   height: 30px;
 }
 
-/* line 1049, ../scss/style.scss */
+/* line 1061, ../scss/style.scss */
 .second .payment_indiv p {
   margin-top: 20px;
 }
 
-/* line 1056, ../scss/style.scss */
+/* line 1068, ../scss/style.scss */
 .payment_indiv p {
   margin: 0;
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 240px) {
-  /* line 1064, ../scss/style.scss */
+  /* line 1076, ../scss/style.scss */
   .upper_nav h1 {
     float: left;
     width: 45%;
     margin-top: 34px;
   }
-  /* line 1070, ../scss/style.scss */
+  /* line 1082, ../scss/style.scss */
   .upper_nav .availability {
     float: right;
     width: 45%;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 1079, ../scss/style.scss */
+  /* line 1091, ../scss/style.scss */
   .file_circles .circle_box {
     width: 50%;
   }
 }
 @media screen and (min-width: 350px) {
-  /* line 1087, ../scss/style.scss */
+  /* line 1099, ../scss/style.scss */
   .upper_nav img {
     width: 200px;
   }
-  /* line 1091, ../scss/style.scss */
+  /* line 1103, ../scss/style.scss */
   .upper_nav .availability {
     padding-bottom: 0;
     float: right;
     margin: 0;
   }
-  /* line 1097, ../scss/style.scss */
+  /* line 1109, ../scss/style.scss */
   .upper_nav h1 {
     display: block;
     text-align: left;
   }
 
-  /* line 1104, ../scss/style.scss */
+  /* line 1116, ../scss/style.scss */
   .lower_nav li {
     display: inline-block;
     width: 47%;
     font-size: .8em;
   }
 
-  /* line 1111, ../scss/style.scss */
+  /* line 1123, ../scss/style.scss */
   .file_circles {
     margin: 15px;
   }
 
-  /* line 1116, ../scss/style.scss */
+  /* line 1128, ../scss/style.scss */
   .details form {
     width: 100%;
     padding: 15px;
   }
 
-  /* line 1123, ../scss/style.scss */
+  /* line 1135, ../scss/style.scss */
   .inset img {
     display: inline-block;
     width: 100px;
     margin: 0;
   }
-  /* line 1129, ../scss/style.scss */
+  /* line 1141, ../scss/style.scss */
   .inset input {
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
     padding-left: 0;
   }
-  /* line 1136, ../scss/style.scss */
+  /* line 1148, ../scss/style.scss */
   .inset .button {
     margin-left: 15px;
   }
-  /* line 1140, ../scss/style.scss */
+  /* line 1152, ../scss/style.scss */
   .inset .submit_img {
     display: inline-block;
     width: 45%;
     vertical-align: top;
   }
 
-  /* line 1149, ../scss/style.scss */
+  /* line 1161, ../scss/style.scss */
   .end .inset .button {
     float: right;
     margin: 0;
   }
-  /* line 1153, ../scss/style.scss */
+  /* line 1165, ../scss/style.scss */
   .end .inset h3 {
     float: left;
     width: 100%;
@@ -1210,96 +1225,96 @@ footer {
     margin-top: 0;
     padding-bottom: 5px;
   }
-  /* line 1160, ../scss/style.scss */
+  /* line 1172, ../scss/style.scss */
   .end .inset #hours {
     float: left;
     width: 45%;
   }
 
-  /* line 1167, ../scss/style.scss */
+  /* line 1179, ../scss/style.scss */
   .avail_form #accept {
     float: left;
     width: 45%;
     margin-top: 0;
   }
 
-  /* line 1173, ../scss/style.scss */
+  /* line 1185, ../scss/style.scss */
   .avail_form .decision {
     float: right;
     width: 46%;
     margin-top: 0;
   }
 
-  /* line 1179, ../scss/style.scss */
+  /* line 1191, ../scss/style.scss */
   .pay {
     display: inline-block;
     width: 45%;
   }
 }
 @media screen and (min-width: 400px) {
-  /* line 1186, ../scss/style.scss */
+  /* line 1198, ../scss/style.scss */
   .avail_form #accept {
     margin-top: 10px;
   }
 
-  /* line 1190, ../scss/style.scss */
+  /* line 1202, ../scss/style.scss */
   .upper_nav h1 {
     margin-top: 20px;
   }
 
-  /* line 1195, ../scss/style.scss */
+  /* line 1207, ../scss/style.scss */
   .sub_header h1 {
     font-size: 1em;
   }
 
-  /* line 1201, ../scss/style.scss */
+  /* line 1213, ../scss/style.scss */
   .content header h1 {
     margin-top: 10px;
   }
-  /* line 1205, ../scss/style.scss */
+  /* line 1217, ../scss/style.scss */
   .content header img {
     height: 25px;
   }
 
-  /* line 1211, ../scss/style.scss */
+  /* line 1223, ../scss/style.scss */
   .project h2 {
     font-size: 1em;
   }
 
-  /* line 1217, ../scss/style.scss */
+  /* line 1229, ../scss/style.scss */
   .submit .button {
     float: right;
     margin-right: 20px;
   }
 
-  /* line 1223, ../scss/style.scss */
+  /* line 1235, ../scss/style.scss */
   .messages .email_upload h1 {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 430px) {
-  /* line 1230, ../scss/style.scss */
+  /* line 1242, ../scss/style.scss */
   .file_circles .circle_box {
     width: 33%;
   }
 }
 @media screen and (min-width: 480px) {
-  /* line 1238, ../scss/style.scss */
+  /* line 1250, ../scss/style.scss */
   .upper_nav {
     padding: 20px;
     padding-bottom: 0;
   }
-  /* line 1242, ../scss/style.scss */
+  /* line 1254, ../scss/style.scss */
   .upper_nav img {
     float: left;
   }
-  /* line 1246, ../scss/style.scss */
+  /* line 1258, ../scss/style.scss */
   .upper_nav .availability {
     width: 38%;
     padding-top: 0;
     text-align: right;
   }
-  /* line 1252, ../scss/style.scss */
+  /* line 1264, ../scss/style.scss */
   .upper_nav h1 {
     margin: 0 auto;
     display: block;
@@ -1307,50 +1322,50 @@ footer {
     margin-top: 70px;
     margin-bottom: 20px;
   }
-  /* line 1261, ../scss/style.scss */
+  /* line 1273, ../scss/style.scss */
   .upper_nav li {
     float: left;
     width: 50%;
   }
-  /* line 1266, ../scss/style.scss */
+  /* line 1278, ../scss/style.scss */
   .upper_nav a {
     width: 100%;
   }
 
-  /* line 1272, ../scss/style.scss */
+  /* line 1284, ../scss/style.scss */
   .lower_nav h1 {
     top: 0;
     padding-left: 0;
   }
 
-  /* line 1279, ../scss/style.scss */
+  /* line 1291, ../scss/style.scss */
   .details form {
     float: right;
   }
 
-  /* line 1284, ../scss/style.scss */
+  /* line 1296, ../scss/style.scss */
   .button {
     margin: 0 auto;
     margin-top: 20px;
   }
 
-  /* line 1291, ../scss/style.scss */
+  /* line 1303, ../scss/style.scss */
   .project h2 {
     width: 29%;
   }
 
-  /* line 1296, ../scss/style.scss */
+  /* line 1308, ../scss/style.scss */
   .sub_header {
     width: 29%;
   }
 
-  /* line 1300, ../scss/style.scss */
+  /* line 1312, ../scss/style.scss */
   .down_arrow {
     margin-top: .5em;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 1307, ../scss/style.scss */
+  /* line 1319, ../scss/style.scss */
   .main_navigation.hidden {
     display: block;
     opacity: 1;
@@ -1359,59 +1374,59 @@ footer {
     width: 100%;
     padding-top: 20px;
   }
-  /* line 1314, ../scss/style.scss */
+  /* line 1326, ../scss/style.scss */
   .main_navigation.hidden a {
     margin-top: 0;
   }
-  /* line 1317, ../scss/style.scss */
+  /* line 1329, ../scss/style.scss */
   .main_navigation.hidden .current {
     border: 1px solid #ef4a04;
     border-radius: 3px;
     padding: 12px 15px;
   }
 
-  /* line 1324, ../scss/style.scss */
+  /* line 1336, ../scss/style.scss */
   #dropdown_button {
     display: none;
   }
 
-  /* line 1328, ../scss/style.scss */
+  /* line 1340, ../scss/style.scss */
   .lower_nav {
     display: none;
   }
 
-  /* line 1332, ../scss/style.scss */
+  /* line 1344, ../scss/style.scss */
   .details {
     width: 45%;
     float: left;
   }
-  /* line 1336, ../scss/style.scss */
+  /* line 1348, ../scss/style.scss */
   .details.second {
     float: right;
   }
-  /* line 1340, ../scss/style.scss */
+  /* line 1352, ../scss/style.scss */
   .details.b {
     float: right;
   }
 
-  /* line 1345, ../scss/style.scss */
+  /* line 1357, ../scss/style.scss */
   .internal {
     float: left;
     width: 30%;
     margin-left: 2%;
   }
 
-  /* line 1353, ../scss/style.scss */
+  /* line 1365, ../scss/style.scss */
   .upper_nav h1 {
     display: none;
   }
-  /* line 1357, ../scss/style.scss */
+  /* line 1369, ../scss/style.scss */
   .upper_nav ul {
     float: right;
     margin-top: 20px;
     width: 100%;
   }
-  /* line 1363, ../scss/style.scss */
+  /* line 1375, ../scss/style.scss */
   .upper_nav li {
     float: right;
     width: 18%;
@@ -1419,188 +1434,188 @@ footer {
     padding: 12px 15px;
     border: none;
   }
-  /* line 1371, ../scss/style.scss */
+  /* line 1383, ../scss/style.scss */
   .upper_nav a {
     border: none;
     padding: 0;
   }
-  /* line 1376, ../scss/style.scss */
+  /* line 1388, ../scss/style.scss */
   .upper_nav li:hover {
     background: #afafaf;
     border-radius: 3px;
     color: #ffffff;
   }
 
-  /* line 1383, ../scss/style.scss */
+  /* line 1395, ../scss/style.scss */
   .wide {
     float: left;
     width: 48%;
   }
 
-  /* line 1388, ../scss/style.scss */
+  /* line 1400, ../scss/style.scss */
   .file_circles {
     float: left;
     width: 51%;
   }
-  /* line 1391, ../scss/style.scss */
+  /* line 1403, ../scss/style.scss */
   .file_circles .circle_box {
     width: 50%;
   }
 
-  /* line 1397, ../scss/style.scss */
+  /* line 1409, ../scss/style.scss */
   .end .inset {
     float: right;
     width: 41%;
     margin-bottom: 20px;
   }
-  /* line 1401, ../scss/style.scss */
+  /* line 1413, ../scss/style.scss */
   .end .inset label {
     margin: 0 auto;
     display: block;
     text-align: center;
   }
-  /* line 1406, ../scss/style.scss */
+  /* line 1418, ../scss/style.scss */
   .end .inset .button {
     float: none;
     margin: 0 auto;
     margin-top: 10px;
   }
-  /* line 1411, ../scss/style.scss */
+  /* line 1423, ../scss/style.scss */
   .end .inset h3 {
     padding-bottom: 5px;
     text-align: center;
   }
-  /* line 1416, ../scss/style.scss */
+  /* line 1428, ../scss/style.scss */
   .end .inset #hours {
     float: left;
     width: 100%;
     margin-bottom: 10px;
   }
 
-  /* line 1425, ../scss/style.scss */
+  /* line 1437, ../scss/style.scss */
   .messages.fix {
     float: left;
   }
 
-  /* line 1430, ../scss/style.scss */
+  /* line 1442, ../scss/style.scss */
   .pay {
     width: 100%;
   }
 
-  /* line 1434, ../scss/style.scss */
+  /* line 1446, ../scss/style.scss */
   .dropdown_project header {
     height: 100px;
   }
 
-  /* line 1438, ../scss/style.scss */
+  /* line 1450, ../scss/style.scss */
   .payment_indiv {
     min-height: 226px;
   }
 }
 @media screen and (min-width: 730px) {
-  /* line 1446, ../scss/style.scss */
+  /* line 1458, ../scss/style.scss */
   .upper_nav li {
     width: 15%;
   }
 
-  /* line 1453, ../scss/style.scss */
+  /* line 1465, ../scss/style.scss */
   .card .details .file_circles {
     width: 56%;
   }
 
-  /* line 1464, ../scss/style.scss */
+  /* line 1476, ../scss/style.scss */
   .messages form {
     width: 100%;
   }
-  /* line 1468, ../scss/style.scss */
+  /* line 1480, ../scss/style.scss */
   .messages label {
     width: 100%;
   }
-  /* line 1472, ../scss/style.scss */
+  /* line 1484, ../scss/style.scss */
   .messages input {
     width: 90%;
   }
-  /* line 1476, ../scss/style.scss */
+  /* line 1488, ../scss/style.scss */
   .messages button {
     float: right;
     margin-top: 15px;
     margin-right: 12px;
   }
 
-  /* line 1484, ../scss/style.scss */
+  /* line 1496, ../scss/style.scss */
   .project h2 {
     width: 185px;
     padding-left: 15px;
   }
 
-  /* line 1490, ../scss/style.scss */
+  /* line 1502, ../scss/style.scss */
   .sub_header {
     width: 185px;
     padding-left: 15px;
   }
 
-  /* line 1495, ../scss/style.scss */
+  /* line 1507, ../scss/style.scss */
   .end .button {
     margin-bottom: 15px;
   }
 
-  /* line 1499, ../scss/style.scss */
+  /* line 1511, ../scss/style.scss */
   .inset {
     margin-top: 16px;
   }
 }
 @media screen and (min-width: 770px) {
-  /* line 1505, ../scss/style.scss */
+  /* line 1517, ../scss/style.scss */
   .file_circles .circle_box {
     width: 33%;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 1512, ../scss/style.scss */
+  /* line 1524, ../scss/style.scss */
   .details.third {
     float: left;
   }
-  /* line 1515, ../scss/style.scss */
+  /* line 1527, ../scss/style.scss */
   .details.b {
     float: right;
   }
 
-  /* line 1521, ../scss/style.scss */
+  /* line 1533, ../scss/style.scss */
   .end .inset {
     width: 36%;
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 880px) {
-  /* line 1529, ../scss/style.scss */
+  /* line 1541, ../scss/style.scss */
   .dropdown_project header {
     height: 78px;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 1536, ../scss/style.scss */
+  /* line 1548, ../scss/style.scss */
   .upper_nav li {
     width: 12%;
   }
 
-  /* line 1541, ../scss/style.scss */
+  /* line 1553, ../scss/style.scss */
   .details {
     width: 32%;
     margin-right: 1%;
     float: left;
   }
-  /* line 1545, ../scss/style.scss */
+  /* line 1557, ../scss/style.scss */
   .details .form_field {
     float: left;
     width: 100%;
     margin-right: 15px;
   }
-  /* line 1550, ../scss/style.scss */
+  /* line 1562, ../scss/style.scss */
   .details.second {
     float: left;
   }
 
-  /* line 1555, ../scss/style.scss */
+  /* line 1567, ../scss/style.scss */
   .inset {
     margin-top: 21px;
   }
