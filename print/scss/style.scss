@@ -351,13 +351,13 @@ button {
 }
 
 header {
-	background: url("..//images/print_background.png");
-	background-size: cover;
-	background-position: center top;
+
 }
 
 .upper_nav {
-	
+	background: url("..//images/print_background.png");
+	background-size: cover; 
+	background-position: center top;
 	display: block;
     margin: 0 auto;
     padding: 20px;
