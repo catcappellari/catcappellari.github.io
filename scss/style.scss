@@ -140,7 +140,10 @@ p {
 	background: #2c2c2c;
 	 h1 {
     	text-align: center;
-    	margin-top: 10px;
+    	//margin-top: 10px;
+    }
+    li {
+
     }
     a {
     	color: #ffffff;
@@ -148,6 +151,46 @@ p {
     	font-weight: normal;
     }
 }
+
+ul {
+	&.source {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+li {
+	a {
+		&.button {
+		display: block;
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		//height: 50%;
+		}
+	}
+}
+
+li:last-child {
+	.button {
+		padding-top: 0;
+	}
+	.button:hover {
+	background: #454545;
+	transition: background .6s ease;
+	padding-top: 20px;
+}
+}
+.button:hover {
+	background: #454545;
+	transition: background .6s ease;
+	padding-top: 20px;
+}
+
 
 .intro_img {
 	width: 90%;
