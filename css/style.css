@@ -245,13 +245,13 @@ li:last-child .button:hover {
   padding: 20px;
 }
 
-/* line 245, ../scss/style.scss */
+/* line 249, ../scss/style.scss */
 section {
   margin-bottom: 40px;
 }
 
 @media (min-width: 200px) {
-  /* line 250, ../scss/style.scss */
+  /* line 254, ../scss/style.scss */
   header li {
     display: inline-block;
     margin: 15px;
@@ -260,81 +260,81 @@ section {
   }
 }
 @media (min-width: 400px) {
-  /* line 260, ../scss/style.scss */
+  /* line 264, ../scss/style.scss */
   header {
     padding-left: 30px;
     padding-right: 30px;
   }
-  /* line 265, ../scss/style.scss */
+  /* line 269, ../scss/style.scss */
   header img {
     float: left;
   }
-  /* line 269, ../scss/style.scss */
+  /* line 273, ../scss/style.scss */
   header nav {
     float: right;
   }
-  /* line 273, ../scss/style.scss */
+  /* line 277, ../scss/style.scss */
   header li {
     display: inline-block;
     text-align: right;
   }
-  /* line 278, ../scss/style.scss */
+  /* line 282, ../scss/style.scss */
   header ul {
     text-align: right;
   }
 
-  /* line 283, ../scss/style.scss */
+  /* line 287, ../scss/style.scss */
   .img_box {
     width: 65%;
   }
 
-  /* line 287, ../scss/style.scss */
+  /* line 291, ../scss/style.scss */
   .text_box {
     float: right;
     margin-top: 20px;
     padding-top: 0;
   }
 
-  /* line 293, ../scss/style.scss */
+  /* line 297, ../scss/style.scss */
   .card {
     margin: 30px;
   }
 
-  /* line 297, ../scss/style.scss */
+  /* line 301, ../scss/style.scss */
   .info_box {
     margin: 30px;
     float: none;
   }
 
-  /* line 302, ../scss/style.scss */
+  /* line 306, ../scss/style.scss */
   .text {
     padding: 30px;
   }
 
-  /* line 306, ../scss/style.scss */
+  /* line 310, ../scss/style.scss */
   .source {
     padding-top: 20px;
     padding-bottom: 30px;
   }
-  /* line 309, ../scss/style.scss */
+  /* line 313, ../scss/style.scss */
   .source a {
     font-size: 1.1em;
   }
 }
 @media (min-width: 500px) {
-  /* line 317, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .about .text, .contact .text {
     padding: 20px;
   }
 }
 @media (min-width: 550px) {
-  /* line 325, ../scss/style.scss */
+  /* line 329, ../scss/style.scss */
   .intro_img.work {
     width: 70%;
     float: left;
   }
 
-  /* line 331, ../scss/style.scss */
+  /* line 335, ../scss/style.scss */
   .text {
     float: left;
     width: 25%;
@@ -343,51 +343,51 @@ section {
   }
 }
 @media (min-width: 650px) {
-  /* line 345, ../scss/style.scss */
+  /* line 349, ../scss/style.scss */
   .card.layr, .card.one_col {
     float: left;
     width: 46%;
     margin-right: 2%;
     margin-left: 2%;
   }
-  /* line 352, ../scss/style.scss */
+  /* line 356, ../scss/style.scss */
   .card.about, .card.contact {
     margin-left: 2%;
     margin-right: 2%;
     width: 96%;
   }
 
-  /* line 359, ../scss/style.scss */
+  /* line 363, ../scss/style.scss */
   .img_box {
     width: 100%;
   }
-  /* line 361, ../scss/style.scss */
+  /* line 365, ../scss/style.scss */
   .img_box img {
     margin: 0 auto;
   }
 
-  /* line 367, ../scss/style.scss */
+  /* line 371, ../scss/style.scss */
   .info_box h2 {
     text-align: center;
     font-size: 1.5em;
   }
 
-  /* line 373, ../scss/style.scss */
+  /* line 377, ../scss/style.scss */
   .move {
     padding-left: 5%;
   }
 
-  /* line 377, ../scss/style.scss */
+  /* line 381, ../scss/style.scss */
   .text_box {
     min-height: 370px;
   }
 
-  /* line 381, ../scss/style.scss */
+  /* line 385, ../scss/style.scss */
   .text {
     margin-top: 10%;
   }
 
-  /* line 385, ../scss/style.scss */
+  /* line 389, ../scss/style.scss */
   section {
     width: 29%;
     float: left;
@@ -397,27 +397,27 @@ section {
   }
 }
 @media (min-width: 800px) {
-  /* line 399, ../scss/style.scss */
+  /* line 403, ../scss/style.scss */
   .text {
     margin-top: 11%;
   }
-  /* line 401, ../scss/style.scss */
+  /* line 405, ../scss/style.scss */
   .text h1, .text h3, .text h5 {
     font-size: 1.1em;
   }
 
-  /* line 407, ../scss/style.scss */
+  /* line 411, ../scss/style.scss */
   .intro_img.work {
     width: 65%;
   }
 
-  /* line 413, ../scss/style.scss */
+  /* line 417, ../scss/style.scss */
   .source a {
     font-size: 1.2em;
   }
 }
 @media (min-width: 1000px) {
-  /* line 420, ../scss/style.scss */
+  /* line 424, ../scss/style.scss */
   .card {
     max-width: 1000px;
     margin: 40px;
@@ -425,14 +425,14 @@ section {
     float: none;
   }
 
-  /* line 427, ../scss/style.scss */
+  /* line 431, ../scss/style.scss */
   header {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media (min-width: 1060px) {
-  /* line 435, ../scss/style.scss */
+  /* line 439, ../scss/style.scss */
   .card {
     margin: 40 auto;
   }
