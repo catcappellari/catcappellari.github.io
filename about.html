@@ -59,9 +59,12 @@
 		<div class="card clearfix">
 			<div class="info_box clearfix infographic">
 				<h2>My Process</h2>
-				<img src="images/process_infographic_mobile.jpg"
-				srcset="images/process_infographic.jpg 600w" 
-				alt="Creative Process Infographic">
+				
+				<picture>
+				    <source src="images/info_process.jpg" media="(min-width: 400px" />
+				    <source src="images/info_process_mobile.jpg" />
+				    <img src="images/info_process_mobile.jpg" alt="Creative Process Infographic" />
+				</picture>
 
 			</div>
 		</div>
