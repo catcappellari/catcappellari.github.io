@@ -1,0 +1,261 @@
+/* LANDING PAGE LAYOUT */
+//section styling & responsive breakpoints
+body {
+	background: #f7f4fc;
+}
+header, section{
+	padding: 20px;
+}
+
+header{
+	background: rgba(52, 9, 120, 1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.logo {
+	img {
+		max-width: 120px;
+		display: block;
+   	 	margin: 0 auto;
+	}
+}
+
+section{
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+
+//mixin details at _variables.scss
+
+.light_pattern {
+	@include section($white, 'Alegreya', 3em, $indigo);
+	padding-top: 220px;
+	background:
+		linear-gradient(
+	      rgba(102, 51, 153, 0.1),
+	      rgba(102, 51, 153, 0.1)),
+		 url(../images/fabric.jpg);
+}
+
+.dark {
+	@include section(#180536, 'Codystar' , 3.5em, $lavender);
+}
+
+.light {
+	@include section(url(../images/geography.jpg), 'Coda' , 3em, $indigo);
+	background:
+		linear-gradient(
+	      rgba(102, 51, 153, 0.1),
+	      rgba(102, 51, 153, 0.3)),
+		 url(../images/geography.jpg);
+}
+
+.white {
+	@include section(#f7f4fc, 'Reenie Beanie' , 4em, $cerulean);
+	h2 {
+		font-family: 'Reenie Beanie', sans-serif;
+		font-size: 1.7em;
+		font-weight: bold;
+		color: $cerulean;
+		border-bottom: dashed $black 2px;
+		text-align: left;
+    	padding-bottom: 5px;
+	}
+	.number h2 {
+		border-bottom: none;
+		text-align: center;
+	}	
+	&.outro h2 {
+		border-bottom: none;
+	}
+	.whole h3 {
+		color: $black;
+	}
+	ul {
+		margin-bottom: 20px;
+		list-style: disc;
+		padding-left: 20px;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+.left_skew, .right_skew, .full {
+	h3, p {
+		color: $black;
+		font-family: 'Avenir', sans-serif;
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+	p {
+		font-weight: normal;
+	}
+}
+
+.left_skew {
+	p {
+		font-style: italic;
+	}
+	margin-bottom: 10px;
+}
+
+.right_skew {
+	margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.binder {
+	width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.number {
+	display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.whole, .half, .third {
+	margin-bottom: 20px;
+}
+
+ol {
+	list-style: disc;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+footer{
+	padding: 20px;
+	background: $indigo;
+	
+	p{ 
+		color: $white;
+		font-size: .8em;
+	}
+}
+
+.banner {
+	background: #29a8e0;
+	border: 5px solid $white;
+	box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.45);
+	text-align: center;
+	padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+	h3 {
+		color: $black;
+		font-family: 'Avenir', sans-serif;
+		font-weight: normal;
+		font-size: 1.3em;
+		margin-bottom: 0;
+	}
+	h2 {
+		color: $black;
+		font-family: 'Avenir', sans-serif;
+		font-weight: bold;
+		font-size: 1.3em;
+		border-bottom: none;
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 120px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	header {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.whole, .half, .third {
+		margin: 20px;
+	}
+
+	.left_skew {
+		float: left;
+	}
+
+	.right_skew {
+		float: right;
+		margin-top: 0;
+		text-align: right;
+	}
+
+	.full {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.whole {
+		float: left;
+		max-width: 100%;
+	}
+
+	.half {
+		float: left;
+    	width: 43%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+	.half {
+    	width: 44%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+	.light_pattern {
+	    padding-top: 104px;
+	}
+	
+}
+
+@media screen and (min-width: 900px) {
+	.half {
+		width: 45%;
+	}
+
+	.third {
+	    float: left;
+	    width: 28%;
+	}
+
+	wrapper {
+		max-width: 900px;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	section {
+		&.resume {
+			float: right;
+			width: 68%;
+		}
+	}
+
+	.banner {
+		float: left;
+		width: 19%;
+		margin-top: 100px;
+	}
+
+	footer {
+		float: left;
+		width: 100%;
+	}
+}

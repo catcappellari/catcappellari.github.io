@@ -1,0 +1,37 @@
+/* VARIABLES */
+
+$nkblue: #00b3e3;
+$white: #ffffff;
+$black: #111111;
+$gray: #666666;
+$lilac: #f7f4fc;
+$lavender: #d2b6fe;
+$indigo: #340978;
+$dkgray: #252525;
+$cerulean: #29a8e0;
+
+//Mixin I wrote to make styling my sections easy and quick:
+
+//$background: changes section background
+//$fontfamily: changes font family for section title/number
+//$fontsize: changes font size for number and section title
+//$color: changes number, section title, and question/answer color
+//individually styled in _dev-internship.scss
+@mixin section ($background, $fontfamily, $fontsize, $color) {
+	background: $background;
+	background-repeat: repeat;
+	.number h2 {
+		font-family: $fontfamily;
+		font-size: $fontsize;
+		color: $color;
+	}
+	h1 {
+		color: $color;
+		font-size: $fontsize;
+		font-family: $fontfamily;
+	}
+	h3, p {
+		color: $color;
+	}
+}
+

@@ -1,0 +1,102 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 4, ../sass/print.scss */
+section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 10, ../sass/print.scss */
+.light_pattern h1, .light_pattern h2, .light_pattern h3, .light_pattern h4, .light_pattern p, .light_pattern a, .dark h1, .dark h2, .dark h3, .dark h4, .dark p, .dark a, .light h1, .light h2, .light h3, .light h4, .light p, .light a {
+  color: #000;
+  font-family: 'Georgia', 'Times New Roman' , serif;
+}
+/* line 14, ../sass/print.scss */
+.light_pattern .number h2, .dark .number h2, .light .number h2 {
+  color: #000;
+  font-family: 'Georgia', 'Times New Roman' , serif;
+  font-size: 1em;
+}
+/* line 19, ../sass/print.scss */
+.light_pattern h1, .dark h1, .light h1 {
+  font-size: 1em;
+  margin-top: 20px;
+}
+/* line 24, ../sass/print.scss */
+.light_pattern h3, .light_pattern p, .dark h3, .dark p, .light h3, .light p {
+  font-size: .9em;
+}
+
+/* line 31, ../sass/print.scss */
+.white h1 {
+  color: #000;
+  font-family: 'Georgia', 'Times New Roman' , serif;
+  font-size: 1em;
+  margin-top: 20px;
+}
+/* line 37, ../sass/print.scss */
+.white .number h2 {
+  color: #000;
+  font-family: 'Georgia', 'Times New Roman' , serif;
+  font-size: 1em;
+}
+/* line 42, ../sass/print.scss */
+.white h3, .white p {
+  font-size: .9em;
+}
+
+@page {
+  margin: 0.5cm;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  width: 100%;
+}
+/* line 56, ../sass/print.scss */
+header {
+  display: none;
+}
+/* line 58, ../sass/print.scss */
+header .main_navigation {
+  display: none;
+}
+/* line 61, ../sass/print.scss */
+header .main_navigation.hidden {
+  display: none;
+}
+
+/* line 66, ../sass/print.scss */
+footer {
+  display: none;
+}
+
+/* line 70, ../sass/print.scss */
+.light_pattern {
+  padding-top: 0;
+}
+
+/* line 74, ../sass/print.scss */
+.banner {
+  box-shadow: none;
+  border: #000 solid 2px;
+}
+
+/* line 79, ../sass/print.scss */
+.binder {
+  width: 100%;
+}
+
+/* line 83, ../sass/print.scss */
+.skew_right {
+  float: right;
+}
+
+/* line 88, ../sass/print.scss */
+.print {
+  page-break-after: always;
+}
+
+/* line 91, ../sass/print.scss */
+p a:after {
+  content: " [" attr(href) "] ";
+}
