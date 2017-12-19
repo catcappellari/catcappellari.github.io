@@ -1,117 +1,216 @@
-<html>
-	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#3498db">
+    <title>Cat Cappellari - Web Developer</title>
+    <meta name="description" content="Portfolio of Raleigh Web Developer Cat Cappellari">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css"/>
+</head>
 
-		<title>Cat Cappellari</title>
-        
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-
-	<body>
-
-		<header class="clearfix">
-			<a href="index.html"><img src="images/logo_fit.svg" alt="logo"></a>
-
-			<nav>
-				<ul>
-					<li><h2><a href="index.html">WORK</a></h2></li>
-					<li><h2><a href="about.html">ABOUT</a></h2></li>
-				</ul>
-			</nav>
-
-		</header>
-
-		<div class="banner"><h1>One Columbia Case Study</h1></div>
-
-		<div class="card clearfix">
+<body>
+	<div class="top" id="top">
+		<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
+	    <header class="header-main">
+	    	<div class="c-contain c-contain_1400">
+	    		<div class="h-block h-block1">
+		            <a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+		        </div>
+		        <div class="h-block h-block2">
+		        	<a href="mailto:cat.cappellari@gmail.com" class="email"></a>
+		            <nav class="mainmenu" role="navigation">
+		                <button id="mainmenu_button" class="menu-button js-menu-button" aria-expanded="false" aria-controls="mainmenu">
+		                	<span></span>
+		                	<span></span>
+		            		<span></span>
+		            	</button>
+		                <ul id="mainmenu" class="mobile-menu js-mobile-menu">
+		                    <li><a href="#work">Work</a></li>
+		                    <li><a href="#about">About</a></li>
+		                </ul>
+		            </nav>
+		        </div>
+	    	</div>
+	    </header>
+	    <div id="main-content"></div>
+	</div>
+	<section class="c-section c-section_center">
+		<div class="c-contain">
+			<h1>One Columbia Case Study</h1>
 			<img class="intro_img" src="images/one_col_presentation_white.png" alt="One Columbia Showcase">
-			<div class="source">
-				<h1><a href="https://invis.io/585B395TM" alt="InVision Link">InVision Demonstration</a></h1>
+			<ul class="c-buttons">
+				<li><a href="https://invis.io/585B395TM" alt="InVision Link">InVision Demonstration</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="c-section c-section_center c-section_alt1">
+		<div class="c-contain">
+			<h2>Discovery</h2>
+			<h3>Creative Brief</h3>
+			<p>One Columbia for Arts & History is a non-profit organization formed to support and promote tourism in Columbia, South Carolina.They currently use a paper passport system so their patrons can track events that they have attended.</p> 
+
+			<p>One Columbia is seeking a visual prototype for a digital  Passport in the form of an app that uses AR Codes and geo-tagging to allow iPhone users in the Columbia area to check into culture events and adding features that only a mobile device can provide. This will also help reduce costs associated with paper passports.</p> 
+
+			<h3>Scope</h3>
+			<p>The scope of this project includes wireframes, thumbnails, mockups, and an interactive prototype in InVision.</p>
+
+			<p>The actions included in this app are a login area, an AR check-in area, a notes/stamp collection section, and an upcoming-events details section.</p>
+		</div>
+	</section>
+	<section class="c-section c-section_center">
+		<div class="c-contain">
+			<h2>User Experience</h2>
+			<h3>Wireframes</h3>
+			<p>Group information together and establish a hierarchy</p>
+			<img src="images/columbia_one_sitemap.png" alt="Columbia One Sitemap">
+			
+			<h3>Thumbnails</h3>
+			<p>Create the final relationships and weights of various elements of the page</p>
+			<img src="images/one_col_thumbnail.png" alt="LAYR Thumbnail">
+
+			<h3>Mockups</h3>
+			<p>Depict the final look of the page</p>
+			<img src="images/columbia_one_mockup.png" alt="One Columbia Mockups">
+		</div>
+	</section>
+	<section class="c-section c-section_center c-section_dark c-section_alt2">
+		<div class="c-contain">	
+			<h2>Prototype & Integrations</h2>
+			<div>
+				<a href="https://projects.invisionapp.com/d/main#/projects/5218891" alt="InVision Link"><h3>InVision Demo</h3></a>
+
+				<p>InVision is an online tool that uses clickable areas and animations to simulate real interactions using user-designed mockups.</p>
+
+				<a href="https://projects.invisionapp.com/d/main#/projects/5218891" alt="InVision Link"><img src="images/one_col_invis.png" alt="One Columbia InVision"></a>
+			</div>
+			<div>		
+				<h3>Font:</h3> 
+				<p>Arvo is a fun and functional Google font that has an old-timey feel that meshes well with the passport theme of this app.</p>
+				<img class="font" src="images/arvo.png" alt="Arvo font">
+			</div>
+
+			<div>
+				<h3>Font:</h3> 		
+				<p>Helvetica serves as a clean navigation font that fits well into the Apple interface.</p>
+				<img class="font" src="images/helvetica.png" alt="Helvetica font">
 			</div>
 		</div>
+	</section>
 
-		<div class="card clearfix">
-			<div class="info_box clearfix">
+	<footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
+    	<div class="c-contain">
+    		<ul class="c-buttons c-buttons_light">
+    			<li><a href="#top" class="js__jump">Take me back to the top!</a></li>
+    		</ul>
+    		<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+    		<ul class="social-media">
+    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
+    		</ul>
+    		<p>This site brought to you by Cat Cappellari, all rights reserved. <script>document.write(new Date().getFullYear())</script>.</p>
+    	</div>
+    </footer>
 
-				<h2>Discovery</h2>
-				<h3>Creative Brief</h3>
-				<p>One Columbia for Arts & History is a non-profit organization formed to support and promote tourism in Columbia, South Carolina.They currently use a paper passport system so their patrons can track events that they have attended.</p> 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick-slider.min.js"></script>
 
-				<p>One Columbia is seeking a visual prototype for a digital  Passport in the form of an app that uses AR Codes and geo-tagging to allow iPhone users in the Columbia area to check into culture events and adding features that only a mobile device can provide. This will also help reduce costs associated with paper passports.</p> 
+    <script>
+    	document.addEventListener("DOMContentLoaded", function() {
 
-				<h3>Scope</h3>
-				<p>The scope of this project includes wireframes, thumbnails, mockups, and an interactive prototype in InVision.</p>
+		   var menuButton = document.querySelector('.js-menu-button');  
+		   var menuWrapper = document.querySelector('.js-mobile-menu');
 
-				<p>The actions included in this app are a login area, an AR check-in area, a notes/stamp collection section, and an upcoming-events details section.</p>
-			</div>
-		</div>
+		    //debounce function - from underscores.js
+		    function debounce(func, wait, immediate) {
+		        var timeout;
+		        return function() {
+		            var context = this, args = arguments;
+		            var later = function() {
+		                timeout = null;
+		                if (!immediate) func.apply(context, args);
+		            };
+		            var callNow = immediate && !timeout;
+		            clearTimeout(timeout);
+		            timeout = setTimeout(later, wait);
+		            if (callNow) func.apply(context, args);
+		        };
+		    };
 
+		    //change menu button and menu based on click status
+		    function buttonToggle() {
+		        //toggle menu button active
+		        if (!menuButton.classList.contains('active')){
+		            menuButton.classList.add('active');
+		            menuButton.setAttribute('aria-expanded', 'true');
+		        } else {
+		            menuButton.classList.remove('active');
+		            menuButton.setAttribute('aria-expanded', 'false');
+		        }
 
-			<div class="card clearfix">
-				<div class="info_box clearfix">
-					<h2>User Experience</h2>
+		        //toggle menu active
+		        if (!menuWrapper.classList.contains('active')){
+		            menuWrapper.classList.add('active');
+		        } else {
+		            menuWrapper.classList.remove('active');
+		        }  
+		    }
 
-					<section>						
-						<h3>Wireframes</h3>
-						<p>Group information together and establish a hierarchy</p>
-						<img src="images/columbia_one_sitemap.png" alt="Columbia One Sitemap">
-					</section>
+		    function menuClickClose() {
+		    	menuButton.classList.remove('active');
+		        menuButton.setAttribute('aria-expanded', 'false');
+		    	menuWrapper.classList.remove('active');
+		    }
+		   
+		    //hide or show menu based on screen size and button status
+		    var menuWidthCheck = debounce(function() {
+		       if (window.matchMedia("(min-width: 992px)").matches) {
+		            //menuButton.style.display = 'none';
+		            if (menuButton.classList.contains('active')){
+		                 menuButton.classList.remove('active');
+		                 menuButton.setAttribute('aria-expanded', 'false');
+		            }
+		            if (menuWrapper.classList.contains('active')){
+		                menuWrapper.classList.remove('active');
+		            }
+		        
+		        }     
+		    }, 250);
 
-					<section>	
-						<h3>Thumbnails</h3>
-						<p>Create the final relationships and weights of various elements of the page</p>
-						<img src="images/one_col_thumbnail.png" alt="LAYR Thumbnail">
-					</section>
+		    menuWidthCheck();
 
-					<section>	
-						<h3>Mockups</h3>
-						<p>Depict the final look of the page</p>
-						<img src="images/columbia_one_mockup.png" alt="One Columbia Mockups">
-					</section>
-				</div>
-			</div>
+		    menuButton.addEventListener('click', buttonToggle, false);
+		    menuWrapper.addEventListener('click', menuClickClose, false);
+		    window.addEventListener("resize", menuWidthCheck, false);
+		});
+    </script>
 
-			<div class="card clearfix">
-				<div class="info_box clearfix">			
-				<h2>Prototype & Integrations</h2>
+    <script>
+    jQuery(document).ready(function() {
+        //check for javascript
+        jQuery('body').addClass('js-active');
 
-				<section>
-					<a href="https://projects.invisionapp.com/d/main#/projects/5218891" alt="InVision Link"><h3>InVision Demo</h3></a>
+        //jump link smooth scroll
+        jQuery('.js__jump').click(function() {
+            jQuery('html, body').animate({
+                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
+            }, 500);
+            return false;
+        });
+    });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Palanquin+Dark', 'Gudea:400,400i,700']
+        }
+    });
+    </script>
 
-					<p>InVision is an online tool that uses clickable areas and animations to simulate real interactions using user-designed mockups.</p>
-
-					<a href="https://projects.invisionapp.com/d/main#/projects/5218891" alt="InVision Link"><img src="images/one_col_invis.png" alt="One Columbia InVision"></a>
-				</section>
-
-				<section>		
-					<h3>Font:</h3> 
-					<p>Arvo is a fun and functional Google font that has an old-timey feel that meshes well with the passport theme of this app.</p>
-					<img class="font" src="images/arvo.png" alt="Arvo font">
-				</section>
-
-				<section>
-					<h3>Font:</h3> 		
-					<p>Helvetica serves as a clean navigation font that fits well into the Apple interface.</p>
-					<img class="font" src="images/helvetica.png" alt="Helvetica font">
-				</section>
-
-			</div>
-		</div>
-
-		<footer>
-		</footer>
-				
-	<script src="js/script.js"></script>	
-	</body>
-
+</body>
 
 </html>
