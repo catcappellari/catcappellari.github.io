@@ -42,13 +42,13 @@
 		<div class="c-contain">
 			<h1>Miller &amp; Goodman Case Study</h1>
 			<img class="intro_img" src="images/mg_presentation.jpg" alt="Miller & Goodman Responsive Showcase">
-			<ul class="c-buttons c-buttons_light">
+			<ul class="c-buttons">
 				<li><a href="https://github.com/catcappellari/catcappellari.github.io/tree/master/mg">Source code</a></li>
 				<li><a href="mg/index.html">Live site</a></li>
 			</ul>
 		</div>
 	</section>
-	<section class="c-section c-section_center c-section_dark c-section_alt1">
+	<section class="c-section c-section_center c-section_alt1">
 		<div class="c-contain">
 			<h2>Discovery</h2>
 			<h3>Creative Brief</h3>
@@ -74,7 +74,7 @@
 			<img src="images/mg_mockup.jpg" alt="Miller & Goodman Mockups">
 		</div>
 	</section>
-	<section class="c-section c-section_center c-section_alt1">
+	<section class="c-section c-section_center c-section_dark c-section_alt2">
 		<div class="c-contain">
 			<h2>Markup &amp; Integrations</h2>
 
@@ -94,7 +94,7 @@
 		</div>
 	</div>
 
-	<footer class="footer-main c-section c-section_center c-section_dark c-section_alt2">
+	<footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
     	<div class="c-contain">
     		<ul class="c-buttons c-buttons_light">
     			<li><a href="#top" class="js__jump">Take me back to the top!</a></li>
@@ -107,5 +107,103 @@
     		<p>This site brought to you by Cat Cappellari, all rights reserved. <script>document.write(new Date().getFullYear())</script>.</p>
     	</div>
     </footer>
-	</body>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick-slider.min.js"></script>
+
+    <script>
+    	document.addEventListener("DOMContentLoaded", function() {
+
+		   var menuButton = document.querySelector('.js-menu-button');  
+		   var menuWrapper = document.querySelector('.js-mobile-menu');
+
+		    //debounce function - from underscores.js
+		    function debounce(func, wait, immediate) {
+		        var timeout;
+		        return function() {
+		            var context = this, args = arguments;
+		            var later = function() {
+		                timeout = null;
+		                if (!immediate) func.apply(context, args);
+		            };
+		            var callNow = immediate && !timeout;
+		            clearTimeout(timeout);
+		            timeout = setTimeout(later, wait);
+		            if (callNow) func.apply(context, args);
+		        };
+		    };
+
+		    //change menu button and menu based on click status
+		    function buttonToggle() {
+		        //toggle menu button active
+		        if (!menuButton.classList.contains('active')){
+		            menuButton.classList.add('active');
+		            menuButton.setAttribute('aria-expanded', 'true');
+		        } else {
+		            menuButton.classList.remove('active');
+		            menuButton.setAttribute('aria-expanded', 'false');
+		        }
+
+		        //toggle menu active
+		        if (!menuWrapper.classList.contains('active')){
+		            menuWrapper.classList.add('active');
+		        } else {
+		            menuWrapper.classList.remove('active');
+		        }  
+		    }
+
+		    function menuClickClose() {
+		    	menuButton.classList.remove('active');
+		        menuButton.setAttribute('aria-expanded', 'false');
+		    	menuWrapper.classList.remove('active');
+		    }
+		   
+		    //hide or show menu based on screen size and button status
+		    var menuWidthCheck = debounce(function() {
+		       if (window.matchMedia("(min-width: 992px)").matches) {
+		            //menuButton.style.display = 'none';
+		            if (menuButton.classList.contains('active')){
+		                 menuButton.classList.remove('active');
+		                 menuButton.setAttribute('aria-expanded', 'false');
+		            }
+		            if (menuWrapper.classList.contains('active')){
+		                menuWrapper.classList.remove('active');
+		            }
+		        
+		        }     
+		    }, 250);
+
+		    menuWidthCheck();
+
+		    menuButton.addEventListener('click', buttonToggle, false);
+		    menuWrapper.addEventListener('click', menuClickClose, false);
+		    window.addEventListener("resize", menuWidthCheck, false);
+		});
+    </script>
+
+    <script>
+    jQuery(document).ready(function() {
+        //check for javascript
+        jQuery('body').addClass('js-active');
+
+        //jump link smooth scroll
+        jQuery('.js__jump').click(function() {
+            jQuery('html, body').animate({
+                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
+            }, 500);
+            return false;
+        });
+    });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Palanquin+Dark', 'Gudea:400,400i,700']
+        }
+    });
+    </script>
+
+</body>
+
 </html>
