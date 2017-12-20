@@ -532,6 +532,12 @@ img {
 .footer-main .c-buttons {
   padding-bottom: 1.5rem;
 }
+@media screen and (min-width: 360px) {
+  .c-buttons_ib li {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
 @media screen and (min-width: 768px) {
   .c-list {
     padding: 1rem 2rem;
