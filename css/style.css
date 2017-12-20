@@ -98,9 +98,12 @@ img {
   opacity: 0.5;
 }
 .top {
-  background: linear-gradient(to top, #3498db 0%, #1f3a93 100%);
+  background: #1f3a93;
   position: relative;
   box-sizing: border-box;
+}
+.index .top {
+  background: linear-gradient(to top, #3498db 0%, #1f3a93 100%);
   padding-bottom: 11vw;
 }
 .top-svg {
@@ -355,6 +358,43 @@ img {
 .c-list li {
   padding-bottom: 0.5em;
 }
+.c-slick-dots .slick-dots {
+  box-sizing: border-box;
+  padding: 1rem 1rem 1.5rem;
+  margin: 0;
+  list-style: none;
+}
+.c-slick-dots .slick-dots li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 3px solid #1f3a93;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.c-slick-dots .slick-dots .slick-active:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #1f3a93;
+}
+.c-slick-dots .slick-dots button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .social-media {
   padding: 1rem 0;
   margin: 0;
@@ -379,43 +419,6 @@ img {
 .box-intro {
   font-size: 1rem;
   padding-top: 0.75rem;
-}
-.box-presentation .slick-dots {
-  box-sizing: border-box;
-  padding: 1rem 1rem 1.5rem;
-  margin: 0;
-  list-style: none;
-}
-.box-presentation .slick-dots li {
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-  margin: 10px;
-  box-sizing: border-box;
-  border: 3px solid #1f3a93;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-}
-.box-presentation .slick-dots .slick-active:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #1f3a93;
-}
-.box-presentation .slick-dots button {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 .box-presentation .slick-arrow {
   border: none;
@@ -547,7 +550,7 @@ img {
   }
 }
 @media screen and (min-width: 992px) {
-  .top {
+  .index .top {
     padding-bottom: 75px;
   }
   .top-svg {
