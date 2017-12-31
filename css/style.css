@@ -645,19 +645,6 @@ img {
     vertical-align: top;
   }
 }
-@media screen and (min-width: 552px) {
-  .footer-main .logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(50% - 4px);
-  }
-  .footer-main .social-media {
-    padding-left: 1rem;
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(50% - 4px);
-  }
-}
 @media screen and (min-width: 768px) {
   .c-section {
     padding: 3rem 1rem;
