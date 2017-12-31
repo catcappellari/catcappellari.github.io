@@ -577,6 +577,8 @@ img {
   position: relative;
   box-sizing: border-box;
   padding: 3rem;
+  max-width: 230px;
+  margin: 0 auto;
 }
 .rocket:hover .rocket-holder {
   transform: rotate(360deg);
@@ -588,12 +590,38 @@ img {
   margin: 0 auto;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 50%;
+  width: 2rem;
   transform: rotate(0deg);
 }
 .rocket-button {
   border: 2px solid #fff;
   border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  width: 130px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: #3498db;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  position: relative;
+}
+.rocket-button:hover {
+  background: #3498db;
+  color: #fff;
+}
+.rocket-button span {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 /* interior pages */
 .ux-slide {
