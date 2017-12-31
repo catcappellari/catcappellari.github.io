@@ -424,6 +424,16 @@ img {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+/* material icon colors */
+.material-icons .mi-white {
+  color: #fff;
+}
+.material-icons .mi-lightblue {
+  color: #3498db;
+}
+.material-icons .mi-indigo {
+  color: #1f3a93;
+}
 .social-media {
   padding: 1rem 0;
   margin: 0;
@@ -560,7 +570,10 @@ img {
 .footer-main .logo {
   display: block;
   max-width: 4rem;
-  margin: 0 auto;
+  margin-left: 0;
+}
+.footer-main .social-media {
+  text-align: right;
 }
 .footer-main .c-buttons {
   padding-bottom: 1.5rem;

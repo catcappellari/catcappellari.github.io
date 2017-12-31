@@ -202,19 +202,22 @@
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			arrows: false,
-			dots: true,
-			appendDots: '.ux-slider__dots',
+			dots: false,
   			responsive: [
   			    {
 					breakpoint: 991,
 					settings: {
-						slidesToShow: 2
+						slidesToShow: 2,
+						dots: true,
+						appendDots: '.ux-slider__dots'
 					}
   			    },
   			    {
 					breakpoint: 551,
 					settings: {
-						slidesToShow: 1
+						slidesToShow: 1,
+						dots: true,
+						appendDots: '.ux-slider__dots'
 					}
   			    }
   			]
