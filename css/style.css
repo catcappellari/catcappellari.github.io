@@ -151,13 +151,8 @@ img {
 .header-main .email {
   display: inline-block;
   vertical-align: middle;
-  height: 48px;
-  width: 48px;
+  font-size: 2rem;
   margin-right: 0.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../images/icon-email.svg");
 }
 /* dropdown menu */
 .menu-button {
@@ -577,6 +572,28 @@ img {
 }
 .footer-main .c-buttons {
   padding-bottom: 1.5rem;
+}
+.rocket {
+  position: relative;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+.rocket:hover .rocket-holder {
+  transform: rotate(360deg);
+}
+.rocket-holder {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(0deg);
+}
+.rocket-button {
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
 /* interior pages */
 .ux-slide {
