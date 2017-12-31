@@ -579,9 +579,16 @@ img {
   padding: 3rem;
   max-width: 230px;
   margin: 0 auto;
+  transform: rotate(0deg);
+}
+.rocket:hover {
+  transform: rotate(360deg);
 }
 .rocket:hover .rocket-holder {
-  transform: rotate(360deg);
+  transform: rotate(-180deg);
+}
+.rocket:hover .rocket-button {
+  transform: rotate(-360deg);
 }
 .rocket-holder {
   display: block;
@@ -601,6 +608,7 @@ img {
   box-sizing: border-box;
   padding: 1.25rem;
   width: 130px;
+  height: 130px;
   max-width: 100%;
   margin: 0 auto;
   text-decoration: none;
