@@ -44,7 +44,7 @@
 			<img class="intro_img" src="images/mg_presentation.jpg" alt="Miller & Goodman Responsive Showcase">
 			<ul class="c-buttons c-buttons_ib">
 				<li><a href="https://github.com/catcappellari/catcappellari.github.io/tree/master/mg">Source code</a></li>
-				<li><a href="mg/index.html">Live site</a></li>
+				<li><a href="mg/index.html">"Live" site</a></li>
 			</ul>
 		</div>
 	</section>
@@ -58,29 +58,26 @@
 	<section class="c-section c-section_center c-section_alt1">
 		<div class="c-contain c-contain_660">
 			<h2>User Experience</h2>
-			<div class="mg-ux-slider">
-				<div class="slide">
-					<h3>Wireframes</h3>
-					<p>Group information together and establish a hierarchy</p>
-					<img src="images/mg_wireframe.jpg" alt="Miller &amp; Goodman Wireframe">
+			<div class="c-pad c-pad_top">
+				<div class="ux-slider">
+					<div class="ux-slide">
+						<h3>Wireframes</h3>
+						<p>Group information together and establish a hierarchy</p>
+						<img src="images/mg_wireframe.jpg" alt="Miller &amp; Goodman Wireframe">
+					</div>
+					<div class="ux-slide">
+						<h3>Thumbnails</h3>
+						<p>Create the final relationships and weights of elements on the page</p>
+						<img src="images/mg_thumbnails.jpg" alt="Miller &amp; Goodman Thumbnails">
+					</div>
+					<div class="ux-slide">
+						<h3>Mockups</h3>
+						<p>Visual representations of the final look of the page</p>
+						<img src="images/mg_mockup.jpg" alt="Miller &amp; Goodman Mockups">
+					</div>
 				</div>
-				<div class="slide">
-					<h3>Thumbnails</h3>
-					<p>Create the final relationships and weights of elements on the page</p>
-					<img src="images/mg_thumbnails.jpg" alt="Miller &amp; Goodman Thumbnails">
-				</div>
-				<div class="slide">
-					<h3>Mockups</h3>
-					<p>Visual representations of the final look of the page</p>
-					<img src="images/mg_mockup.jpg" alt="Miller &amp; Goodman Mockups">
-				</div>
-				<!-- <div class="slide">
-					<h3>Font:</h3> 
-					<p>Source sans pro is simple yet elegant, so it made a good choice for an understated attorney site. Merriweather adds emphasis while remaining refined.</p>
-					<img class="font" src="images/ssp_merri.jpg" alt="Source sans pro and Merriweather font">
-				</div> -->
+				<div class="c-slick-dots ux-slider__dots"></div>
 			</div>
-			<div class="c-slick-dots mg-ux-slider__dots"></div>
 		</div>
 	</section>
 	<section class="c-section c-section_center">
@@ -88,7 +85,9 @@
 			<h2>Markup &amp; Integrations</h2>
 			<h3>Code:</h3>
 			<p>HTML, CSS/SCSS, JavaScript/JQuery</p>
-			<img src="images/mg_markup.jpg" alt="Miller and Goodman Markup">
+			<div class="c-pad c-pad_top">
+				<img src="images/mg_markup.jpg" alt="Miller and Goodman Markup">
+			</div>
 		</div>
 	</section>
 
@@ -101,7 +100,7 @@
     		<ul class="social-media">
     			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
     			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
-    			<li><a href="https://github.com/catcappellari"><img src="images/icon-github.png" alt="GitHub" target="_blank"></a></li>
+    			<li><a href="https://github.com/catcappellari" target="_blank"><img src="images/icon-github.png" alt="GitHub"></a></li>
     		</ul>
     		<p>This site brought to you by Cat Cappellari, all rights reserved. <script>document.write(new Date().getFullYear())</script>.</p>
     	</div>
@@ -194,15 +193,35 @@
         });
 
         //portfolio slider
-        jQuery('.mg-ux-slider').slick({
+        jQuery('.ux-slider').slick({
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: false,
 			dots: true,
-			appendDots: '.mg-ux-slider__dots',
+			appendDots: '.ux-slider__dots',
 			fade: true,
-  			cssEase: 'linear'
+  			cssEase: 'linear',
+  			responsive: [
+  			    {
+  			      breakpoint: 1200,
+  			      settings: {
+  			        slidesToShow: 3
+  			      }
+  			    },
+  			    {
+  			      breakpoint: 992,
+  			      settings: {
+  			        slidesToShow: 2
+  			      }
+  			    },
+  			    {
+  			      breakpoint: 552,
+  			      settings: {
+  			        slidesToShow: 1
+  			      }
+  			    }
+  			]
 		});
     });
     </script>
