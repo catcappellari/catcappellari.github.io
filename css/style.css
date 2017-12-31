@@ -576,32 +576,28 @@ img {
 .rocket-wrap {
   position: relative;
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 3rem 0;
   max-width: 230px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .rocket-wrap:hover .rocket-holder {
   transform: rotate(180deg);
-  background: #008000;
-}
-.rocket-wrap:hover .rocket-button {
-  transform: rotate(-90deg);
 }
 .rocket-holder {
   display: block;
-  height: 2rem;
-  width: 2rem;
-  margin: 0 auto;
   position: absolute;
-  left: 0;
-  bottom: 50%;
+  height: 2rem;
+  width: 230px;
+  top: calc(50% - 16px);
   width: 2rem;
   transform: rotate(0deg);
+  transition: transform 0.5s linear;
 }
 .rocket {
   height: 32px;
   width: 32px;
-  background: #800080;
+  transform: rotate(-90deg);
 }
 .rocket-button {
   border: 2px solid #fff;
@@ -620,6 +616,7 @@ img {
   font-weight: bold;
   transition: all 0.3s linear;
   position: relative;
+  z-index: 10;
 }
 .rocket-button:hover {
   background: #3498db;
