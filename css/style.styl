@@ -292,6 +292,9 @@ img {
     &_nopad {
         padding: 0;
     }
+    &_tall {
+        padding: 2.5rem 1rem;
+    }
 }
 .c-contain {
     max-width: 960px;
@@ -413,6 +416,7 @@ img {
     padding: 1rem 0;
     margin: 0;
     list-style: none;
+    box-sizing: border-bottom;
     li {
         display: inline-block;
         vertical-align: middle;
@@ -564,7 +568,29 @@ img {
     }
 }
 
+@media screen and (min-width: 552px) {
+    .footer-main {
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(50% - 4px);
+        }
+        .social-media {
+            padding-left: 1rem;
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(50% - 4px);
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .c-section {
+        padding: 3rem 1rem;
+        &_tall {
+            padding: 4rem 1rem;
+        }
+    }
     .c-list {
         padding: 1rem 2rem;
     }
@@ -585,7 +611,7 @@ img {
     .top-svg-image {
         height: 75px;
     }
-    .header-main {
+    .header-index {
         padding: 1.5rem 0.75rem 3rem;
     }
     .header-main .email {
