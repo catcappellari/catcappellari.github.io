@@ -158,7 +158,9 @@ img {
     margin-right: 0.5rem;
     color: #fff;
     text-decoration: none;
+    padding: 0;
 }
+
 
 /* dropdown menu */
 .menu-button {
@@ -453,7 +455,7 @@ img {
     padding: 1rem 0;
     margin: 0;
     list-style: none;
-    box-sizing: border-bottom;
+    box-sizing: border-box;
     li {
         display: inline-block;
         vertical-align: middle;
@@ -590,10 +592,10 @@ img {
     .logo {
         display: block;
         max-width: 4rem;
-        margin-left: 0;
+        margin: 0 auto;
     }
     .social-media {
-        text-align: right;
+        text-align: center;
     }
     .c-buttons {
         padding-bottom: 1.5rem;
@@ -605,7 +607,7 @@ img {
 .rocket-wrap {
     position: relative;
     box-sizing: border-box;
-    padding: 4rem 0 1rem;
+    padding: 4rem 0 2rem;
     max-width: 230px;
     margin: 0 auto;
     overflow: hidden;
@@ -687,6 +689,12 @@ img {
         .f-block {
             width: auto;
         }
+        .social-media {
+            text-align: right;
+        }
+    }
+    .rocket-wrap {
+        padding: 4rem 0;
     }
 }
 
@@ -719,10 +727,6 @@ img {
     }
     .header-index {
         padding: 1.5rem 0.75rem 3rem;
-    }
-    .header-main .email {
-        height: 32px;
-        width: 32px;
     }
     .menu-button {
         display: none;
