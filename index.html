@@ -242,7 +242,6 @@
 		    //hide or show menu based on screen size and button status
 		    var menuWidthCheck = debounce(function() {
 		       if (window.matchMedia("(min-width: 992px)").matches) {
-		            //menuButton.style.display = 'none';
 		            if (menuButton.classList.contains('active')){
 		                 menuButton.classList.remove('active');
 		                 menuButton.setAttribute('aria-expanded', 'false');
