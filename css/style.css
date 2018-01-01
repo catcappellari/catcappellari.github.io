@@ -576,6 +576,9 @@ img {
 .footer-main .c-buttons {
   padding-bottom: 1.5rem;
 }
+.footer-main .c-flex__item {
+  width: 100%;
+}
 .rocket-wrap {
   position: relative;
   box-sizing: border-box;
@@ -647,6 +650,11 @@ img {
   .c-buttons_ib li {
     display: inline-block;
     vertical-align: top;
+  }
+}
+@media screen and (min-width: 552px) {
+  .footer-main .f-block {
+    width: auto;
   }
 }
 @media screen and (min-width: 768px) {
