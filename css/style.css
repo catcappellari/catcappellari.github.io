@@ -422,6 +422,17 @@ img {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+.c-card__ul {
+  margin: 0;
+  text-align: left;
+  padding: 1rem 0;
+  list-style: none;
+}
+.c-card__ul-simple {
+  margin: 0;
+  text-align: left;
+  padding: 0.5rem 0 0 2rem;
+}
 /* material icon colors */
 .material-icons .mi-white {
   color: #fff;
@@ -674,12 +685,6 @@ img {
 }
 .box-resume .contact-info a {
   text-decoration: none;
-}
-.box-resume .c-card__ul {
-  margin: 0;
-  text-align: left;
-  padding: 1rem 0;
-  list-style: none;
 }
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
