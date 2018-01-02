@@ -666,13 +666,20 @@ img {
   padding: 1rem 0;
   margin: 0;
   list-style: none;
-  color: #fff;
+}
+.box-resume .contact-info p,
+.box-resume .contact-info a {
+  color: #555;
   font-weight: bold;
 }
-.box-resume ul {
+.box-resume .contact-info a {
+  text-decoration: none;
+}
+.box-resume .c-card__ul {
   margin: 0;
   text-align: left;
-  padding: 0.5rem 0 0 2rem;
+  padding: 1rem 0;
+  list-style: none;
 }
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
