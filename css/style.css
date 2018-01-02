@@ -686,6 +686,9 @@ img {
 .box-resume .contact-info a {
   text-decoration: none;
 }
+.box-resume .c-card .c-flex__item:nth-child(2) {
+  text-align: right;
+}
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
     display: inline-block;
