@@ -466,18 +466,18 @@ img {
     list-style: none;
     li {
         box-sizing: border-box;
-        padding: 0 0 0.5rem 0.5rem;
+        padding: 0 0 0.5rem 0.75rem;
         position: relative;
         box-sizing: border-box;
         &:after {
             position: absolute;
-            top: 50%;
+            top: 0.5rem;
             left: 0;
             height: 0.25rem;
             width: 0.25rem;
             content: "";
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+            background: #000;
+            border-radius: 50%;
         }
     }
 }
@@ -818,6 +818,16 @@ img {
     .box-intro {
         h1 {
             font-size: 3.074rem;
+        }
+    }
+    .box-resume {
+        .sidebar {
+            width: calc(300px + 2rem);
+            padding-right: 2rem;
+            box-sizing: border-box;
+        }
+        .mainbar {
+            width: calc(100% - (300px + 2rem));
         }
     }
 }
