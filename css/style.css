@@ -745,6 +745,9 @@ img {
 .box-resume .c-card p {
   padding: 0;
 }
+.box-resume h2 {
+  color: #3498db;
+}
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
     display: inline-block;
@@ -783,9 +786,13 @@ img {
     width: calc(300px + 2rem);
     padding-right: 2rem;
     box-sizing: border-box;
+    text-align: left;
   }
   .box-resume .mainbar {
     width: calc(100% - (300px + 2rem));
+  }
+  .box-resume .mainbar h2 {
+    text-align: left;
   }
 }
 @media screen and (min-width: 992px) {
