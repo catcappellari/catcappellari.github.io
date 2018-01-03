@@ -445,21 +445,24 @@ img {
 .c-card__ul-simple {
   margin: 0;
   text-align: left;
-  padding: 1rem 0 0 1rem;
+  padding: 2rem 0 0;
   list-style: none;
 }
 .c-card__ul-simple li {
-  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+  padding: 0 0 0.5rem 0.5rem;
   position: relative;
-  padding-left: 0.5rem;
+  box-sizing: border-box;
 }
 .c-card__ul-simple li:after {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  height: 100%;
-  width: 0.5rem;
-  content: "\00b7";
+  height: 0.25rem;
+  width: 0.25rem;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .u-italic {
   font-style: italic;
