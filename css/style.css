@@ -417,10 +417,16 @@ img {
   align-items: center;
   justify-items: center;
 }
+.c-flex_top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
 .c-flex__item {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  box-sizing: border-box;
 }
 .c-card h2 {
   color: #3498db;
@@ -441,6 +447,9 @@ img {
   text-align: left;
   padding: 0.5rem 0 0 2rem;
   list-style: disc;
+}
+.c-card__ul-simple li {
+  padding-bottom: 0.25rem;
 }
 /* material icon colors */
 .material-icons .mi-white {
@@ -700,6 +709,10 @@ img {
 }
 .box-resume .c-card .c-flex__item:nth-child(2) {
   text-align: right;
+  padding-left: 0.25rem;
+}
+.box-resume .c-card .c-flex__item:nth-child(2n - 1) {
+  padding-right: 0.25rem;
 }
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {

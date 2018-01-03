@@ -429,12 +429,18 @@ img {
         flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+        align-items: center;
+        justify-items: center;
+    &_top {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    }
     &__item {
         -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
+        box-sizing: border-box;
     }
 }
 .c-card {
@@ -458,6 +464,9 @@ img {
     text-align: left;
     padding: 0.5rem 0 0 2rem;
     list-style: disc;
+    li {
+        padding-bottom: 0.25rem;
+    }
 }
 
 /* material icon colors */
@@ -729,6 +738,10 @@ img {
             width: 50%;
             &:nth-child(2) {
                 text-align: right;
+                padding-left: 0.25rem;
+            }
+            &:nth-child(2n - 1) {
+                padding-right: 0.25rem;
             }
         }
     }
