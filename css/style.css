@@ -445,11 +445,11 @@ img {
 .c-card__ul-simple {
   margin: 0;
   text-align: left;
-  padding: 0.5rem 0 0 2rem;
+  padding: 1rem 0 0 1rem;
   list-style: disc;
 }
 .c-card__ul-simple li {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 /* material icon colors */
 .material-icons .mi-white {
@@ -706,6 +706,7 @@ img {
 }
 .box-resume .c-card .c-flex__item {
   width: 50%;
+  padding-bottom: 0.25rem;
 }
 .box-resume .c-card .c-flex__item:nth-child(2) {
   text-align: right;
