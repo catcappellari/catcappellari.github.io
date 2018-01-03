@@ -714,6 +714,9 @@ img {
 .box-resume .c-card .c-flex__item:nth-child(2n - 1) {
   padding-right: 0.25rem;
 }
+.box-resume .c-card p {
+  padding: 0;
+}
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
     display: inline-block;
