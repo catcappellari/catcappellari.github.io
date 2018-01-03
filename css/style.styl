@@ -463,10 +463,23 @@ img {
     margin: 0;
     text-align: left;
     padding: 1rem 0 0 1rem;
-    list-style: disc;
+    list-style: none;
     li {
         padding-bottom: 0.5rem;
+        position: relative;
+        padding-left: 0.5rem;
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0.5rem;
+            content: "\00b7";
+        }
     }
+}
+.u-italic {
+    font-style: italic;
 }
 
 /* material icon colors */
@@ -721,6 +734,11 @@ img {
         margin: 0 auto;
         padding: 0;
     }
+    hr {
+        height: 1px;
+        border: none;
+        background: #555;
+    }
     .contact-info {
         padding: 1rem 0;
         margin: 0;
@@ -728,15 +746,21 @@ img {
         p, a {
             color: #555;
             font-weight: bold;
+            padding: 0;
         }
         a {
             text-decoration:none;
         }
+        li {
+            padding-bottom: 0.25rem;
+        }
     }
     .c-card {
+        .c-flex {
+            padding-bottom: 0.25rem;
+        }
         .c-flex__item {
             width: 50%;
-            padding-bottom: 0.25rem;
             &:nth-child(2) {
                 text-align: right;
                 padding-left: 0.25rem;
