@@ -692,6 +692,9 @@ img {
 .ux-slide img {
   margin: 0 auto;
 }
+.page-resume p {
+  font-size: 0.9rem;
+}
 .box-resume .logo-holder {
   background: #3498db;
   max-width: 300px;
@@ -747,6 +750,7 @@ img {
 }
 .box-resume h2 {
   color: #3498db;
+  padding-bottom: 0;
 }
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
