@@ -148,6 +148,7 @@ img {
 .header-main .logo img {
   display: block;
   height: auto;
+  width: 100%;
 }
 .header-main .mainmenu {
   display: inline-block;
