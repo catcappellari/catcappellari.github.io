@@ -695,6 +695,9 @@ img {
 .page-resume p {
   font-size: 0.9rem;
 }
+.page-resume li {
+  font-size: 0.9rem;
+}
 .box-resume .logo-holder {
   background: #3498db;
   max-width: 300px;
@@ -734,16 +737,19 @@ img {
 }
 .box-resume .c-card .c-flex {
   padding-bottom: 0.25rem;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
-.box-resume .c-card .c-flex__item {
-  width: 50%;
-}
-.box-resume .c-card .c-flex__item:nth-child(2) {
+.box-resume .c-card .c-flex__item:nth-child(3) {
   text-align: right;
   padding-left: 0.25rem;
 }
-.box-resume .c-card .c-flex__item:nth-child(2n - 1) {
+.box-resume .c-card .c-flex__item:nth-child(1) {
   padding-right: 0.25rem;
+}
+.box-resume .c-card .dotted {
+  border-bottom: 1px solid #008000;
 }
 .box-resume .c-card p {
   padding: 0;

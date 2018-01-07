@@ -725,6 +725,9 @@ img {
     p {
         font-size: 0.9rem;
     }
+    li {
+        font-size: 0.9rem;
+    }
 }
 .box-resume {
     .logo-holder {
@@ -766,16 +769,29 @@ img {
     .c-card {
         .c-flex {
             padding-bottom: 0.25rem;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
         }
         .c-flex__item {
-            width: 50%;
-            &:nth-child(2) {
+            // width: 50%;
+            // &:nth-child(2) {
+            //     text-align: right;
+            //     padding-left: 0.25rem;
+            // }
+            // &:nth-child(2n - 1) {
+            //     padding-right: 0.25rem;
+            // }
+            &:nth-child(3) {
                 text-align: right;
                 padding-left: 0.25rem;
             }
-            &:nth-child(2n - 1) {
+            &:nth-child(1) {
                 padding-right: 0.25rem;
             }
+        }
+        .dotted {
+            border-bottom: 1px solid green;
         }
         p {
             padding: 0;
