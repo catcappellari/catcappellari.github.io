@@ -147,6 +147,7 @@ img {
 }
 .header-main .logo img {
   display: block;
+  height: auto;
 }
 .header-main .mainmenu {
   display: inline-block;
