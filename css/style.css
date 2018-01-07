@@ -793,10 +793,10 @@ img {
 .box-resume .sublist:nth-child(2n) {
   background: #efefef;
 }
-.box-resume .titlelist:nth-child(2) {
+.box-resume .titlelist .c-flex__item:nth-child(2) {
   text-align: right;
 }
-.box-resume .titlelist:nth-child(1) {
+.box-resume .titlelist .c-flex__item:nth-child(1) {
   text-align: left;
 }
 .box-resume h2 {
@@ -821,6 +821,9 @@ img {
     margin-left: 0;
   }
   .page-resume p {
+    font-size: 1rem;
+  }
+  .page-resume li {
     font-size: 1rem;
   }
   .box-resume .c-card .dotted {
