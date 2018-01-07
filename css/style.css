@@ -422,6 +422,10 @@ img {
   -ms-flex-align: start;
   align-items: flex-start;
 }
+.c-flex_nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
 .c-flex__item {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
