@@ -749,13 +749,10 @@ img {
             text-transform: uppercase;
             text-align: center;
         }
-        strong {
-            display: block;
-        }
     }
     .logo {
         display: block;
-        max-width: 80px;
+        max-width: 60px;
         margin: 0 auto;
         padding: 0;
     }
@@ -865,6 +862,9 @@ img {
         padding: 4rem 0;
         margin-left: 0;
     }
+    .page-resume p {
+        font-size: 1rem;
+    }
     .box-resume .c-card .dotted {
         display: block;
     }
@@ -876,18 +876,21 @@ img {
             &:nth-child(2n) {
                 background: transparent;
             }
-        }
-        .c-flex__item {
-            width: auto;
-        }
-        .c-card .c-flex__item:nth-child(1) {
-            flex-grow: 0;
-            padding-right: 0.75rem;
-        }
-        .c-card .c-flex__item:nth-child(3) {
-            flex-grow: 0;
-            padding-left: 0.75rem;
-        }
+            .c-flex {
+                padding: 0;
+            }
+            .c-flex__item {
+                width: auto;
+            }
+            .c-flex__item:nth-child(1) {
+                flex-grow: 0;
+                padding-right: 0.75rem;
+            }
+            .c-flex__item:nth-child(3) {
+                flex-grow: 0;
+                padding-left: 0.75rem;
+            }
+        } 
     }
 }
 

@@ -718,12 +718,9 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
-.box-resume .logo-holder strong {
-  display: block;
-}
 .box-resume .logo {
   display: block;
-  max-width: 80px;
+  max-width: 60px;
   margin: 0 auto;
   padding: 0;
 }
@@ -823,6 +820,9 @@ img {
     padding: 4rem 0;
     margin-left: 0;
   }
+  .page-resume p {
+    font-size: 1rem;
+  }
   .box-resume .c-card .dotted {
     display: block;
   }
@@ -834,14 +834,17 @@ img {
   .box-resume .sublist:nth-child(2n) {
     background: transparent;
   }
-  .box-resume .c-flex__item {
+  .box-resume .sublist .c-flex {
+    padding: 0;
+  }
+  .box-resume .sublist .c-flex__item {
     width: auto;
   }
-  .box-resume .c-card .c-flex__item:nth-child(1) {
+  .box-resume .sublist .c-flex__item:nth-child(1) {
     flex-grow: 0;
     padding-right: 0.75rem;
   }
-  .box-resume .c-card .c-flex__item:nth-child(3) {
+  .box-resume .sublist .c-flex__item:nth-child(3) {
     flex-grow: 0;
     padding-left: 0.75rem;
   }
