@@ -471,6 +471,9 @@ img {
 .u-italic {
   font-style: italic;
 }
+.u-bg-alt2 {
+  background-color: #3498db;
+}
 /* material icon colors */
 .material-icons .mi-white {
   color: #fff;
@@ -833,12 +836,10 @@ img {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+    padding: 0;
   }
   .box-resume .sublist:nth-child(2n) {
     background: transparent;
-  }
-  .box-resume .sublist .c-flex {
-    padding: 0;
   }
   .box-resume .sublist .c-flex__item {
     width: auto;
