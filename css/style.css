@@ -774,6 +774,16 @@ img {
   background-repeat: repeat-x;
   background-image: url("../images/dashes.svg");
 }
+.box-resume .sublist {
+  box-sizing: border-box;
+  padding: 0.25rem;
+}
+.box-resume .sublist:nth-child(2n) {
+  background: #efefef;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .box-resume h2 {
   color: #3498db;
   padding-bottom: 0;
@@ -797,6 +807,14 @@ img {
   }
   .box-resume .c-card .dotted {
     display: block;
+  }
+  .box-resume .sublist {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .box-resume .sublist:nth-child(2n) {
+    background: transparent;
   }
 }
 @media screen and (min-width: 768px) {

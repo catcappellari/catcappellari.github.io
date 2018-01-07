@@ -806,8 +806,15 @@ img {
                 background-image: url('../images/dashes.svg');
             }
         }
-        .sublist {
-
+    }
+    .sublist {
+        box-sizing: border-box;
+        padding: 0.25rem;
+        &:nth-child(2n) {
+            background: #efefef;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
         }
     }
     h2 {
@@ -840,6 +847,16 @@ img {
     }
     .box-resume .c-card .dotted {
         display: block;
+    }
+    .box-resume {
+        .sublist {
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            &:nth-child(2n) {
+                background: transparent;
+            }
+        }
     }
 }
 
