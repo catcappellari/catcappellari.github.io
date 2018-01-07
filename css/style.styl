@@ -460,13 +460,14 @@ img {
 .c-card__ul {
     margin: 0;
     text-align: left;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     list-style: none;
+    box-sizing: border-box;
 }
 .c-card__ul-simple {
     margin: 0;
     text-align: left;
-    padding: 1rem 0 0;
+    padding: 1rem;
     list-style: none;
     li {
         box-sizing: border-box;
@@ -487,6 +488,9 @@ img {
 }
 .u-italic {
     font-style: italic;
+}
+.u-uppercase {
+    text-transform: uppercase;
 }
 .u-bg-alt2 {
     background-color: #3498db;
@@ -760,6 +764,8 @@ img {
         height: 4px;
     }
     .logo-holder {
+        display: block;
+        text-decoration: none;
         background: #3498db;
         max-width: 300px;
         margin: 0 auto;
@@ -798,15 +804,15 @@ img {
             padding-bottom: 0.25rem;
         }
     }
-    .c-card {
+    .sublist {
+        box-sizing: border-box;
+        padding: 0.5rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-bottom: 1px dashed rgba(0,0,0,0.25);
         p {
             padding: 0;
-        }
-        .c-flex {
-            padding-bottom: 0.25rem;
-            -webkit-box-align: stretch;
-            -ms-flex-align: stretch;
-            align-items: stretch;
         }
         .c-flex__item {
             width: 50%;
@@ -834,16 +840,6 @@ img {
                 background-image: url('../images/dashes.svg');
                 opacity: 0.25;
             }
-        }
-    }
-    .sublist {
-        box-sizing: border-box;
-        padding: 0.5rem;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        &:nth-child(2n) {
-            background: #efefef;
         }
     }
     .titlelist {
@@ -893,9 +889,7 @@ img {
             -ms-flex-align: stretch;
             align-items: stretch;
             padding: 0;
-            &:nth-child(2n) {
-                background: transparent;
-            }
+            border-bottom: none;
             .c-flex__item {
                 width: auto;
             }
@@ -924,6 +918,9 @@ img {
     .c-list {
         padding: 1rem 2rem;
     }
+    .c-card__ul {
+        padding: 0.5rem 0.75rem;
+    }
     .box-intro {
         h1 {
             font-size: 3.074rem;
@@ -933,7 +930,7 @@ img {
         .sidebar {
             width: calc(300px + 2rem);
             padding-right: 2rem;
-            padding-top: 5rem;
+            padding-top: 6.5rem;
             box-sizing: border-box;
             text-align: left;
         }

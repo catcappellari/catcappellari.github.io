@@ -443,13 +443,14 @@ img {
 .c-card__ul {
   margin: 0;
   text-align: left;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   list-style: none;
+  box-sizing: border-box;
 }
 .c-card__ul-simple {
   margin: 0;
   text-align: left;
-  padding: 1rem 0 0;
+  padding: 1rem;
   list-style: none;
 }
 .c-card__ul-simple li {
@@ -470,6 +471,9 @@ img {
 }
 .u-italic {
   font-style: italic;
+}
+.u-uppercase {
+  text-transform: uppercase;
 }
 .u-bg-alt2 {
   background-color: #3498db;
@@ -728,6 +732,8 @@ img {
   height: 4px;
 }
 .box-resume .logo-holder {
+  display: block;
+  text-decoration: none;
   background: #3498db;
   max-width: 300px;
   margin: 0 auto;
@@ -767,31 +773,33 @@ img {
 .box-resume .contact-info li {
   padding-bottom: 0.25rem;
 }
-.box-resume .c-card p {
+.box-resume .sublist {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px dashed rgba(0,0,0,0.25);
+}
+.box-resume .sublist p {
   padding: 0;
 }
-.box-resume .c-card .c-flex {
-  padding-bottom: 0.25rem;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-.box-resume .c-card .c-flex__item {
+.box-resume .sublist .c-flex__item {
   width: 50%;
 }
-.box-resume .c-card .c-flex__item:nth-child(3) {
+.box-resume .sublist .c-flex__item:nth-child(3) {
   text-align: right;
   padding-left: 0.25rem;
 }
-.box-resume .c-card .c-flex__item:nth-child(1) {
+.box-resume .sublist .c-flex__item:nth-child(1) {
   padding-right: 0.25rem;
 }
-.box-resume .c-card .dotted {
+.box-resume .sublist .dotted {
   padding-bottom: 3px;
   position: relative;
   display: none;
 }
-.box-resume .c-card .dotted:after {
+.box-resume .sublist .dotted:after {
   position: absolute;
   bottom: 1px;
   height: 1px;
@@ -802,16 +810,6 @@ img {
   background-repeat: repeat-x;
   background-image: url("../images/dashes.svg");
   opacity: 0.25;
-}
-.box-resume .sublist {
-  box-sizing: border-box;
-  padding: 0.5rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.box-resume .sublist:nth-child(2n) {
-  background: #efefef;
 }
 .box-resume .titlelist .c-flex__item:nth-child(2) {
   text-align: right;
@@ -850,9 +848,7 @@ img {
     -ms-flex-align: stretch;
     align-items: stretch;
     padding: 0;
-  }
-  .box-resume .sublist:nth-child(2n) {
-    background: transparent;
+    border-bottom: none;
   }
   .box-resume .sublist .c-flex__item {
     width: auto;
@@ -879,13 +875,16 @@ img {
   .c-list {
     padding: 1rem 2rem;
   }
+  .c-card__ul {
+    padding: 0.5rem 0.75rem;
+  }
   .box-intro h1 {
     font-size: 3.074rem;
   }
   .box-resume .sidebar {
     width: calc(300px + 2rem);
     padding-right: 2rem;
-    padding-top: 5rem;
+    padding-top: 6.5rem;
     box-sizing: border-box;
     text-align: left;
   }
