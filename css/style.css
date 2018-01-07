@@ -744,9 +744,15 @@ img {
 .box-resume .c-card .c-flex__item:nth-child(3) {
   text-align: right;
   padding-left: 0.25rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .box-resume .c-card .c-flex__item:nth-child(1) {
   padding-right: 0.25rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .box-resume .c-card .dotted {
   border-bottom: 1px solid #008000;
