@@ -1,50 +1,377 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-		<title>Cat Cappellari</title>
-        
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+	    <meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="theme-color" content="#3498db">
+	    <title>Cat Cappellari - Resume</title>
+	    <meta name="description" content="Portfolio of Raleigh Web Developer Cat Cappellari">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css"/>
 	</head>
 
-	<body class="clearfix">
-
-		<header class="clearfix">
-			<a href="index.html"><img src="images/logo_fit.svg" alt="logo"></a>
-
-			<nav>
-				<ul>
-					<li><h2><a href="index.html">WORK</a></h2></li>
-					<li><h2><a href="about.html">ABOUT</a></h2></li>
-				</ul>
-			</nav>
-
-		</header>
-
-		<div class="banner"><h1>Cat Cappellari</h1></div>
-
-		<div class="card clearfix">
-			
-			<div class="info_box clearfix">
-				<h2>Resume</h2>
-				<img src="images/cappellari_resume_public.jpg" alt="Cat Cappellari Resume">
-			</div>
+	<body class="page-resume">
+		<div class="top" id="top">
+			<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
+		    <header class="header-main">
+		    	<div class="c-contain c-contain_1400">
+		    		<div class="h-block h-block1">
+			            <a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+			        </div>
+			        <div class="h-block h-block2">
+			        	<a href="mailto:cat.cappellari@gmail.com" class="email material-icons mi-white">email</a>
+			            <nav class="mainmenu" role="navigation">
+			                <button id="mainmenu_button" class="menu-button js-menu-button" aria-expanded="false" aria-controls="mainmenu">
+			                	<span></span>
+			                	<span></span>
+			            		<span></span>
+			            	</button>
+			                <ul id="mainmenu" class="mobile-menu js-mobile-menu">
+			                    <li><a href="#work">Work</a></li>
+			                    <li><a href="#about">About</a></li>
+			                </ul>
+			            </nav>
+			        </div>
+		    	</div>
+		    </header>
+		    <div id="main-content"></div>
 		</div>
+		<section class="c-section c-section_tall c-section_center box-resume">
+			<div class="c-contain">
+				<div class="c-flex c-flex_top">
+				<div class="c-flex__item sidebar">
+					<a href="index.html" class="logo-holder">
+						<span class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></span>
+						<h4>Cat <strong> Cappellari</strong></h4>
+					</a>
+					<ul class="contact-info">
+						<li><p>Based in Raleigh, NC</p></li>
+						<li><p><a href="mailto:cat.cappellari@gmail.com">cat.cappellari@gmail.com</a></p></li>
+						<li><p><a href="catcappellari.github.io">catcappellari.github.io</a></p></li>
+						<li><p><a href="tel:336-407-2204">336-407-2204</a></p></li>
+					</ul>
+				</div>
+				<div class="c-flex__item mainbar">
+					<h2 class="u-color-alt2">Experience</h2>
+					<hr class="u-bg-alt3 hr-tall">
+					<div class="c-card">
+						<ul class="c-card__ul">
+							<li>
+								<div class="c-flex titlelist">
+									<div class="c-flex__item">
+										<p class="u-uppercase"><strong>Dakno</strong></p>
+									</div>
+									<div class="c-flex__item">
+										<p><strong>Clayton, NC</strong></p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Web Developer</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>October 2017 - Present</p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Jr. Web Designer (Developer)</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>April 2016 - October 2017</p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Web Design Intern</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>February 2016 - April 2016</p>
+									</div>
+								</div>
+								<ul class="c-card__ul c-card__ul-simple">
+									<li>Code individual websites and resuable themes that use a custom CMS</li>
+									<li>Create code snippets in HTML, CSS, and JavaScript for the coding team as a whole to use</li>
+									<li>Monitor and solve those support tickets which relate to my team</li>
+									<li>Assist newer developers with questions about how to accomplish tasks and troubleshoot issues</li>
+									<li>Communicate and brainstorm with designers and marketers to determine solutions to challenges that may arise related to design or implementation</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="c-card">
+						<ul class="c-card__ul">
+							<li>
+								<div class="c-flex titlelist">
+									<div class="c-flex__item">
+										<p class="u-uppercase"><strong>Trader Joe's</strong></p>
+									</div>
+									<div class="c-flex__item">
+										<p><strong>Chapel Hill, NC</strong></p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Crew Member</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>2011-2013, 2014-2015</p>
+									</div>
+								</div>
+								<ul class="c-card__ul c-card__ul-simple">
+									<li>Fostered a friendly, welcoming environment for customers</li>
+									<li>Followed health code guidelines while maintaining stock levels</li>
+									<li>Helped plan and build product displays</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="c-card">
+						<ul class="c-card__ul">
+							<li>
+								<div class="c-flex titlelist">
+									<div class="c-flex__item">
+										<p class="u-uppercase"><strong>Performance Bicycle</strong></p>
+									</div>
+									<div class="c-flex__item">
+										<p><strong>Chapel Hill, NC</strong></p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Operations Manager</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>2012-2014</p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Sales Associate</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>2011-2012</p>
+									</div>
+								</div>
+								<ul class="c-card__ul c-card__ul-simple">
+									<li>Organized inventory, shipments, and warranties and helped implement a new point of sale system in the target store</li>
+									<li>Trained staff on product knowledge and guest experience on an on-going basis</li>
+									<li>Built strong relationships with customers, including leading a weekly women’s group ride
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<h2 class="u-color-alt2">Education</h2>
+					<hr class="u-bg-alt3 hr-tall">
+					<div class="c-card">
+						<ul class="c-card__ul">
+							<li>
+								<div class="c-flex titlelist">
+									<div class="c-flex__item">
+										<p class="u-uppercase"><strong>Iron Yard</strong></p>
+									</div>
+									<div class="c-flex__item">
+										<p><strong>Columbia, SC</strong></p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">Certificate for UX/UI Design</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>November 2015</p>
+									</div>
+								</div>
+								<ul class="c-card__ul c-card__ul-simple">
+									<li>Learned the design process, beginning with interpreting the creative brief and moving to creating wireframes and thumbnail sketches</li>
+									<li>Created mockups while paying careful attention to color and typography</li>
+									<li>Upon approval of instructor, coded mockups up as responsive websites</li>
+									<li>Diversity Scholarship recipient</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="c-card">
+						<ul class="c-card__ul">
+							<li>
+								<div class="c-flex titlelist">
+									<div class="c-flex__item">
+										<p class="u-uppercase"><strong>UNC-Chapel Hill</strong></p>
+									</div>
+									<div class="c-flex__item">
+										<p><strong>Chapel Hill, NC</strong></p>
+									</div>
+								</div>
+								<div class="c-flex sublist">
+									<div class="c-flex__item">
+										<p class="u-italic">B.A. in German</p>
+										<p class="u-italic">Second Major: Comparative Literature</p>
+									</div>
+									<div class="c-flex__item dotted"></div>
+									<div class="c-flex__item">
+										<p>2007-2011</p>
+									</div>
+								</div>
+								<ul class="c-card__ul c-card__ul-simple">
+									<li>GPA: 3.8</li>
+									<li>National Merit Scholarship Recipient</li>
+									<li>Dean’s List: 8 semesters</li>
+									<li>Delta Phi Alpha: National German Honor Society</li>
+									<li>Phi Beta Kappa: National Academic Honor Society</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<h2 class="u-color-alt2">Skills</h2>
+					<hr class="u-bg-alt3 hr-tall">
+					<div class="c-card">
+						<ul class="c-card__ul">
+							<li>
+								<ul class="c-card__ul c-card__ul-simple">
+									<li>HTML, CSS/STYLUS, JavaScript/jQuery</li>
+									<li>Adobe Illustrator, PhotoShop</li>
+									<li>Performance Bicycle SpinDoctor Mechanic Certificate, 2014</li>
+									<li>Proficient User of Business German, WiDaF Certificate, 2011</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
+	    	<div class="c-contain">
+	    		<div class="c-flex">
+	    			<div class="c-flex__item f-block f-block1">
+	    				<div class="rocket-wrap">
+			    			<div class="rocket-holder">
+			    				<span class="rocket material-icons mi-white">send</span>
+			    			</div>
+			    			<a href="#top" class="rocket-button js__jump"><span>To the Top!</span></a>
+			    		</div>
+	    			</div>
+	    			<div class="c-flex__item f-block f-block2">
+	    				<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+	    			</div>
+	    			<div class="c-flex__item f-block f-block3">
+	    				<ul class="social-media">
+			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+			    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
+			    			<li><a href="https://github.com/catcappellari" target="_blank"><img src="images/icon-github.png" alt="GitHub"></a></li>
+			    		</ul>
+	    			</div>
+	    		</div>
+	    		<p><small>This site brought to you by Cat Cappellari. All rights reserved. <script>document.write(new Date().getFullYear())</script>.</small></p>
+	    	</div>
+	    </footer>
 
-		<footer>
-		</footer>
-				
-	<script src="js/script.js"></script>	
+	    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
+
+	    <script>
+	    	document.addEventListener("DOMContentLoaded", function() {
+
+			   var menuButton = document.querySelector('.js-menu-button');  
+			   var menuWrapper = document.querySelector('.js-mobile-menu');
+
+			    //debounce function - from underscores.js
+			    function debounce(func, wait, immediate) {
+			        var timeout;
+			        return function() {
+			            var context = this, args = arguments;
+			            var later = function() {
+			                timeout = null;
+			                if (!immediate) func.apply(context, args);
+			            };
+			            var callNow = immediate && !timeout;
+			            clearTimeout(timeout);
+			            timeout = setTimeout(later, wait);
+			            if (callNow) func.apply(context, args);
+			        };
+			    };
+
+			    //change menu button and menu based on click status
+			    function buttonToggle() {
+			        //toggle menu button active
+			        if (!menuButton.classList.contains('active')){
+			            menuButton.classList.add('active');
+			            menuButton.setAttribute('aria-expanded', 'true');
+			        } else {
+			            menuButton.classList.remove('active');
+			            menuButton.setAttribute('aria-expanded', 'false');
+			        }
+
+			        //toggle menu active
+			        if (!menuWrapper.classList.contains('active')){
+			            menuWrapper.classList.add('active');
+			        } else {
+			            menuWrapper.classList.remove('active');
+			        }  
+			    }
+
+			    function menuClickClose() {
+			    	menuButton.classList.remove('active');
+			        menuButton.setAttribute('aria-expanded', 'false');
+			    	menuWrapper.classList.remove('active');
+			    }
+			   
+			    //hide or show menu based on screen size and button status
+			    var menuWidthCheck = debounce(function() {
+			       if (window.matchMedia("(min-width: 992px)").matches) {
+			            //menuButton.style.display = 'none';
+			            if (menuButton.classList.contains('active')){
+			                 menuButton.classList.remove('active');
+			                 menuButton.setAttribute('aria-expanded', 'false');
+			            }
+			            if (menuWrapper.classList.contains('active')){
+			                menuWrapper.classList.remove('active');
+			            }
+			        
+			        }     
+			    }, 250);
+
+			    menuWidthCheck();
+
+			    menuButton.addEventListener('click', buttonToggle, false);
+			    menuWrapper.addEventListener('click', menuClickClose, false);
+			    window.addEventListener("resize", menuWidthCheck, false);
+			});
+	    </script>
+
+	    <script>
+	    jQuery(document).ready(function() {
+	        //check for javascript
+	        jQuery('body').addClass('js-active');
+
+	        //jump link smooth scroll
+	        jQuery('.js__jump').click(function() {
+	            jQuery('html, body').animate({
+	                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
+	            }, 500);
+	            return false;
+	        });
+	    });
+	    </script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	    <script>
+	    WebFont.load({
+	        google: {
+	            families: ['Palanquin+Dark', 'Gudea:400,400i,700']
+	        }
+	    });
+	    </script>
+
 	</body>
-
-
 </html>

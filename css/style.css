@@ -755,6 +755,9 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
+.box-resume .logo-holder img {
+  width: 100%;
+}
 .box-resume .logo {
   display: block;
   max-width: 60px;
