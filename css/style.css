@@ -870,10 +870,14 @@ img {
     flex-basis: auto;
   }
   .box-resume .sublist .c-flex__item:nth-child(1) {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
     padding-right: 0.75rem;
   }
   .box-resume .sublist .c-flex__item:nth-child(3) {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
     padding-left: 0.75rem;
   }
