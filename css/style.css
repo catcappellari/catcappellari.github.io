@@ -799,9 +799,13 @@ img {
 }
 .box-resume .sublist .c-flex__item:nth-child(3) {
   text-align: right;
+}
+.box-resume .sublist .c-flex__item:nth-child(3) p {
+  box-sizing: border-box;
   padding-left: 0.25rem;
 }
-.box-resume .sublist .c-flex__item:nth-child(1) {
+.box-resume .sublist .c-flex__item:nth-child(1) p {
+  box-sizing: border-box;
   padding-right: 0.25rem;
 }
 .box-resume .sublist .dotted {
