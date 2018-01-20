@@ -806,7 +806,7 @@ img {
 }
 .box-resume .sublist .dotted {
   padding-bottom: 3px;
-  position: relative;
+  position: absolute;
   display: none;
 }
 .box-resume .sublist .dotted:after {
@@ -852,6 +852,7 @@ img {
   }
   .box-resume .c-card .dotted {
     display: block;
+    position: relative;
   }
   .box-resume .sublist {
     -webkit-box-align: stretch;
@@ -861,7 +862,8 @@ img {
     border-bottom: none;
   }
   .box-resume .sublist .c-flex__item {
-    width: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
   }
   .box-resume .sublist .c-flex__item:nth-child(1) {
     flex-grow: 0;

@@ -836,7 +836,7 @@ img {
         }
         .dotted {
             padding-bottom: 3px;
-            position: relative;
+            position: absolute;
             display: none;
             &:after {
                 position: absolute;
@@ -892,6 +892,7 @@ img {
     }
     .box-resume .c-card .dotted {
         display: block;
+        position: relative;
     }
     .box-resume {
         .sublist {
@@ -901,7 +902,8 @@ img {
             padding: 0;
             border-bottom: none;
             .c-flex__item {
-                width: auto;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
             }
             .c-flex__item:nth-child(1) {
                 flex-grow: 0;
