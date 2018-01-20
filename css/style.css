@@ -794,7 +794,8 @@ img {
   padding: 0;
 }
 .box-resume .sublist .c-flex__item {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
 }
 .box-resume .sublist .c-flex__item:nth-child(3) {
   text-align: right;
