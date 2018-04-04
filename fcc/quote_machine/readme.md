@@ -1,0 +1,1 @@
+##Welcome to the random Bob Ross Quote Machine.
