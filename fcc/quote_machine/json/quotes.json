@@ -1,4 +1,4 @@
-Access-Control-Allow-Origin: https://catcappellari.github.io
+Access-Control-Allow-Origin: *
 var quotes = module.exports = [
   'That\'ll be our little secret.',
   'In painting, you have unlimited power. You have the ability to move mountains. You can bend rivers. But when I get home, the only thing I have power over, is the garbage.',
