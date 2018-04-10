@@ -28,6 +28,7 @@
 		<section class="box-quote">
 			<h1 class="quote" id="quote"></h1>
 			<a href="#" class="quote-btn" id="quote-btn">Happy Quote!</a>
+			<div class="happy-quote"></div>
 		</section>
 	    <footer class="footer-main">
 	    	<div class="c-contain">
@@ -46,7 +47,7 @@
 		      // Only change code below this line.
 		      
 		      jQuery.getJSON("js/quotes.json", function(json) {
-		        jQuery("#quote-btn").html(JSON.stringify(json));
+		        jQuery(".happy-quote").html(JSON.stringify(json));
 		      });
 		      
 		      // Only change code above this line.
