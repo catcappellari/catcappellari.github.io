@@ -1,8 +1,11 @@
+body {
+	background-color: #4b5151;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",;
+	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
