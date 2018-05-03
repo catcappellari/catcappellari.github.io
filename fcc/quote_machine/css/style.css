@@ -1,5 +1,5 @@
 body {
-	background-color: #4b5151;
+	background-color: #0984e3;
 }
 h1,
 h2,
@@ -8,4 +8,14 @@ h4,
 h5,
 h6 {
 	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
+}
+h1 {
+	color: #ffeaa7;
+}
+[class*="u-contain-"] {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.u-contain-1200 {
+	max-width: 1200px;
 }
