@@ -19,3 +19,17 @@ h1 {
 .u-contain-1200 {
 	max-width: 1200px;
 }
+.quote-btn {
+	-webkit-appearance: none;
+	appearance: none;
+	display: block;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 6px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+ 	background: #fd79a8;
+	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
+}
