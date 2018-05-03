@@ -28,8 +28,10 @@ h1 {
     width: 100%;
     max-width: 350px;
     border-radius: 6px;
+    border: none;
     margin: 0 auto;
     font-size: 1.25rem;
  	background: #fd79a8;
+ 	color: #fff;
 	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
