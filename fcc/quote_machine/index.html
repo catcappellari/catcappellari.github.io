@@ -41,19 +41,25 @@
   crossorigin="anonymous"></script>
 	    <!-- <script type="text/javascript" src="js/slick-slider.min.js"></script> -->
 		<script>
-		  jQuery(document).ready(function() {
+		jQuery(document).ready(function() {
 
-		    jQuery("#quote-btn").on("click", function(){
-		      // Only change code below this line.
-		      
-		      jQuery.getJSON("js/quotes.json", function(json) {
-		        jQuery(".happy-quote").html(JSON.stringify(json));
-		      });
-		      
-		      // Only change code above this line.
-		    });
+			jQuery("#quote-btn").on("click", function(){
+				// Only change code below this line.
 
-		  });
+				jQuery.getJSON("js/quotes.json", function(json) {
+					//jQuery(".happy-quote").html(JSON.stringify(json));
+					var html = "";
+
+					json.forEach(function(val){
+						var quotes = Objects.keys(val);
+						console.log(quote);
+					});
+				});
+
+			// Only change code above this line.
+			});
+
+		});
 		</script>
 	    <!-- <script>
 	    	document.addEventListener("DOMContentLoaded", function() {
