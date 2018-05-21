@@ -1,5 +1,5 @@
 body {
-	background-color: #0984e3;
+	background-color: rgba(116, 185, 255, 0.65);
 }
 h1,
 h2,
@@ -10,7 +10,7 @@ h6 {
 	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
 h1 {
-	color: #ffeaa7;
+	color: #FF9900;
 }
 [class*="u-contain-"] {
 	max-width: 960px;
@@ -31,23 +31,82 @@ h1 {
 }
 .box-quote {
 	height: 100vh;
+	background-size: auto 90%;
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	background-image: url('../images/mtns2.svg');
+}
+.scenery-holder {
+	background-size: auto 33%;
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	background-image: url('../images/trees.svg');
+	box-sizing: border-box;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.h-quote {
+	height: 53vw;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-image: url('../images/cloud2.svg');
+	margin-bottom: 12vw;
+}
+.h-quote__text {
+	text-align: center;
+	padding: 1em 24vw;
+	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto;
+	line-height: 1;
 }
 .quote-btn {
-	-webkit-appearance: none;
-	appearance: none;
 	display: block;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0.75rem 2rem;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     border-radius: 6px;
     border: none;
     margin: 0 auto;
-    font-size: 1.25rem;
- 	background: #fd79a8;
- 	color: #fff;
+	color: #fff;
+	font-size: 1.25rem;
+	background-color: #FF9900;
+	text-align: center;
+	text-decoration: none;
 	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
+.quote-btn span {
+	box-sizing: border-box;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+[class*="c-skew-"] {
+	display: inline-block;
+	vertical-align: middle;
+	transition: transform 0.33s ease-in;
+}
+.is-flipped .c-skew-forward {
+	-webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg);
+}
+.is-flipped .c-skew-backward {
+	-webkit-transform: rotateY(-360deg); /* Safari */
+    transform: rotateY(-360deg);
+}
+
+/*.quote-btn svg {
+	color: #FF9900;
+	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
+	font-size: 70px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.quote-btn text {
+	fill: #FF9900;
+}*/
 .footer-rights {
 	box-sizing: border-box;
 	padding: 0.75rem;

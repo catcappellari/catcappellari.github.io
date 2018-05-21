@@ -3,13 +3,13 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<!-- 	    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 	    <link rel="icon" type="image/png" sizes="256x256" href="images/favicon/android-chrome-256x256.png">
 	    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 		<link rel="manifest" href="images/favicon/manifest.json">
-		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
 	    <meta name="theme-color" content="#3498db">
 
 	    <title>Bob Ross Random Quote Machine</title>
@@ -26,33 +26,53 @@
 			
 		</header>
 		<section class="box-quote c-table">
-			<div class="c-table__cell">
+			<div class="scenery-holder c-table__cell c-table__cell_bottom">
 				<div class="u-contain-1200">
-					<!-- <h1 class="quote" id="quote"></h1> -->
-					<h1 class="happy-quote"></h1>
-					<button class="quote-btn" id="quote-btn">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" width="400" height="400"><defs><clipPath id="a"><path d="M0 0h400v400H0z"/></clipPath></defs><path id="b" d="M-2 200C-2 89.617 87.617 0 198 0s200 89.617 200 200-89.617 200-200 200S-2 310.383-2 200z" fill="#F90"/><text><textPath xlink:href="#b"> Happy Quote! </textPath></text></svg>
-					</button>
+					<div class="c-table h-quote">
+						<div class="c-table__cell c-table__cell_middle">
+							<h1 class="h-quote__text">Bob Ross Happy Quote!</h1>
+						</div>
+					</div>
+					<a class="quote-btn js-quote-btn" href="#">
+						<span class="c-skew-forward">New </span><span class="c-skew-backward"> Quote!</span>
+					</a>
 				</div>
 			</div>
 		</section>
-	    <footer class="footer-main">
+	    <!-- <footer class="footer-main">
 	    	<div class="c-contain">
 	    		<div class="footer-rights">
 	    			<p><small>This site brought to you by Cat Cappellari. All rights reserved. <script>document.write(new Date().getFullYear())</script>.</small></p>
 	    		</div>
 	    	</div>
-	    </footer>
+	    </footer> -->
 		<!-- <script src="js/random-quote.js"></script> -->
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 	    <!-- <script type="text/javascript" src="js/slick-slider.min.js"></script> -->
 		<script>
-		jQuery(document).ready(function() {
+		document.addEventListener("DOMContentLoaded", function() {
 
-			jQuery("#quote-btn").on("click", function(){
-				// Only change code below this line.
+			//New quote
+			//var quoteBtn = document.querySelector('#quote-btn');
+
+			// function newQuote(e) {
+			// 	console.log(e.target);
+				
+			// }
+
+			//button quote change
+			//find all selectors in a document
+			//loop over each of them
+			//access elements that relate to those selectors
+			//match media element as well
+			//https://toddmotto.com/ditch-the-array-foreach-call-nodelist-hack/
+
+			function newQuote(event) {
+				event.stopPropagation();
+				var item = event.currentTarget;
+				item.classList.toggle('is-flipped');
 
 				jQuery.getJSON("js/quotes-br.json", function(json) {
 					//jQuery(".happy-quote").html(JSON.stringify(json));
@@ -63,8 +83,20 @@
 						console.log(quotes);
 					});
 				});
+			}
 
-			// Only change code above this line.
+			var forEach = function (array, callback, scope) {
+				for (var i = 0; i < array.length; i++) {
+					callback.call(scope, i, array[i]);
+				}
+			};
+
+			//buttons list
+			var buttonList = document.querySelectorAll('.js-quote-btn');
+			forEach(buttonList, function (index, value) {
+			    //console.log(index, value); // passes index + value back!
+			    value.addEventListener('click', newQuote, false);
+			    	
 			});
 
 		});
