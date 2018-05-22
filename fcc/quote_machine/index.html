@@ -30,7 +30,7 @@
 				<div class="u-contain-1200">
 					<div class="c-table h-quote">
 						<div class="c-table__cell c-table__cell_middle">
-							<h1 class="h-quote__text">Bob Ross Happy Quote!</h1>
+							<h1 class="h-quote__text js-text">Bob Ross Happy Quote!</h1>
 						</div>
 					</div>
 					<a class="quote-btn js-quote-btn" href="#">
@@ -73,19 +73,26 @@
 				event.stopPropagation();
 				var item = event.currentTarget;
 				item.classList.toggle('is-flipped');
+				var randomNumber = Math.floor(Math.random() * 10);
+				var quoteHeadline = document.querySelector('.js-text');
+
 
 				jQuery.getJSON("js/quotes-br.json", function(json) {
 					//jQuery(".happy-quote").html(JSON.stringify(json));
-					var html = "";
+					//var html = "";
 
-					json.forEach(function(val){
-						var quotes = Object.keys(val);
-						//console.log(quotes);
-
-						quotes.forEach(function(quote){
-							console.log(val[quote]);
-						});
+					json.filter(function(val){
+						quoteHeadline.innerHTML = (val.id == randomNumber);
 					});
+
+					// json.forEach(function(randomNumber){
+					// 	var quotes = Object.keys(randomNumber);
+					// 	//console.log(quotes);
+
+					// 	quotes.forEach(function(quote){
+					// 		console.log(randomNumber[quote]);
+					// 	});
+					// });
 				});
 			}
 

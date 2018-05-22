@@ -42,8 +42,7 @@ h1 {
 	background-position: bottom center;
 	background-image: url('../images/trees.svg');
 	box-sizing: border-box;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding: 3rem 1rem;
 }
 .h-quote {
 	height: 53vw;
