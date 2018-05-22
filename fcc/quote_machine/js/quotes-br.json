@@ -1,42 +1,41 @@
-[
-  {
-     "id":1,
-     "quote": "That'll be our little secret.",
+[{
+    "id": 1,
+    "quote": "That'll be our little secret."
   },
   {
-     "id":2,
-     "quote": "In painting, you have unlimited power. You have the ability to move mountains. You can bend rivers. But when I get home, the only thing I have power over, is the garbage.",
-   },
-   {
-     "id":3,
-     "quote": "Remember our Golden Rule: A thin paint sticks to a thick paint.",
-   },
-   {
-     "id":4,
-     "quote": "And that makes it look like birch trees, isn't that sneaky? Heh. Ha. It's gorgeous.",
-   },
-   {
-     "id":5,
-     "quote": "You know me, I gotta put in a big tree.",
-   },
-   {
-     "id":6,
-     "quote": "Here's your bravery test!",
-   },
-   {
-     "id":7,
-     "quote": "Gotta give him a friend. Like I always say 'everyone needs a friend."
-   },
-   {
-     "id":8,
-     "quote": "That's a crooked tree. We'll send him to Washington."
-   },
-   {
-     "id":9,
-     "quote": "There's nothing wrong with having a tree as a friend."
-   },
-   {
-     "id":10,
-     "quote": "I can't go over 30 minutes, because we have a mean ol' director with no sense of humor."
-   },
-}]
+    "id": 2,
+    "quote": "In painting, you have unlimited power. You have the ability to move mountains. You can bend rivers. But when I get home, the only thing I have power over, is the garbage."
+  },
+  {
+    "id": 3,
+    "quote": "Remember our Golden Rule: A thin paint sticks to a thick paint."
+  },
+  {
+    "id": 4,
+    "quote": "And that makes it look like birch trees, isn't that sneaky? Heh. Ha. It's gorgeous."
+  },
+  {
+    "id": 5,
+    "quote": "You know me, I gotta put in a big tree."
+  },
+  {
+    "id": 6,
+    "quote": "Here's your bravery test!"
+  },
+  {
+    "id": 7,
+    "quote": "Gotta give him a friend. Like I always say 'everyone needs a friend."
+  },
+  {
+    "id": 8,
+    "quote": "That's a crooked tree. We'll send him to Washington."
+  },
+  {
+    "id": 9,
+    "quote": "There's nothing wrong with having a tree as a friend."
+  },
+  {
+    "id": 10,
+    "quote": "I can't go over 30 minutes, because we have a mean ol' director with no sense of humor."
+  }
+]
