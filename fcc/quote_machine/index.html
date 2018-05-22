@@ -85,13 +85,13 @@
 
 					console.log(json[randomNumber]);
 
-					json = json.filter(function(val){
-						return (val.id == randomNumber);
+					// json = json.filter(function(val){
+					// 	return (val.id == randomNumber);
 						
-					});
+					// });
 
 
-					quoteHeadline.innerHTML = (val.id == randomNumber);
+					quoteHeadline.innerText = json[randomNumber];
 
 					// json.forEach(function(randomNumber){
 					// 	var quotes = Object.keys(randomNumber);
