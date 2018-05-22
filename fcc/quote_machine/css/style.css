@@ -59,6 +59,7 @@ h1 {
 	max-width: 1200px;
 	margin: 0 auto;
 	line-height: 1;
+	font-size: 1.125rem;
 }
 .quote-btn {
 	display: block;
@@ -94,21 +95,21 @@ h1 {
 	-webkit-transform: rotateY(-360deg); /* Safari */
     transform: rotateY(-360deg);
 }
-
-/*.quote-btn svg {
-	color: #FF9900;
-	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
-	font-size: 70px;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-.quote-btn text {
-	fill: #FF9900;
-}*/
 .footer-rights {
 	box-sizing: border-box;
 	padding: 0.75rem;
 	text-align: center;
 	color: #fff;
+}
+
+@media screen and (min-width: 34.5rem) {
+	.h-quote__text {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 48rem) {
+	.h-quote__text {
+		font-size: 4.5rem;
+	}
 }
