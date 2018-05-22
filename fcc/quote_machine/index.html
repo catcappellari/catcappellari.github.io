@@ -27,7 +27,7 @@
 		</header>
 		<section class="box-quote c-table">
 			<div class="scenery-holder c-table__cell c-table__cell_bottom">
-				<div class="u-contain-1200">
+				<div class="u-contain-960">
 					<div class="c-table h-quote">
 						<div class="c-table__cell c-table__cell_middle">
 							<h1 class="h-quote__text js-text">Bob Ross Happy Quote!</h1>
@@ -71,6 +71,8 @@
 
 			function newQuote(event) {
 				event.stopPropagation();
+				event.preventDefault();
+
 				var item = event.currentTarget;
 				item.classList.toggle('is-flipped');
 				var randomNumber = Math.floor(Math.random() * 10);
