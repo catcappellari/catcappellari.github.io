@@ -74,7 +74,9 @@
 				var item = event.currentTarget;
 				item.classList.toggle('is-flipped');
 				var randomNumber = Math.floor(Math.random() * 10);
+				console.log(randomNumber);
 				var quoteHeadline = document.querySelector('.js-text');
+				console.log(quoteHeadline);
 
 
 				jQuery.getJSON("js/quotes-br.json", function(json) {
@@ -83,6 +85,7 @@
 
 					json.filter(function(val){
 						quoteHeadline.innerHTML = (val.id == randomNumber);
+						console.log(val.id == randomNumber);
 					});
 
 					// json.forEach(function(randomNumber){
