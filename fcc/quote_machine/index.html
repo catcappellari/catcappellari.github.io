@@ -83,12 +83,14 @@
 					//jQuery(".happy-quote").html(JSON.stringify(json));
 					//var html = "";
 
+					console.log(json);
+					
 					json = json.filter(function(val){
 						return (val.id == randomNumber);
 						
 					});
 
-					console.log(json);
+
 					quoteHeadline.innerHTML = (val.id == randomNumber);
 
 					// json.forEach(function(randomNumber){
