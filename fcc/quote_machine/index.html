@@ -22,6 +22,13 @@
 	</head>
 
 	<body class="index">
+		<div class="acorn-overlay js-acorn-overlay c-table">
+			<div class="acorn-loader c-table__cell">
+				<img src="../images/acorn2.svg" alt="">
+				<img src="../images/acorn2.svg" alt="">
+				<img src="../images/acorn2.svg" alt="">
+			</div>
+		</div>
 		<header class="header-main">
 			
 		</header>
@@ -51,6 +58,35 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 	    <!-- <script type="text/javascript" src="js/slick-slider.min.js"></script> -->
+	    <script>
+		document.addEventListener('DOMContentLoaded', function(){ 
+			//loading screen
+			var acornScreen = document.querySelector('.js-acorn-overlay');
+			
+			//results message
+			function loadingScreen() {
+				var delay = 1000 * (Math.floor(Math.random() * (2) + 2));
+				var timeout = false;
+
+				//clear the timeout
+		        window.clearTimeout(timeout);
+
+				//show/hide results
+				acornScreen.classList.add('is-active');
+
+				//set time out
+				window.setTimeout(hideLoadingScreen, delay);
+			}
+
+			function hideLoadingScreen() {
+				//hide loadinf screen
+				acornScreen.classList.remove('is-active');
+			}
+
+			loadingScreen();
+			
+		}, false);
+		</script>
 		<script>
 		document.addEventListener("DOMContentLoaded", function() {
 
@@ -75,34 +111,14 @@
 
 				var item = event.currentTarget;
 				item.classList.toggle('is-flipped');
+
 				var randomNumber = Math.floor(Math.random() * 10);
-				console.log(randomNumber);
 				var quoteHeadline = document.querySelector('.js-text');
-				console.log(quoteHeadline);
 
 
 				jQuery.getJSON("js/quotes-br.json", function(json) {
-					//jQuery(".happy-quote").html(JSON.stringify(json));
-					//var html = "";
-
-					console.log(json[randomNumber]);
-
-					// json = json.filter(function(val){
-					// 	return (val.id == randomNumber);
-						
-					// });
-
-
+					//replace headline
 					quoteHeadline.innerText = json[randomNumber].quote;
-
-					// json.forEach(function(randomNumber){
-					// 	var quotes = Object.keys(randomNumber);
-					// 	//console.log(quotes);
-
-					// 	quotes.forEach(function(quote){
-					// 		console.log(randomNumber[quote]);
-					// 	});
-					// });
 				});
 			}
 
@@ -115,7 +131,6 @@
 			//buttons list
 			var buttonList = document.querySelectorAll('.js-quote-btn');
 			forEach(buttonList, function (index, value) {
-			    //console.log(index, value); // passes index + value back!
 			    value.addEventListener('click', newQuote, false);
 			    	
 			});

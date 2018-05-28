@@ -1,0 +1,36 @@
+<script>
+		document.addEventListener('DOMContentLoaded', function(){ 
+			//loading screen
+			var submitButton = document.querySelector('.js-submit');
+			var homeButton = document.querySelector('.js-home');
+			var resultsBox = document.querySelector('.js-results');
+			var resultsMessage = document.querySelector('.js-message');
+			
+			//results message
+			function checkIfWon() {
+				var delay = 1000 * (Math.floor(Math.random() * (2) + 2));
+				var timeout = false;
+
+				//clear the timeout
+		        window.clearTimeout(timeout);
+
+				//show/hide results
+				resultsBox.classList.add('is-active');
+				submitButton.innerText = "Calculating";
+				resultsMessage.innerHTML = "<span>.</span><span>.</span><span>.</span>";
+
+				//set time out
+				window.setTimeout(displayResults, delay);
+			}
+
+			function displayResults() {
+				//populate result
+				resultsMessage.innerText = "Sorry, you didn't win";
+				//submitButton.innerText = "Click Here To See If You've Won!";
+				submitButton.style.display = "none";
+				homeButton.style.display = "inline-block";
+			}
+
+			submitButton.addEventListener('click', checkIfWon);
+		}, false);
+		</script>
