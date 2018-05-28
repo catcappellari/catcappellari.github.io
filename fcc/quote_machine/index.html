@@ -72,7 +72,7 @@
 		        window.clearTimeout(timeout);
 
 				//show/hide results
-				acornScreen.classList.add('is-active');
+				acornScreen.classList.add('is-loading');
 
 				//set time out
 				window.setTimeout(hideLoadingScreen, delay);
@@ -80,7 +80,7 @@
 
 			function hideLoadingScreen() {
 				//hide loadinf screen
-				acornScreen.classList.remove('is-active');
+				acornScreen.classList.remove('is-loading');
 			}
 
 			loadingScreen();

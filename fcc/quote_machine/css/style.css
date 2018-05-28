@@ -45,7 +45,7 @@ h1 {
 	padding: 1rem;
 	display: none;
 }
-.acorn-overlay.is-active {
+.acorn-overlay.is-loading {
 	display: table;
 }
 .box-quote {
