@@ -48,6 +48,24 @@ h1 {
 .acorn-overlay.is-loading {
 	display: table;
 }
+.acorn-loader {
+	text-align: center;
+}
+.acorn-loader img {
+	height: 60px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.acorn-loader img:nth-child(1) {
+	opacity: 0.75;
+}
+.acorn-loader img:nth-child(2) {
+	opacity: 0.5;
+}
+.acorn-loader img:nth-child(3) {
+	opacity: 0.25;
+}
 .box-quote {
 	height: 100vh;
 	background-size: auto 90%;
@@ -99,7 +117,7 @@ h1 {
 	transition: background 0.33s linear;
 }
 .quote-btn:hover {
-	background: rgba(255,153,0,.75);
+	background: rgba(255,153,0,.85);
 }
 .quote-btn span {
 	box-sizing: border-box;
