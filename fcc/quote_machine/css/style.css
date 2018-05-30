@@ -35,7 +35,8 @@ h1 {
 .c-cloud {
 	position: fixed;
 	content: "";
-	background-size: cover;
+	z-index: 1;
+	background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/cloud2.svg);
