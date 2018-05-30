@@ -40,9 +40,8 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/cloud2.svg);
-    animation-name: flicker;
-	animation-duration: 1.33s;
-	animation-iteration-count: infinite;
+    animation-name: resizer;
+	animation-duration: 2.66s;
     transition: all 0.33s ease-in;
 }
 .c-cloud1 {
@@ -60,6 +59,7 @@ h1 {
 	right: 1rem;
 	height: 6rem;
 	width: 6rem;
+	animation-delay: 0.66s;
 }
 .c-cloud2:hover {
 	-webkit-transform: scale(1.2);
@@ -69,7 +69,7 @@ h1 {
 	background: #fff;
 	position: absolute;
 	content: "";
-	z-index: 5;
+	z-index: 30;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -92,7 +92,7 @@ h1 {
     display: inline-block;
     vertical-align: middle;
     animation-name: flicker;
-	animation-duration: 1.33s;
+	animation-duration: 1.66s;
 	animation-iteration-count: infinite;
 }
 .acorn-loader img:nth-child(1) {
@@ -187,9 +187,12 @@ h1 {
 }
 .footer-rights {
 	box-sizing: border-box;
-	padding: 0.75rem;
+	padding: 0.75rem 0.5rem;
 	text-align: center;
 	color: #fff;
+}
+.footer-rights p {
+	margin: 0;
 }
 
 @media screen and (min-width: 34.5rem) {
