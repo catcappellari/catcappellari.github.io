@@ -32,6 +32,26 @@ h1 {
 	vertical-align: middle;
 	width: 100%;
 }
+.c-cloud {
+	position: absolute;
+	content: "";
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/cloud2.svg);
+}
+.c-cloud1 {
+	top: 0.5rem;
+	left: 0rem;
+	height: 2rem;
+	width: 2rem;
+}
+.c-cloud2 {
+	top: 2rem;
+	right: 1rem;
+	height: 2.5rem;
+	width: 2.5rem;
+}
 .acorn-overlay {
 	background: #fff;
 	position: absolute;
@@ -56,15 +76,18 @@ h1 {
     width: 60px;
     display: inline-block;
     vertical-align: middle;
+    animation-name: flicker;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
 .acorn-loader img:nth-child(1) {
-	opacity: 0.75;
+	animation-delay: 0s;
 }
 .acorn-loader img:nth-child(2) {
-	opacity: 0.5;
+	animation-delay: 0.2s;
 }
 .acorn-loader img:nth-child(3) {
-	opacity: 0.25;
+	animation-delay: 0.4s;
 }
 .box-quote {
 	height: 100vh;
@@ -72,6 +95,7 @@ h1 {
 	background-repeat: repeat-x;
 	background-position: bottom center;
 	background-image: url('../images/mtns2.svg');
+	position: relative;
 }
 .scenery-holder {
 	background-size: auto 33%;
@@ -88,7 +112,7 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-image: url('../images/cloud2.svg');
-	margin-bottom: 12vw;
+	margin-bottom: 6vw;
 }
 .h-quote__text {
 	text-align: center;
@@ -111,6 +135,7 @@ h1 {
 	color: #fff;
 	font-size: 1.25rem;
 	background-color: #FF9900;
+	border: 2px solid #FF9900;
 	text-align: center;
 	text-decoration: none;
 	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
@@ -154,4 +179,13 @@ h1 {
 	.h-quote__text {
 		font-size: 2.25rem;
 	}
+}
+
+@-webkit-keyframes flicker {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes flicker {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
