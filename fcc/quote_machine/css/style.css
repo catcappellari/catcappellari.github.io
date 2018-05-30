@@ -40,9 +40,10 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/cloud2.svg);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    transition: scale 0.33s ease-in;
+    animation-name: flicker;
+	animation-duration: 1.33s;
+	animation-iteration-count: infinite;
+    transition: all 0.33s ease-in;
 }
 .c-cloud1 {
 	top: 0.5rem;
@@ -61,8 +62,8 @@ h1 {
 	width: 6rem;
 }
 .c-cloud2:hover {
-	-webkit-transform: scale(1.4);
-	transform: scale(1.4);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 .acorn-overlay {
 	background: #fff;
@@ -118,6 +119,8 @@ h1 {
 	background-image: url('../images/trees.svg');
 	box-sizing: border-box;
 	padding: 3rem 1rem;
+	position: relative;
+	z-index: 5;
 }
 .h-quote {
 	height: 53vw;
@@ -176,6 +179,12 @@ h1 {
 	-webkit-transform: rotateY(-360deg); /* Safari */
     transform: rotateY(-360deg);
 }
+.footer-main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .footer-rights {
 	box-sizing: border-box;
 	padding: 0.75rem;
@@ -196,10 +205,19 @@ h1 {
 }
 
 @-webkit-keyframes flicker {
-  0%   { opacity: 0.25; }
-  100% { opacity: 1; }
+	0%   { opacity: 0.25; }
+	100% { opacity: 1; }
 }
 @keyframes flicker {
-  0%   { opacity: 0.25; }
-  100% { opacity: 1; }
+	0%   { opacity: 0.25; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes resizer {
+	0%   { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1.2); }
+}
+@keyframes resizer {
+	0%   { transform: scale(1); }
+	100% { transform: scale(1.2); }
 }
