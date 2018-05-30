@@ -33,29 +33,41 @@ h1 {
 	width: 100%;
 }
 .c-cloud {
-	position: absolute;
+	position: fixed;
 	content: "";
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/cloud2.svg);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: scale 0.33s ease-in;
 }
 .c-cloud1 {
 	top: 0.5rem;
 	left: 0rem;
-	height: 2rem;
-	width: 2rem;
+	height: 4rem;
+	width: 4rem;
+}
+.c-cloud1:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 .c-cloud2 {
 	top: 2rem;
 	right: 1rem;
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 6rem;
+	width: 6rem;
+}
+.c-cloud2:hover {
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
 }
 .acorn-overlay {
 	background: #fff;
 	position: absolute;
 	content: "";
+	z-index: 5;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -74,10 +86,11 @@ h1 {
 .acorn-loader img {
 	height: 60px;
     width: 60px;
+    margin: 12px;
     display: inline-block;
     vertical-align: middle;
     animation-name: flicker;
-	animation-duration: 1s;
+	animation-duration: 1.33s;
 	animation-iteration-count: infinite;
 }
 .acorn-loader img:nth-child(1) {
@@ -182,10 +195,10 @@ h1 {
 }
 
 @-webkit-keyframes flicker {
-  0%   { opacity: 0; }
+  0%   { opacity: 0.25; }
   100% { opacity: 1; }
 }
 @keyframes flicker {
-  0%   { opacity: 0; }
+  0%   { opacity: 0.25; }
   100% { opacity: 1; }
 }
