@@ -52,6 +52,7 @@ body {
 	left: 0rem;
 	height: 4rem;
 	width: 4rem;
+	animation-delay: 3s;
 }
 .c-cloud1:hover {
 	-webkit-transform: scale(1.2);
@@ -62,7 +63,7 @@ body {
 	right: 1rem;
 	height: 6rem;
 	width: 6rem;
-	animation-delay: 0.66s;
+	animation-delay: 3.66s;
 }
 .c-cloud2:hover {
 	-webkit-transform: scale(1.2);
@@ -105,13 +106,13 @@ body {
 	animation-iteration-count: infinite;
 }
 .acorn-loader img:nth-child(1) {
-	animation-delay: 3s;
+	animation-delay: 0s;
 }
 .acorn-loader img:nth-child(2) {
-	animation-delay: 3.2s;
+	animation-delay: 0.2s;
 }
 .acorn-loader img:nth-child(3) {
-	animation-delay: 3.4s;
+	animation-delay: 0.4s;
 }
 .box-quote {
 	height: 100vh;
