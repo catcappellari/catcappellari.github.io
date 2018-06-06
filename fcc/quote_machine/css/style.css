@@ -195,6 +195,11 @@ body {
     width: 100%;
     z-index: 6;
 }
+.footer-main .logo {
+    display: block;
+    max-width: 4rem;
+    margin: 0 auto;
+}
 .footer-rights {
 	box-sizing: border-box;
 	padding: 0.75rem 0.5rem;
