@@ -44,7 +44,7 @@ body {
     background-position: center;
     background-image: url(../images/cloud2.svg);
     animation-name: resizer;
-	animation-duration: 6s;
+	animation-iteration-count: infinite;
     transition: all 0.33s ease-in-out;
 }
 .c-cloud1 {
