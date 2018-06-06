@@ -43,6 +43,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/cloud2.svg);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     animation-name: resizer;
 	animation-iteration-count: infinite;
     transition: all 0.33s ease-in-out;
@@ -54,10 +56,10 @@ body {
 	width: 4rem;
 	animation-delay: 3s;
 }
-.c-cloud1:hover {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
+/*.c-cloud1:hover {
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}*/
 .c-cloud2 {
 	top: 2rem;
 	right: 1rem;
@@ -65,10 +67,10 @@ body {
 	width: 6rem;
 	animation-delay: 3.66s;
 }
-.c-cloud2:hover {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
+/*.c-cloud2:hover {
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}*/
 .acorn-overlay {
 	position: absolute;
 	content: "";
@@ -102,7 +104,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     animation-name: flicker;
-	animation-duration: 1.66s;
+	//animation-duration: 1.66s;
 	animation-iteration-count: infinite;
 	transition: opacity 1.66s ease-in-out;
 }
@@ -231,9 +233,9 @@ body {
 
 @-webkit-keyframes resizer {
 	0%   { -webkit-transform: scale(1); }
-	100% { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(3); }
 }
 @keyframes resizer {
 	0%   { transform: scale(1); }
-	100% { transform: scale(1.2); }
+	100% { transform: scale(3); }
 }
