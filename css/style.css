@@ -439,9 +439,9 @@ img {
   box-sizing: border-box;
 }
 .c-flex__item-auto {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .c-card h2 {
   color: #3498db;
@@ -482,14 +482,18 @@ img {
 }
 .c-tile {
   display: block;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   box-sizing: border-box;
-  padding: 0.75rem;
-  box-shadow: 0 0.5rem 1rem 0 #555;
+  padding: 1.25rem 0.75rem;
+  box-shadow: 0 0.5rem 0.75rem 0 rgba(85,85,85,0.5);
   text-decoration: none;
 }
 .c-tile__img {
+  display: block;
   box-sizing: border-box;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 .c-tile__img img {
   display: block;
