@@ -475,6 +475,28 @@ img {
   background: #000;
   border-radius: 50%;
 }
+.c-tile {
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid #555;
+  text-decoration: none;
+}
+.c-tile__img {
+  box-sizing: border-box;
+  padding-bottom: 0.5rem;
+}
+.c-tile__img img {
+  display: block;
+  margin: 0 autom;
+}
+.c-tile__headline {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.c-tile__text {
+  text-align: center;
+  color: #555;
+}
 .u-italic {
   font-style: italic;
 }
