@@ -126,7 +126,7 @@ body {
 	background-position: bottom center;
 	background-image: url('../images/trees.svg');
 	box-sizing: border-box;
-	padding: 3rem 1rem;
+	padding: 3rem 1rem 110px;
 	position: relative;
 	z-index: 5;
 }
@@ -197,7 +197,7 @@ body {
 }
 .footer-main .logo {
     display: block;
-    max-width: 4rem;
+    max-width: 2rem;
     margin: 0 auto;
 }
 .footer-rights {
