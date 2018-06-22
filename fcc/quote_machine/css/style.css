@@ -10,7 +10,7 @@ h6 {
 	font-family: 'Kalam', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
 h1 {
-	color: #ee0824;
+	color: #fb7409;
 }
 body {
 	position: relative;
@@ -76,10 +76,10 @@ body {
 	background: rgba(255,255,255,.95);
 	box-sizing: border-box;
 	padding: 1rem;
-	display: none;
-}
-.acorn-overlay.is-loading {
 	display: block;
+}
+.acorn-overlay.is-loaded {
+	display: none;
 }
 .acorn-loader {
 	text-align: center;
@@ -147,6 +147,7 @@ body {
 	margin: 0 auto;
 	line-height: 1;
 	font-size: 1.125rem;
+	text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
 }
 .quote-btn {
 	display: block;
@@ -159,15 +160,15 @@ body {
     margin: 0 auto;
 	color: #fff;
 	font-size: 1.25rem;
-	background-color: #ee0824;
-	border: 2px solid #ee0824;
+	background-color: #fb7409;
+	border: 2px solid #fb7409;
 	text-align: center;
 	text-decoration: none;
 	font-family: 'Kalam', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 	transition: background 0.33s linear;
 }
 .quote-btn:hover {
-	background: rgba(238,8,36),.85);
+	background: rgba(251,116,9,.85);
 }
 .quote-btn span {
 	box-sizing: border-box;

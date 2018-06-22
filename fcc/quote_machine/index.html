@@ -70,18 +70,15 @@
 				var timeout = false;
 
 				//clear the timeout
-		        window.clearTimeout(timeout);
-
-				//show/hide results
-				acornScreen.classList.add('is-loading');
+		        window.clearTimeout(timeout);				
 
 				//set time out
 				window.setTimeout(hideLoadingScreen, delay);
 			}
 
 			function hideLoadingScreen() {
-				//hide loadinf screen
-				acornScreen.classList.remove('is-loading');
+				//hide loading screen
+				acornScreen.classList.add('is-loaded');
 			}
 
 			loadingScreen();
