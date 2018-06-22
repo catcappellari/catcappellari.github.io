@@ -7,10 +7,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
+	font-family: 'Kalam', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
 h1 {
-	color: #FF9900;
+	color: #ee0824;
 }
 body {
 	position: relative;
@@ -159,15 +159,15 @@ body {
     margin: 0 auto;
 	color: #fff;
 	font-size: 1.25rem;
-	background-color: #FF9900;
-	border: 2px solid #FF9900;
+	background-color: #ee0824;
+	border: 2px solid #ee0824;
 	text-align: center;
 	text-decoration: none;
-	font-family: 'Permanent Marker', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
+	font-family: 'Kalam', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 	transition: background 0.33s linear;
 }
 .quote-btn:hover {
-	background: rgba(255,153,0,.85);
+	background: rgba(238,8,36),.85);
 }
 .quote-btn span {
 	box-sizing: border-box;
