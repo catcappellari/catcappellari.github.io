@@ -10,7 +10,7 @@ h6 {
 	font-family: 'Kalam', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 }
 h1 {
-	color: #fb7409;
+	color: #E30721;
 }
 body {
 	position: relative;
@@ -160,15 +160,15 @@ body {
     margin: 0 auto;
 	color: #fff;
 	font-size: 1.25rem;
-	background-color: #fb7409;
-	border: 2px solid #fb7409;
+	background-color: #E30721;
+	border: 2px solid #E30721;
 	text-align: center;
 	text-decoration: none;
 	font-family: 'Kalam', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black";
 	transition: background 0.33s linear;
 }
 .quote-btn:hover {
-	background: rgba(251,116,9,.85);
+	background: rgba(227,7,33,.85);
 }
 .quote-btn span {
 	box-sizing: border-box;
@@ -181,11 +181,11 @@ body {
 	transition: transform 0.33s ease-in;
 }
 .is-flipped .c-skew-forward {
-	-webkit-transform: rotateY(360deg); /* Safari */
+	-webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
 }
 .is-flipped .c-skew-backward {
-	-webkit-transform: rotateY(-360deg); /* Safari */
+	-webkit-transform: rotateY(-360deg);
     transform: rotateY(-360deg);
 }
 .footer-main {
