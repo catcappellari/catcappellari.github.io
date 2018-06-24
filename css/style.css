@@ -1041,3 +1041,10 @@ img {
     width: 100%;
   }
 }
+/* Neon */
+.landing-neon .box-neon {
+  background-image: url("../images/bg-neon.jpg");
+}
+.landing-neon h1 {
+  color: #ff6bff;
+}
