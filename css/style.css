@@ -311,6 +311,22 @@ img {
   box-sizing: border-box;
   padding: 1.5rem 1rem;
 }
+.c-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.c-table__cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.c-table__cell_top {
+  vertical-align: top;
+}
+.c-table__cell_bottom {
+  vertical-align: bottom;
+}
 .c-slide__image {
   display: block;
   margin: 0 auto;
@@ -1044,7 +1060,12 @@ img {
 /* Neon */
 .landing-neon .box-neon {
   background-image: url("../images/bg-neon.jpg");
+  height: 100vh;
 }
 .landing-neon h1 {
   color: #ff6bff;
+  text-shadow: 0 0.5em 1em #ff6bff;
+  font-family: 'Comfortaa', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  box-sizing: border-box;
+  padding: 1rem;
 }
