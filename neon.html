@@ -22,32 +22,37 @@
 	    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css"/>
 	</head>
 
-	<body class="index landing-neon">
+	<body class="landing-neon">
 		<div class="top" id="top">
 		    <section class="c-section c-section_nopad c-section_image c-section_dark c-section_center c-table box-neon">
 		    	<div class="c-table__cell">
-		    		<div class="c-contain c-contain_1400">
-		    			<div class="e-neon">
-		    				<h1 class="e-neon__headline">
-			    				<span>W</span>
-			    				<span>a</span>
-			    				<span>n</span>
-			    				<span>d</span>
-			    				<span>e</span>
-			    				<span>r</span>
-			    				<span>l</span>
-			    				<span>u</span>
-			    				<span>s</span>
-			    				<span>t</span>
-			    				<span>.</span>
-			    			</h1>
+		    		<div class="c-contain c-contain_1200">
+		    			<div class="e-neon js-neon">
+		    				<div class="e-neon__corners">
+		    					<div class="e-neon__horizontal">
+			    					<div class="e-neon__vertical">
+			    						<h1 class="e-neon__headline">
+						    				<span>W</span>
+						    				<span>a</span>
+						    				<span>n</span>
+						    				<span>d</span>
+						    				<span>e</span>
+						    				<span>r</span>
+						    				<span>l</span>
+						    				<span>u</span>
+						    				<span>s</span>
+						    				<span>t</span>
+						    				<span>.</span>
+						    			</h1>
+			    					</div>
+			    				</div>
+		    				</div>
 		    			</div>
-		    			
 		    		</div>
 		    	</div>
 		    </section>
 		</div>
-	    <footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
+	    <footer class="footer-main c-section c-section_center c-section_dark c-section_alt4">
 	    	<div class="c-contain">
 	    		<div class="c-flex">
 	    			<div class="c-flex__item f-block f-block2">
@@ -62,7 +67,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
-
+<!-- 
 	    <script type="text/javascript">
 	    	document.addEventListener("DOMContentLoaded", function() {
 
@@ -130,12 +135,15 @@
 			    menuWrapper.addEventListener('click', menuClickClose, false);
 			    window.addEventListener("resize", menuWidthCheck, false);
 			});
-	    </script>
+	    </script> -->
 
 	    <script>
 	    jQuery(document).ready(function() {
 	        //check for javascript
 	        jQuery('body').addClass('js-active');
+
+	        //neon active
+	        jQuery('.js-neon').addClass('is-active');
 
 	        //jump link smooth scroll
 	        jQuery('.js__jump').click(function() {
