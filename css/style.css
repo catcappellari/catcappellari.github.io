@@ -706,6 +706,17 @@ img {
 .footer-main .c-flex__item {
   width: 100%;
 }
+.footer-main_minimal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 6;
+}
+.footer-main_minimal .logo {
+  max-width: 2rem;
+}
 .rocket-wrap {
   position: relative;
   box-sizing: border-box;
@@ -1067,6 +1078,12 @@ img {
 }
 .landing-neon .box-neon:after {
   background: rgba(0,0,0,0.66);
+}
+.landing-neon .footer-main p {
+  box-sizing: border-box;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  color: #fff;
 }
 .e-neon {
   box-sizing: border-box;

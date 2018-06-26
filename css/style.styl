@@ -731,6 +731,17 @@ img {
     .c-flex__item {
         width: 100%;
     }
+    &_minimal {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 6;
+        .logo {
+            max-width: 2rem;
+        }
+    }
 }
 .rocket-wrap {
     position: relative;
@@ -1117,11 +1128,21 @@ img {
 }
 
 /* Neon */
-.landing-neon .box-neon {
-    background-image: url('../images/bg-neon.jpg');
-    height: 100vh;
-    &:after {
-        background: rgba(0,0,0,0.66);
+.landing-neon {
+    .box-neon {
+        background-image: url('../images/bg-neon.jpg');
+        height: 100vh;
+        &:after {
+            background: rgba(0,0,0,0.66);
+        }
+    }
+    .footer-main {
+        p {
+            box-sizing: border-box;
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+            color: #fff;
+        }
     }
 }
 .e-neon {
@@ -1270,9 +1291,6 @@ img {
             &:nth-child(2) {
                 -webkit-animation: flash 7s forwards 5s infinite;
                 animation: flash 7s forwards 5s infinite;
-                
-                // -webkit-animation: flash 4s forwards 8s 3;
-                // animation: flash 4s forwards 8s 3;
             }
             &:nth-child(3) {
                 -webkit-animation: flash 2s linear 3s forwards;

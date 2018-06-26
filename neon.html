@@ -52,7 +52,7 @@
 		    	</div>
 		    </section>
 		</div>
-	    <footer class="footer-main c-section c-section_center c-section_dark c-section_alt4">
+	    <footer class="footer-main footer-main_minimal">
 	    	<div class="c-contain">
 	    		<div class="c-flex">
 	    			<div class="c-flex__item f-block f-block2">
@@ -66,77 +66,6 @@
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
-<!-- 
-	    <script type="text/javascript">
-	    	document.addEventListener("DOMContentLoaded", function() {
-
-			   var menuButton = document.querySelector('.js-menu-button');  
-			   var menuWrapper = document.querySelector('.js-mobile-menu');
-
-			    //debounce function - from underscores.js
-			    function debounce(func, wait, immediate) {
-			        var timeout;
-			        return function() {
-			            var context = this, args = arguments;
-			            var later = function() {
-			                timeout = null;
-			                if (!immediate) func.apply(context, args);
-			            };
-			            var callNow = immediate && !timeout;
-			            clearTimeout(timeout);
-			            timeout = setTimeout(later, wait);
-			            if (callNow) func.apply(context, args);
-			        };
-			    };
-
-			    //change menu button and menu based on click status
-			    function buttonToggle() {
-			        //toggle menu button active
-			        if (!menuButton.classList.contains('active')){
-			            menuButton.classList.add('active');
-			            menuButton.setAttribute('aria-expanded', 'true');
-			        } else {
-			            menuButton.classList.remove('active');
-			            menuButton.setAttribute('aria-expanded', 'false');
-			        }
-
-			        //toggle menu active
-			        if (!menuWrapper.classList.contains('active')){
-			            menuWrapper.classList.add('active');
-			        } else {
-			            menuWrapper.classList.remove('active');
-			        }  
-			    }
-
-			    function menuClickClose() {
-			    	menuButton.classList.remove('active');
-			        menuButton.setAttribute('aria-expanded', 'false');
-			    	menuWrapper.classList.remove('active');
-			    }
-			   
-			    //hide or show menu based on screen size and button status
-			    var menuWidthCheck = debounce(function() {
-			       if (window.matchMedia("(min-width: 992px)").matches) {
-			            if (menuButton.classList.contains('active')){
-			                 menuButton.classList.remove('active');
-			                 menuButton.setAttribute('aria-expanded', 'false');
-			            }
-			            if (menuWrapper.classList.contains('active')){
-			                menuWrapper.classList.remove('active');
-			            }
-			        
-			        }     
-			    }, 250);
-
-			    menuWidthCheck();
-
-			    menuButton.addEventListener('click', buttonToggle, false);
-			    menuWrapper.addEventListener('click', menuClickClose, false);
-			    window.addEventListener("resize", menuWidthCheck, false);
-			});
-	    </script> -->
-
 	    <script>
 	    jQuery(document).ready(function() {
 	        //check for javascript
