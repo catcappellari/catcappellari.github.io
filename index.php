@@ -49,11 +49,7 @@
 		    	</div>
 		    </header>
 		    <div id="main-content"></div> -->
-		    <?php
-
-			include('header.php');
-
-			?>
+		    <?php include 'header.php';?>
 		    <section class="c-section c-section_dark c-section_center box-intro" id="cat">
 		        <div class="c-contain c-contain_660">
 		        	<h1>Hello there!</h1>
