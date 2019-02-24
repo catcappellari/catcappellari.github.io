@@ -284,7 +284,8 @@
 	    		var copywrite = document.getElementById('copywrite');
 	    		var date = new Date().getFullYear();
 
-	    		copywrite.appendChild(date);
+	    		copywrite.innerHTML = date;
+	    		document.body.appendChild(copywrite);
 	    	}
 	    	updateDate();
 
