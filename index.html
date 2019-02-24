@@ -94,7 +94,7 @@
 					            <h4>UI/UX Design, Wordpress, HTML/CSS/jQuery</h4>
 					            <p>Embassy Church International is located in central NC. The church was looking for a way to have a digital presence to reach those interested in learning more about its work.</p>
 					            <ul class="c-buttons c-buttons_light">
-					            	<li><a href="http://embassychurchintl.org/" target="_blank">Live Embassy Site</a></li>
+					            	<li><a href="http://embassychurchintl.org/" target="_blank" rel="noopener">Live Embassy Site</a></li>
 					            </ul>
 					        </div>
 			    		</div>
@@ -105,7 +105,7 @@
 					            <p>This "site" was a redesign of an existing site that needed to have a better usability flow and a design update.</p>
 					            <ul class="c-buttons c-buttons_light">
 						            <li><a href="millergoodman-case-study.html">Case study</a></li>
-						            <li><a href="mg/index.html" target="_blank">Live site (GitHub)</a></li>
+						            <li><a href="mg/index.html" target="_blank" rel="noopener">Live site (GitHub)</a></li>
 						        </ul>
 					        </div>
 			    		</div>
@@ -116,7 +116,7 @@
 					            <p>This "app" was created to all designers for a certain company to create accounts and upload their work.</p>
 					            <ul class="c-buttons c-buttons_light">
 						            <li><a href="print-case-study.html">Case study</a></li>
-						            <li><a href="print/index_profile.html" target="_blank">Live site (GitHub)</a></li>
+						            <li><a href="print/index_profile.html" target="_blank" rel="noopener">Live site (GitHub)</a></li>
 						        </ul>
 					        </div>
 			    		</div>
@@ -125,7 +125,7 @@
 					            <h2>South Carolina Center for Fathers and Families</h2>
 					            <ul class="c-buttons c-buttons_light">
 						            <li><a href="fathers/fathers-case-study.html">Case study</a></li>
-						            <li><a href="fathers/index.html" target="_blank">Live site</a></li>
+						            <li><a href="fathers/index.html" target="_blank" rel="noopener">Live site</a></li>
 						        </ul>
 					        </div>
 			    		</div> -->
@@ -136,7 +136,7 @@
 					            <p>This "app" prototype was created to highlight different events at a museum.</p>
 					            <ul class="c-buttons c-buttons_light">
 						            <li><a href="onecolumbia-case-study.html">Case study</a></li>
-						            <li><a href="https://invis.io/585B395TM" target="_blank">InVision Demonstration</a></li>
+						            <li><a href="https://invis.io/585B395TM" target="_blank" rel="noopener">InVision Demonstration</a></li>
 						        </ul>
 					        </div>
 			    		</div>
@@ -189,13 +189,13 @@
 	    			</div>
 	    			<div class="c-flex__item f-block f-block3">
 	    				<ul class="social-media">
-			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
 			    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
-			    			<li><a href="https://github.com/catcappellari" target="_blank"><img src="images/icon-github.png" alt="GitHub"></a></li>
+			    			<li><a href="https://github.com/catcappellari" target="_blank" rel="noopener"><img src="images/icon-github.png" alt="GitHub"></a></li>
 			    		</ul>
 	    			</div>
 	    		</div>
-	    		<p><small>This site brought to you by Cat Cappellari. All rights reserved. <script>document.write(new Date().getFullYear())</script>.</small></p>
+	    		<p>This site brought to you by Cat Cappellari. All rights reserved <span id="copywrite"></span>.</p>
 	    	</div>
 	    </footer>
 
@@ -278,6 +278,14 @@
 	    jQuery(document).ready(function() {
 	        //check for javascript
 	        jQuery('body').addClass('js-active');
+
+	        //copywrite
+	    	function newDate() {
+	    		var copywrite = document.getElementById('copywrite');
+	    		var date = new Date().getFullYear();
+
+	    		copywrite.appendChild(date);
+	    	}
 
 	        //jump link smooth scroll
 	        jQuery('.js__jump').click(function() {
