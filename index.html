@@ -37,6 +37,7 @@
 			                	<span></span>
 			                	<span></span>
 			            		<span></span>
+			            		<span class="sr-only">Toggle menu</span>
 			            	</button>
 			                <ul id="mainmenu" class="mobile-menu js-mobile-menu">
 			                    <li><a href="#work">Work</a></li>
@@ -56,7 +57,7 @@
 		            <div class="text">
 		                <p>I'm Cat and I'm a web developer! I use HTML, CSS, and jQuery/JavaScript to create user-friendly, robust websites that are easy to interact with and maintain.</p>
 		            </div>
-		            <a href="#work" class="c-arrow-jump js__jump"></a>
+		            <a href="#work" class="c-arrow-jump js__jump"><span class="sr-only">Jump to website examples</span></a>
 		        </div>
 		    </section>
 		    <div class="top-svg">
@@ -68,19 +69,19 @@
 	    		<div class="presentation__wrapper presentation__wrapper_1">
 			    	<div class="presentation__slider presentation__slider_images">
 			    		<div class="presentation__slide slide1">
-			    			<img class="c-slide__image" src="images/embassy_presentation.png" alt="Presentation of Embassy Church website on different screen sizes">
+			    			<img class="c-slide__image lazyload" data-src="images/embassy_presentation.png" alt="Presentation of Embassy Church website on different screen sizes">
 			    		</div>
 			    		<div class="presentation__slide slide2">
-			    			<img class="c-slide__image" src="images/mg_presentation.png" alt="Miller &amp; Goodman Presentation">
+			    			<img class="c-slide__image lazyload" data-src="images/mg_presentation.png" alt="Miller &amp; Goodman Presentation">
 			    		</div>
 			    		<div class="presentation__slide slide3">
-			    			<img class="c-slide__image" src="images/print_presentation.png" alt="Presentation of PRINT on website different screen sizes">
+			    			<img class="c-slide__image lazyload" data-src="images/print_presentation.png" alt="Presentation of PRINT on website different screen sizes">
 			    		</div>
 			    		<!-- <div class="presentation__slide slide4">
-			    			<img class="c-slide__image" src="images/fathers_presentation.png" alt="Fathers Presentation">
+			    			<img class="c-slide__image lazyload" data-src="images/fathers_presentation.png" alt="Fathers Presentation">
 			    		</div> -->
 			    		<div class="presentation__slide slide5">
-			    			<img class="c-slide__image" src="images/one_col_presentation.png" alt="One Columbia Presentation">
+			    			<img class="c-slide__image lazyload" data-src="images/one_col_presentation.png" alt="One Columbia Presentation">
 			    		</div>
 	    			</div>
 	    			<div class="c-slick-dots presentation__dots"></div>
@@ -153,8 +154,7 @@
 				<div class="c-list">
 					<h4>When I'm coding websites I'm:</h4>
 					<ul>
-						<li>Using BEM-style CSS</li>
-						<li>Scheming about how to make workflows more efficient</li>
+						<li>Strategizing about using efficient CSS</li>
 						<li>Pondering ways in which to make my code more accessible</li>
 						<li>Tinkering around with something JavaScript-related in JSFiddle</li>
 						<li>Keeping a tab with Stack Overflow open at all times</li>
@@ -167,7 +167,6 @@
 						<li>Riding my bike on a trail of some sort</li>
 						<li>Running ... slowly</li>
 						<li>Reading something interesting or watching a documentary
-						<li>Browsing people's cute pet photos on Reddit</li>
 						<li>Plotting an adventure</li>
 						<li>Blissfully unaware that IE exists</li>
 					</ul>
@@ -203,6 +202,7 @@
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="js/lazysizes.min.js"></script>
 	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
 
 	    <script type="text/javascript">
