@@ -280,12 +280,13 @@
 	        jQuery('body').addClass('js-active');
 
 	        //copywrite
-	    	function newDate() {
+	    	function updateDate() {
 	    		var copywrite = document.getElementById('copywrite');
 	    		var date = new Date().getFullYear();
 
 	    		copywrite.appendChild(date);
-	    	}();
+	    	}
+	    	updateDate();
 
 	        //jump link smooth scroll
 	        jQuery('.js__jump').click(function() {
