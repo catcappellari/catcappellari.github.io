@@ -271,6 +271,13 @@
 			    menuButton.addEventListener('click', buttonToggle, false);
 			    menuWrapper.addEventListener('click', menuClickClose, false);
 			    window.addEventListener("resize", menuWidthCheck, false);
+
+			    //copywrite
+			    function updateDate() {
+		    		var date = new Date().getFullYear();
+		    		document.getElementById('copywrite').innerHTML = date;
+		    	}
+		    	updateDate();
 			});
 	    </script>
 
@@ -278,13 +285,6 @@
 	    jQuery(document).ready(function() {
 	        //check for javascript
 	        jQuery('body').addClass('js-active');
-
-	        //copywrite
-	    	function updateDate() {
-	    		var date = new Date().getFullYear();
-	    		document.getElementById('copywrite').innerHTML = date;
-	    	}
-	    	updateDate();
 
 	        //jump link smooth scroll
 	        jQuery('.js__jump').click(function() {
