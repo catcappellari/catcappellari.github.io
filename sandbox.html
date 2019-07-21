@@ -99,20 +99,15 @@
 	    			</div>
 	    			<div class="c-flex__item f-block f-block3">
 	    				<ul class="social-media">
-			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
 			    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
-			    			<li><a href="https://github.com/catcappellari" target="_blank"><img src="images/icon-github.png" alt="GitHub"></a></li>
+			    			<li><a href="https://github.com/catcappellari" target="_blank" rel="noopener"><img src="images/icon-github.png" alt="GitHub"></a></li>
 			    		</ul>
 	    			</div>
 	    		</div>
-	    		<p><small>This site brought to you by Cat Cappellari. All rights reserved. <script>document.write(new Date().getFullYear())</script>.</small></p>
+	    		<p>This site brought to you by Cat Cappellari. All rights reserved <span id="copywrite"></span>.</p>
 	    	</div>
 	    </footer>
-
-	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
 
 	    <script type="text/javascript">
 	    	document.addEventListener("DOMContentLoaded", function() {
@@ -180,6 +175,13 @@
 			    menuButton.addEventListener('click', buttonToggle, false);
 			    menuWrapper.addEventListener('click', menuClickClose, false);
 			    window.addEventListener("resize", menuWidthCheck, false);
+
+			    //copywrite
+			    function updateDate() {
+		    		var date = new Date().getFullYear();
+		    		document.getElementById('copywrite').innerHTML = date;
+		    	}
+		    	updateDate();
 			});
 	    </script>
 
@@ -195,28 +197,6 @@
 	            }, 500);
 	            return false;
 	        });
-
-	        //portfolio slider
-	        jQuery('.presentation__slider_images').slick({
-				infinite: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false,
-				dots: true,
-				appendDots: '.presentation__dots',
-				asNavFor: '.presentation__slider_text',
-				fade: true,
-	  			cssEase: 'linear'
-			});
-			jQuery('.presentation__slider_text').slick({
-				infinite: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: true,
-				appendArrows: '.presentation__arrows',
-				dots: false,
-				asNavFor: '.presentation__slider_images'
-			});
 	    });
 	    </script>
 	    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

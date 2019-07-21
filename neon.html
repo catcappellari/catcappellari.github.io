@@ -59,7 +59,7 @@
 	    				<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
 	    			</div>
 	    		</div>
-	    		<p><small>This site brought to you by Cat Cappellari. All rights reserved. <script>document.write(new Date().getFullYear())</script>.</small></p>
+	    		<p><small>This site brought to you by Cat Cappellari. All rights reserved. <span id="copywrite"></span>.</small></p>
 	    	</div>
 	    </footer>
 
@@ -82,6 +82,12 @@
 	            return false;
 	        });
 
+	        //copywrite
+		    function updateDate() {
+	    		var date = new Date().getFullYear();
+	    		document.getElementById('copywrite').innerHTML = date;
+	    	}
+	    	updateDate();
 	    });
 	    </script>
 	    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
