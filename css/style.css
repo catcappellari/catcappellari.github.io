@@ -1342,7 +1342,7 @@ img {
   text-shadow: 0px 0px 0.5em #000;
 }
 .box-trail {
-  background-image: url("../images/bg-bike.jpeg");
+  background-image: url("../images/bg-bike.jpg");
   background-color: #555;
 }
 .box-trail:after {
@@ -1382,6 +1382,9 @@ img {
 }
 .landing-bike-raleigh .footer-main .logo {
   max-width: 2rem;
+}
+.landing-bike-raleigh .c-leaflet.leaflet-container a.leaflet-popup-close-button {
+  background-color: #355e3b;
 }
 .landing-bike-raleigh .bike-map {
   height: calc(100vh - 150px);
