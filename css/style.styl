@@ -452,10 +452,14 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
-        justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    &_center {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    }
     &_top {
         -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1407,7 +1411,7 @@ img {
     text-shadow: 0px 0px .5em rgba(0, 0, 0, 1);
 }
 .box-trail {
-    background-image: url('../images/bg-bike.jp g');
+    background-image: url('../images/bg-bike.jpg');
     background-color: #555;
     &:after {
         background: rgba(0,0,0,0.5);
@@ -1449,7 +1453,7 @@ img {
 }
 .landing-bike-raleigh .bike-map {
     height: calc(100vh - 150px);
-    width: calc(100% - 2rem);
+    width: calc(100% - 3rem);
     margin: 0 auto;
 }
 .c-leaflet .leaflet-popup-content {
