@@ -33,7 +33,7 @@
 	                <p class="h3">Wanna go for a spin? Raleigh's full of bike-adventure potential! Here are some of your options: </p>
 	            </div>
 	            <div class="c-pad_top">
-	            	<a href="#pedal" class="c-arrow-jump js__jump"><span class="sr-only">Two-Wheeled Adventure Spots</span></a>
+	            	<a href="#pedal" class="c-arrow-jump"><span class="sr-only">Two-Wheeled Adventure Spots</span></a>
 	            </div>
 	        </div>
 	    </section>
@@ -64,26 +64,16 @@
 	    	</div>
 	    </footer>
 
-	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
   		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
 	    <script>
-	    jQuery(document).ready(function() {
-	        //check for javascript
-	        jQuery('body').addClass('js-active');
+	    document.addEventListener("DOMContentLoaded", function() {
+        	document.querySelector('body').classList.add('js-active');
+			var menuButton = document.querySelector('.js-menu-button');  
+			var menuWrapper = document.querySelector('.js-mobile-menu');
 
-	        //jump link smooth scroll
-	        jQuery('.js__jump').click(function() {
-	            jQuery('html, body').animate({
-	                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
-	            }, 500);
-	            return false;
-	        });
-
-
+			//map initialization
 	        var map = L.map('bike-map', {zoomControl: false}).setView([35.857791, -78.749762], 12);
 
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

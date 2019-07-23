@@ -13,18 +13,18 @@
 	    <meta name="theme-color" content="#3498db">
 	    
 	    <title>Cat Cappellari - Resume</title>
-	    <meta name="description" content="Portfolio of Raleigh Web Developer Cat Cappellari">
+	    <meta name="description" content="Resume - Cat Cappellari">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	      rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Gudea:400,400i,700|Palanquin+Dark&display=swap" rel="stylesheet">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css"/>
 	</head>
 
 	<body class="page-resume">
 		<div class="top" id="top">
-			<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
+			<a href="#main-content" class="focus-only js-focus-only">Skip to main content</a>
 		    <header class="header-main">
 		    	<div class="c-contain c-contain_1400">
 		    		<div class="h-block h-block1">
@@ -63,7 +63,6 @@
 						<li><p>Based in Raleigh, NC</p></li>
 						<li><p><a href="mailto:cat.cappellari@gmail.com">cat.cappellari@gmail.com</a></p></li>
 						<li><p><a href="catcappellari.github.io">catcappellari.github.io</a></p></li>
-						<li><p><a href="tel:336-407-2204">336-407-2204</a></p></li>
 					</ul>
 					<ul class="c-buttons">
 			            <li><a href="images/cappellari-resume.pdf" target="_blank">View as PDF</a></li>
@@ -272,7 +271,7 @@
 			    			<div class="rocket-holder">
 			    				<span class="rocket material-icons mi-white">send</span>
 			    			</div>
-			    			<a href="#top" class="rocket-button js__jump"><span>To the Top!</span></a>
+			    			<a href="#top" class="rocket-button"><span>To the Top!</span></a>
 			    		</div>
 	    			</div>
 	    			<div class="c-flex__item f-block f-block2">
@@ -280,9 +279,9 @@
 	    			</div>
 	    			<div class="c-flex__item f-block f-block3">
 	    				<ul class="social-media">
-			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
 			    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
-			    			<li><a href="https://github.com/catcappellari" target="_blank"><img src="images/icon-github.png" alt="GitHub"></a></li>
+			    			<li><a href="https://github.com/catcappellari" target="_blank" rel="noopener"><img src="images/icon-github.png" alt="GitHub"></a></li>
 			    		</ul>
 	    			</div>
 	    		</div>
@@ -290,14 +289,11 @@
 	    	</div>
 	    </footer>
 
-	    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
-
 	    <script>
 	    	document.addEventListener("DOMContentLoaded", function() {
-
-			   var menuButton = document.querySelector('.js-menu-button');  
-			   var menuWrapper = document.querySelector('.js-mobile-menu');
+	    		document.querySelector('body').classList.add('js-active');
+				var menuButton = document.querySelector('.js-menu-button');  
+				var menuWrapper = document.querySelector('.js-mobile-menu');
 
 			    //debounce function - from underscores.js
 			    function debounce(func, wait, immediate) {
@@ -369,29 +365,5 @@
 		    	updateDate();
 			});
 	    </script>
-
-	    <script>
-	    jQuery(document).ready(function() {
-	        //check for javascript
-	        jQuery('body').addClass('js-active');
-
-	        //jump link smooth scroll
-	        jQuery('.js__jump').click(function() {
-	            jQuery('html, body').animate({
-	                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
-	            }, 500);
-	            return false;
-	        });
-	    });
-	    </script>
-	    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-	    <script>
-	    WebFont.load({
-	        google: {
-	            families: ['Palanquin+Dark', 'Gudea:400,400i,700']
-	        }
-	    });
-	    </script>
-
 	</body>
 </html>
