@@ -17,9 +17,9 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	      rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&display=swap" rel="stylesheet">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css"/>
 	</head>
 
 	<body class="landing-neon">
@@ -63,41 +63,21 @@
 	    	</div>
 	    </footer>
 
-	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	    <script>
-	    jQuery(document).ready(function() {
-	        //check for javascript
-	        jQuery('body').addClass('js-active');
+	    <script type="text/javascript">
+	    	document.addEventListener("DOMContentLoaded", function() {
+				document.querySelector('body').classList.add('js-active');
 
-	        //neon active
-	        jQuery('.js-neon').addClass('is-active');
+		        //neon active
+		        document.querySelector('.js-neon').addClass('is-active');
 
-	        //jump link smooth scroll
-	        jQuery('.js__jump').click(function() {
-	            jQuery('html, body').animate({
-	                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
-	            }, 500);
-	            return false;
-	        });
 
-	        //copywrite
-		    function updateDate() {
-	    		var date = new Date().getFullYear();
-	    		document.getElementById('copywrite').innerHTML = date;
-	    	}
-	    	updateDate();
-	    });
+		        //copywrite
+			    function updateDate() {
+		    		var date = new Date().getFullYear();
+		    		document.getElementById('copywrite').innerHTML = date;
+		    	}
+		    	updateDate();
+	    	});
 	    </script>
-	    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-	    <script>
-	    WebFont.load({
-	        google: {
-	            families: ['Comfortaa:300,400,700']
-	        }
-	    });
-	    </script>
-
 	</body>
 </html>

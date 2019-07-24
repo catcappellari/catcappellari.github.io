@@ -143,13 +143,14 @@ img {
 .header-main .h-block {
   display: inline-block;
   vertical-align: middle;
-  width: 50%;
+  width: 45%;
   text-align: left;
   font-size: 1rem;
 }
 .header-main .h-block:nth-child(2) {
   text-align: right;
   z-index: 10;
+  width: 55%;
 }
 .header-main .logo {
   display: block;

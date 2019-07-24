@@ -208,9 +208,10 @@
 
 	    <script type="text/javascript">
 	    	document.addEventListener("DOMContentLoaded", function() {
+				document.querySelector('body').classList.add('js-active');
+				var menuButton = document.querySelector('.js-menu-button');  
+				var menuWrapper = document.querySelector('.js-mobile-menu');
 
-			   var menuButton = document.querySelector('.js-menu-button');  
-			   var menuWrapper = document.querySelector('.js-mobile-menu');
 
 			    //debounce function - from underscores.js
 			    function debounce(func, wait, immediate) {
@@ -284,17 +285,6 @@
 
 	    <script>
 	    jQuery(document).ready(function() {
-	        //check for javascript
-	        jQuery('body').addClass('js-active');
-
-	        //jump link smooth scroll
-	        jQuery('.js__jump').click(function() {
-	            jQuery('html, body').animate({
-	                scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
-	            }, 500);
-	            return false;
-	        });
-
 	        //portfolio slider
 	        jQuery('.presentation__slider_images').slick({
 				infinite: true,
