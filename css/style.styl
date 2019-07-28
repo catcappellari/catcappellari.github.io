@@ -13,6 +13,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Gudea', sans-serif;
     font-size: 1.125rem;
+    box-sizing: border-box;
+}
+body * {
+    box-sizing: inherit;
 }
 h1,
 h2,
@@ -574,6 +578,10 @@ img {
 }
 .u-color-alt3 {
     color: #1f3a93;
+}
+.u-color-light,
+.u-color-light * {
+    color: #fff;
 }
 .hr-tall {
     height: 4px;
@@ -1419,6 +1427,14 @@ img {
 .u-text-shadow {
     text-shadow: 0px 0px .5em rgba(0, 0, 0, 1);
 }
+.footer-main_simple {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    .logo {
+        max-width: 2rem;
+    }
+}
 .box-trail {
     background-image: url('../images/bg-bike.jpg');
     background-color: #555;
@@ -1447,14 +1463,6 @@ img {
     .c-leaflet__popupheadline {
         font-family: 'Open Sans', Tahoma, Verdana, Segoe, sans-serif;
         font-weight: 600;
-    }
-    .footer-main {
-        text-align: center;
-        color: #fff;
-        background-color: #355e3b;
-        .logo {
-            max-width: 2rem;
-        }
     }
     .c-leaflet.leaflet-container a.leaflet-popup-close-button {
         background-color: #355e3b;
@@ -1509,5 +1517,95 @@ img {
 @media screen and (min-width: 768px) {
     .u-font-size-84 {
         font-size: 5.25rem;
+    }
+}
+
+/* intersection */
+.box-intersection-hero {
+    background-color: #000;
+    height: 100vh;
+    border-right: 12px dashed yellow;
+}
+.intersection-hero__cell {
+    padding-left: 2rem;
+}
+.intersection-hero__title {
+    color: #000;
+    max-width: 440px;
+    position: relative;
+    width: calc(100% - 24px);
+}
+.intersection-hero__title h1 {
+    padding: 0;
+    position: relative;
+    z-index: 5;
+}
+.intersection-hero__title:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFEB3B;
+    transform: skew(-4deg, 0);
+}
+.box-intersection {
+    background-color: #1B5E20;
+    position: relative;
+    height: 100vh;
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        width: 16vh;
+        left: calc(50% - 8vh);
+        background-color: #000;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 16vh;
+        top: calc(50% - 8vh);
+        background-color: #000;
+    }
+}
+[class*="intersection__car"] {
+    font-size: 4.5vh;
+    position: absolute;
+    z-index: 5;
+    transition: all 4s linear;
+}
+.intersection__car_1 {
+    color: #9b59b6;
+    left: calc(50% - 6.25vh);
+    &.is-rolling {
+        transform: translateY(calc(100vh - 100%));
+    }
+}
+.intersection__car_2 {
+    color: #bdc3c7;
+    top: calc(50% - 6.25vh);
+    right: 0;
+    &.is-rolling {
+        transform: translateX(calc(-100vw + 200%));
+    }
+}
+.intersection__car_3 {
+    color: #e67e22;
+    bottom: 0;
+    right: calc(50% - 6.25vh);
+    &.is-rolling {
+        transform: translateY(calc(-100vh + 100%));
+    }
+}
+.intersection__car_4 {
+    color: #3498db;
+    bottom: calc(50% - 6.25vh);
+    &.is-rolling {
+        transform: translateX(calc(100vw - 200%));
     }
 }
