@@ -350,7 +350,7 @@ img {
 }
 .c-slide__image {
   display: block;
-  margin: 0 auto;
+  margin: 1.25rem auto;
 }
 .c-buttons {
   box-sizing: border-box;
