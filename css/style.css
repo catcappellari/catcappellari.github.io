@@ -1003,6 +1003,9 @@ img {
   .box-resume .mainbar h2 {
     text-align: left;
   }
+  .c-slick-dots .slick-dots {
+    padding: 1rem 1rem 3.5rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .index .top {

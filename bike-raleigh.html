@@ -74,7 +74,10 @@
 			var menuWrapper = document.querySelector('.js-mobile-menu');
 
 			//map initialization
-	        var map = L.map('bike-map', {zoomControl: false}).setView([35.857791, -78.749762], 12);
+	        var map = L.map('bike-map', {
+	        	zoomControl: false,
+	        	scrollWheelZoom: false
+	        }).setView([35.857791, -78.749762], 12);
 
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
