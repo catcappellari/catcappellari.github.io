@@ -10,7 +10,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 		<link rel="manifest" href="images/favicon/manifest.json">
 		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	    <meta name="theme-color" content="#217cb8">
+	    <meta name="theme-color" content="#3498db">
 
 	    <title>Sandbox</title>
 	    <meta name="description" content="Portfolio of Raleigh Web Developer Cat Cappellari">
@@ -23,12 +23,14 @@
 	</head>
 
 	<body class="index">
-		<div class="top" id="top">
-			<a href="#main-content" class="focus-only js-focus-only">Skip to main content</a>
+		<div class="top" id="top" tabindex="-1">
+			<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
 		    <header class="header-main header-index">
 		    	<div class="c-contain c-contain_1400">
 		    		<div class="h-block h-block1">
-			            <a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+			            <a href="index.html" class="logo">
+			            	<img src="images/logo2.svg" alt="Logo - Cat Cappellari">
+			            </a>
 			        </div>
 			        <div class="h-block h-block2">
 			        	<a href="mailto:cat.cappellari@gmail.com" class="email material-icons mi-white">email</a>
@@ -49,50 +51,69 @@
 			        </div>
 		    	</div>
 		    </header>
-		    <div id="main-content"></div>
 		</div>
-		<section class="c-section c-section_alt2 c-section_dark c-section_center box-intro">
-	        <div class="c-contain c-contain_660">
-	        	<h1>Sandbox</h1>
-	            <div class="text">
-	                <p>This is the spot where I put all my weird ideas and projects. Enjoy!</p>
-	            </div>
-	            <a href="#weird" class="c-arrow-jump js__jump"><span class="sr-only">Weird Projects</span></a>
-	        </div>
-	    </section>
-	    <section class="c-section c-section_center box-stuff" id="weird">
-	    	<div class="c-contain c-contain_1400">
-	    		<div class="c-flex">
-	    			<div class="c-flex__item c-flex__item-auto c-pad">
-	    				<a href="/bike-raleigh" class="c-tile">
-	    					<span class="c-tile__img">
-	    						<img class="lazyload" data-src="/images/sandbox-bikeraleigh.jpg" alt="Image of a trail with a map beneath">
-	    					</span>
-	    					<h2 class="c-tile__headline">Raleigh Trail Map</h2>
-	    					<p class="c-tile__text">Wanna go for a spin? Raleigh's full of bike-adventure potential! Check out this interactive map of local trails.</p>
-	    				</a>
-	    			</div>
-	    			<div class="c-flex__item c-flex__item-auto c-pad">
-	    				<a href="/neon" class="c-tile">
-	    					<span class="c-tile__img">
-	    						<img class="lazyload" data-src="/images/sandbox-neon.jpg" alt="The word 'wanderlust' positioned over a crosswalk at night" >
-	    					</span>
-	    					<h2 class="c-tile__headline">Flickering Magenta Neon Sign</h2>
-	    					<p class="c-tile__text">A 'neon' (ok ok, CSS) sign flickers above the backdrop of a crosswalk at night. Where will your feet take you?</p>
-	    				</a>
-	    			</div>
-	    			<div class="c-flex__item c-flex__item-auto c-pad">
-	    				<a href="/fcc/quote_machine/index.html" class="c-tile">
-	    					<span class="c-tile__img">
-	    						<img class="lazyload" data-src="/images/sandbox-bobross2.png" alt="Bob Ross Random Quote Machine">
-	    					</span>
-	    					<h2 class="c-tile__headline">Bob Ross Random Quote Machine</h2>
-	    					<p class="c-tile__text">Having a bad day? Get an uplifting Bob Ross quote at the click of a button!</p>
-	    				</a>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </section>
+		<main id="main-content" tabindex="-1">
+			<section class="c-section c-section_alt2 c-section_dark c-section_center box-intro">
+		        <div class="c-contain c-contain_660">
+		        	<h1>Sandbox</h1>
+		            <div class="text">
+		                <p>This is the spot where I put all my weird ideas and projects. Enjoy!</p>
+		            </div>
+		            <a href="#weird" class="c-arrow-jump js__jump"><span class="sr-only">Weird Projects</span></a>
+		        </div>
+		    </section>
+		    <section class="c-section c-section_center box-stuff" id="weird" tabindex="-1">
+		    	<div class="c-contain c-contain_1400">
+		    		<div class="c-flex">
+		    			<div class="c-flex__item c-flex__item-auto c-pad">
+		    				<a href="/season" class="c-tile">
+		    					<span class="c-tile__img">
+		    						<img class="lazyload" data-src="/images/sandbox-seasons.jpg" alt="Graphic of tree with green leaves on blue background">
+		    					</span>
+		    					<h2 class="c-tile__headline">Season Selector</h2>
+		    					<p class="c-tile__text">A React-built season and time selector that provides visual changes based on your selections.</p>
+		    				</a>
+		    			</div>
+		    			<div class="c-flex__item c-flex__item-auto c-pad">
+		    				<a href="/bike-raleigh" class="c-tile">
+		    					<span class="c-tile__img">
+		    						<img class="lazyload" data-src="/images/sandbox-bikeraleigh.jpg" alt="Wooded trail with a map beneath">
+		    					</span>
+		    					<h2 class="c-tile__headline">Raleigh Trail Map</h2>
+		    					<p class="c-tile__text">Wanna go for a spin? Raleigh's full of bike-adventure potential! Check out this interactive map of local trails built using Leaflet!</p>
+		    				</a>
+		    			</div>
+		    			<div class="c-flex__item c-flex__item-auto c-pad">
+		    				<a href="/intersection" class="c-tile">
+		    					<span class="c-tile__img">
+		    						<img class="lazyload" data-src="/images/sandbox-traffic.jpg" alt="Simplistic graphic of 4 cars on a road with an intersection" >
+		    					</span>
+		    					<h2 class="c-tile__headline">Intersection Observer Intersection</h2>
+		    					<p class="c-tile__text">Four cars move towards each other. They start at different times based on intersection observer.</p>
+		    				</a>
+		    			</div>
+		    			<div class="c-flex__item c-flex__item-auto c-pad">
+		    				<a href="/neon" class="c-tile">
+		    					<span class="c-tile__img">
+		    						<img class="lazyload" data-src="/images/sandbox-neon.jpg" alt="The word 'wanderlust' positioned over a crosswalk at night" >
+		    					</span>
+		    					<h2 class="c-tile__headline">Flickering Magenta Neon Sign</h2>
+		    					<p class="c-tile__text">A 'neon' (ok ok, CSS) sign flickers above the backdrop of a crosswalk at night. Where will your feet take you?</p>
+		    				</a>
+		    			</div>
+		    			<div class="c-flex__item c-flex__item-auto c-pad">
+		    				<a href="/fcc/quote_machine/index.html" class="c-tile">
+		    					<span class="c-tile__img">
+		    						<img class="lazyload" data-src="/images/sandbox-bobross2.png" alt="Bob Ross Random Quote Machine">
+		    					</span>
+		    					<h2 class="c-tile__headline">Bob Ross Random Quote Machine</h2>
+		    					<p class="c-tile__text">Having a bad day? Get an uplifting Bob Ross quote at the click of a button!</p>
+		    				</a>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </section>
+		</main>
 	    <footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
 	    	<div class="c-contain">
 	    		<div class="c-flex c-flex_center">
@@ -105,13 +126,27 @@
 			    		</div>
 	    			</div>
 	    			<div class="c-flex__item f-block f-block2">
-	    				<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+	    				<a href="index.html" class="logo">
+	    					<img src="images/logo2.svg" alt="Logo - Cat Cappellari">
+	    				</a>
 	    			</div>
 	    			<div class="c-flex__item f-block f-block3">
 	    				<ul class="social-media">
-			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
-			    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
-			    			<li><a href="https://github.com/catcappellari" target="_blank" rel="noopener"><img src="images/icon-github.png" alt="GitHub"></a></li>
+			    			<li>
+			    				<a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener">
+			    					<img src="images/icon-linkedin.png" alt="LinkedIn"/>
+			    				</a>
+			    			</li>
+			    			<li>
+			    				<a href="mailto:cat.cappellari@gmail.com">
+			    					<img src="images/icon-email.svg" alt="Email"/>
+			    				</a>
+			    			</li>
+			    			<li>
+			    				<a href="https://github.com/catcappellari" target="_blank" rel="noopener">
+			    					<img src="images/icon-github.png" alt="GitHub"/>
+			    				</a>
+			    			</li>
 			    		</ul>
 	    			</div>
 	    		</div>

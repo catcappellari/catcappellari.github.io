@@ -149,12 +149,7 @@
 	    	</div>
 	    </footer>
 
-	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 	    <script type="text/javascript" src="js/lazysizes.min.js"></script>
-	    <script type="text/javascript" src="js/slick-slider.min.js"></script>
-
 	    <script type="text/javascript">
 	    	document.addEventListener("DOMContentLoaded", function() {
 				document.querySelector('body').classList.add('js-active');
@@ -230,32 +225,6 @@
 		    	}
 		    	updateDate();
 			});
-	    </script>
-
-	    <script>
-	    jQuery(document).ready(function() {
-	        //portfolio slider
-	        jQuery('.presentation__slider_images').slick({
-				infinite: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false,
-				dots: true,
-				appendDots: '.presentation__dots',
-				asNavFor: '.presentation__slider_text',
-				fade: true,
-	  			cssEase: 'linear'
-			});
-			jQuery('.presentation__slider_text').slick({
-				infinite: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: true,
-				appendArrows: '.presentation__arrows',
-				dots: false,
-				asNavFor: '.presentation__slider_images'
-			});
-	    });
 	    </script>
 	</body>
 </html>
