@@ -664,31 +664,16 @@ img {
 }
 .presentation {
     position: relative;
-    &__slider {
-        &_images {
-            z-index: 10;
-            margin: 0 auto;
-            box-sizing: border-box;
-            padding: 3rem 1rem 0;
-        }
-        &_text {
-            color: #fff;
-            z-index: 20;
-        }
-    } 
-    &__arrows {
-        z-index: 15;
-        height: 40px;
-        position: relative;
-        max-width: 120px;
-        margin: 0 auto;
-        margin-top: 1.5rem;
-    }
     &__wrapper {
         position: relative;
+        z-index: 5;
         box-sizing: border-box;
     }
+    &__wrapper_1 {
+        padding: 2rem 1rem;
+    }
     &__wrapper_2 {
+        min-height: 15rem;
         background-color: #1f3a93;
         padding: 1.5rem 1rem 2rem;
         position: relative;

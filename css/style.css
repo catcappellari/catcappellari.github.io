@@ -646,29 +646,16 @@ img {
 .presentation {
   position: relative;
 }
-.presentation__slider_images {
-  z-index: 10;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 3rem 1rem 0;
-}
-.presentation__slider_text {
-  color: #fff;
-  z-index: 20;
-}
-.presentation__arrows {
-  z-index: 15;
-  height: 40px;
-  position: relative;
-  max-width: 120px;
-  margin: 0 auto;
-  margin-top: 1.5rem;
-}
 .presentation__wrapper {
   position: relative;
+  z-index: 5;
   box-sizing: border-box;
 }
+.presentation__wrapper_1 {
+  padding: 2rem 1rem;
+}
 .presentation__wrapper_2 {
+  min-height: 15rem;
   background-color: #1f3a93;
   padding: 1.5rem 1rem 2rem;
   position: relative;
