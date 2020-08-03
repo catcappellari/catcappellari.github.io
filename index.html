@@ -10,7 +10,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 		<link rel="manifest" href="images/favicon/manifest.json">
 		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	    <meta name="theme-color" content="#3498db">
+	    <meta name="theme-color" content="#217cb8">
 
 	    <title>Cat Cappellari - Portfolio</title>
 	    <meta name="description" content="Portfolio of Raleigh Web Developer Cat Cappellari">
@@ -24,7 +24,8 @@
 	</head>
 
 	<body class="index">
-		<div class="top" id="top">
+		<div class="top" id="top" tabindex="-1">
+			<a href="#cat" class="focus-only js-focus-only js__jump">Skip to intro content</a>
 			<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
 		    <header class="header-main header-index">
 		    	<div class="c-contain c-contain_1400">
@@ -50,11 +51,9 @@
 			        </div>
 		    	</div>
 		    </header>
-		    <div id="main-content"></div>
-
-		    <section class="c-section c-section_dark c-section_center box-intro" id="cat">
+		    <section class="c-section c-section_dark c-section_center box-intro" id="cat" tabindex="-1">
 		        <div class="c-contain c-contain_660">
-		        	<h1>Hello there!</h1>
+		        	<h1>Oh Hey!</h1>
 		            <div class="text">
 		                <p>I'm Cat and I'm a web developer! I use HTML, CSS, and jQuery/JavaScript to create user-friendly, robust websites that are easy to interact with and maintain.</p>
 		            </div>
@@ -65,100 +64,46 @@
 	        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 0.25" preserveAspectRatio="none" class="top-svg-image" fill="#ffffff"><path d="M0 0l200 0.25H0z"/></svg>
 	        </div>
 		</div>
-	    <section class="c-section c-section_center c-section_nopad box-presentation" id="work">
-	    	<div class="c-contain c-contain_1400">
-	    		<div class="presentation__wrapper presentation__wrapper_1">
-			    	<div class="presentation__slider presentation__slider_images">
-			    		<div class="presentation__slide slide1">
-			    			<img class="c-slide__image lazyload" data-src="images/presentation-seasons.png" alt="Presentation of season selector on different screen sizes">
-			    		</div>
-			    		<div class="presentation__slide slide2">
-			    			<img class="c-slide__image lazyload" data-src="images/presentation-raleigh-bike.png" alt="Presentation of Raleigh Bike Map on different screen sizes">
-			    		</div>
-			    		<div class="presentation__slide slide3">
-			    			<img class="c-slide__image lazyload" data-src="images/presentation-neon.png" alt="Presentation of flickering pink neon sign on different screen sizes">
-			    		</div>
-			    		<div class="presentation__slide slide4">
-			    			<img class="c-slide__image lazyload" data-src="images/presentation-intersection.png" alt="Presentation of colorful cars at in intersection on website different screen sizes">
-			    		</div>
-	    			</div>
-	    			<div class="c-slick-dots presentation__dots"></div>
-	    		</div>
-	    		<div class="presentation__wrapper presentation__wrapper_2">
-	    			<div class="presentation__slider presentation__slider_text">
-	    				<div class="presentation__slide c-slide1">
-			    			<div class="c-slide__text">
-					            <h2>Season Selector</h2>
-					            <p><strong>React</strong></p>
-					            <p>A React-built season and time selector that provides visual changes based on your selections.</p>
-					            <ul class="c-buttons c-buttons_light">
-					            	<li><a href="/season">See Season Changer</a></li>
-					            </ul>
-					        </div>
-			    		</div>
-			    		<div class="presentation__slide c-slide2">
-			    			<div class="c-slide__text">
-					            <h2>Raleigh Bike Map</h2>
-					            <p><strong>Leaflet/JS</strong></p>
-					            <p>Markers for a few popular cycling locations in the Triangle Area.</p>
-					            <ul class="c-buttons c-buttons_light">
-					            	<li><a href="/bike-raleigh">See Bike Map</a></li>
-					            </ul>
-					        </div>
-			    		</div>
-			    		<div class="presentation__slide c-slide3">
-			    			<div class="c-slide__text">
-					            <h2>Neon Sign</h2>
-					            <p><strong>CSS Animations</strong></p>
-					            <p>CSS can do all kinds of fun things. For example, make some HTML flicker like a neon sign.</p>
-					            <ul class="c-buttons c-buttons_light">
-						            <li><a href="/neon">Check Out The Sign</a></li>
-						        </ul>
-					        </div>
-			    		</div>
-			    		<div class="presentation__slide c-slide4">
-			    			<div class="c-slide__text">
-					            <h2>Intersection</h2>
-					            <p><strong>JS</strong></p>
-					            <p>Four cars move towards each other. They start at different times based on intersection observer.</p>
-					            <ul class="c-buttons c-buttons_light">
-						            <li><a href="/intersection">Travel On Over</a></li>
-						        </ul>
-					        </div>
-			    		</div>
-				    </div>
-				    <div class="presentation__arrows"></div>
-	    		</div>
-	    	</div>
-	    </section>
-	    <section class="c-section c-section_center c-section_dark c-section_alt2 box-about" id="about">
-	    	<div class="about-svg">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 0.25" preserveAspectRatio="none" class="about-svg-image" fill="#3498db"><path d="M200 0l0 0.25H0z"/></svg>
-			</div>
-	        <div class="c-contain">
-	        	<h2>About</h2>
-				<div class="c-list">
-					<h4>When I'm coding websites I'm:</h4>
-					<ul>
-						<li>Strategizing about using efficient CSS</li>
-						<li>Pondering ways in which to make my code more accessible</li>
-						<li>Tinkering around with something JavaScript-related in JSFiddle</li>
-						<li>Keeping a tab with Stack Overflow open at all times</li>
-						<li>Enjoying some sweet tunes</li>
-					</ul>
+		<main id="main-content" tabindex="-1">
+			<section class="c-section c-section_center c-section_nopad box-presentation" id="work" tabindex="-1">
+		    	<div class="c-contain c-contain_1400">
+		    		<div class="presentation__wrapper presentation__wrapper_1">
+		    			<img class="c-slide__image lazyload" data-src="images/projects.png" alt="Presentation of various projects">
+		    		</div>
+		    		<div class="presentation__wrapper presentation__wrapper_2">
+		    			<h2>Sandbox</h2>
+		    		</div>
+		    	</div>
+		    </section>
+		    <section class="c-section c-section_center c-section_dark c-section_alt2 box-about" id="about" tabindex="-1">
+		    	<div class="about-svg">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 0.25" preserveAspectRatio="none" class="about-svg-image" fill="#217cb8"><path d="M200 0l0 0.25H0z"/></svg>
 				</div>
-				<div class="c-list">
-					<h4>When I'm not coding websites I'm:</h4>
-					<ul>
-						<li>Riding my bike on a trail of some sort</li>
-						<li>Running ... slowly</li>
-						<li>Reading something interesting or watching a documentary
-						<li>Plotting an adventure</li>
-						<li>Blissfully unaware that IE exists</li>
-					</ul>
-				</div>
-	        </div>
-	    </section>
+		        <div class="c-contain">
+		        	<h2>About</h2>
+					<div class="c-list">
+						<h4>When I'm coding websites I'm:</h4>
+						<ul>
+							<li>Strategizing about using efficient CSS</li>
+							<li>Pondering ways in which to make my code more accessible</li>
+							<li>Tinkering around with something JavaScript-related in JSFiddle</li>
+							<li>Keeping a tab with Stack Overflow open at all times</li>
+							<li>Enjoying some sweet tunes</li>
+						</ul>
+					</div>
+					<div class="c-list">
+						<h4>When I'm not coding websites I'm:</h4>
+						<ul>
+							<li>Riding my bike on a trail of some sort</li>
+							<li>Running ... slowly</li>
+							<li>Reading something interesting or watching a documentary
+							<li>Plotting an adventure</li>
+							<li>Blissfully unaware that IE exists</li>
+						</ul>
+					</div>
+		        </div>
+		    </section>
+		</main>
 	    <footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
 	    	<div class="c-contain">
 	    		<div class="c-flex c-flex_center">
@@ -175,9 +120,21 @@
 	    			</div>
 	    			<div class="c-flex__item f-block f-block3">
 	    				<ul class="social-media">
-			    			<li><a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
-			    			<li><a href="mailto:cat.cappellari@gmail.com"><img src="images/icon-email.svg" alt="Email"></a></li>
-			    			<li><a href="https://github.com/catcappellari" target="_blank" rel="noopener"><img src="images/icon-github.png" alt="GitHub"></a></li>
+			    			<li>
+			    				<a href="https://www.linkedin.com/in/cat-cappellari-40314b10b/" target="_blank" rel="noopener">
+			    					<img src="images/icon-linkedin.png" alt="LinkedIn"/>
+			    				</a>
+			    			</li>
+			    			<li>
+			    				<a href="mailto:cat.cappellari@gmail.com">
+			    					<img src="images/icon-email.svg" alt="Email"/>
+			    				</a>
+			    			</li>
+			    			<li>
+			    				<a href="https://github.com/catcappellari" target="_blank" rel="noopener">
+			    					<img src="images/icon-github.png" alt="GitHub"/>
+			    				</a>
+			    			</li>
 			    		</ul>
 	    			</div>
 	    		</div>
