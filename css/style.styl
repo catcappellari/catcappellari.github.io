@@ -95,6 +95,9 @@ img {
     clip: rect(0,0,0,0);
     border: 0;
 }
+[tabindex="-1"]:focus {
+    outline: 0;
+}
 .c-arrow-jump {
     display: block;
     box-sizing: border-box;
@@ -535,13 +538,18 @@ img {
 }
 .c-tile {
     display: block;
+    height: 100%;
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 1.25rem 0.75rem;
     box-shadow: 0 .5rem .75rem 0 rgba(85,85,85,.5);
+    transition: box-shadow .33s ease-out;
     text-decoration: none;
+    &:hover {
+        box-shadow: 0 .5rem .75rem 0 rgba(85,85,85,.75);
+    }
     &__img {
         display: block;
         box-sizing: border-box;
@@ -627,41 +635,6 @@ img {
     font-size: 1.5rem;
     padding-top: 0.75rem;
 }
-.box-presentation {
-    .slick-arrow {
-        border: none;
-        background: none;
-        font-size: 0;
-        content: "";
-        position: absolute;
-        top: 0;
-        display: block;
-        width: 40px;
-        height: 40px;
-        margin: 0;
-        background-size: 80px auto;
-        background-repeat: no-repeat;
-        background-image: url('../images/arrow-down-white.svg');
-        background-position: center;
-        padding: 0;
-        opacity: 1;
-        transition: opacity 0.33s linear;
-        cursor: pointer;
-        &:hover {
-            opacity: 0.5;
-        }
-    }
-    .slick-prev {
-        left: 0;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-    .slick-next {
-        right: 0;
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
-}
 .presentation {
     position: relative;
     &__wrapper {
@@ -671,6 +644,11 @@ img {
     }
     &__wrapper_1 {
         padding: 2rem 1rem;
+        img {
+            display: block;
+            max-width: 80%;
+            margin: 0 auto;
+        }
     }
     &__wrapper_2 {
         min-height: 15rem;
