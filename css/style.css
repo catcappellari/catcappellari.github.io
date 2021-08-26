@@ -591,6 +591,16 @@ img {
   margin: 0;
   padding: 0;
 }
+.u-my-2 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.u-mt-2 {
+  margin-top: 1.25rem;
+}
+.u-mb-2 {
+  margin-bottom: 1.25rem;
+}
 
 /* material icon colors */
 .material-icons .mi-white {
@@ -965,6 +975,16 @@ img {
   }
   .c-card__ul {
     padding: 0.5rem 0.75rem;
+  }
+  .u-my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .u-mt-2 {
+    margin-top: 2rem;
+  }
+  .u-mb-2 {
+    margin-bottom: 2rem;
   }
   .box-intro h1 {
     font-size: 3.074rem;
