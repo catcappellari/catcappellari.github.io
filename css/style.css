@@ -591,6 +591,9 @@ img {
   margin: 0;
   padding: 0;
 }
+.u-text-center {
+  text-align: center;
+}
 .u-my-2 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -600,6 +603,12 @@ img {
 }
 .u-mb-2 {
   margin-bottom: 1.25rem;
+}
+.u-p-0 {
+  padding: 0;
+}
+.u-p-1 {
+  padding: 1rem;
 }
 
 /* material icon colors */
