@@ -61,6 +61,7 @@ small {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 /*[Reusable Styles]*/
 .clearfix:after {
@@ -294,20 +295,16 @@ img {
   content: "";
   background: rgba(0,0,0,0.45);
 }
-.c-section_alt1,
-.u-bg-alt1 {
+.c-section_alt1 {
   background-color: #efefef;
 }
-.c-section_alt2,
-.u-bg-alt2 {
+.c-section_alt2 {
   background-color: #217cb8;
 }
-.c-section_alt3,
-.u-bg-alt3 {
+.c-section_alt3 {
   background-color: #1f3a93;
 }
-.c-section_alt4,
-.u-bg-alt4 {
+.c-section_alt4 {
   background-color: #000;
 }
 .c-section_wide {
@@ -586,20 +583,20 @@ img {
 .hr-tall {
   height: 4px;
 }
-.u-unlist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .u-text-center {
   text-align: center;
+}
+.u-list {
+  margin: 0;
+  text-align: left;
+  padding: 0.5rem 0 0 2rem;
+}
+.u-list li {
+  padding-bottom: 0.5em;
 }
 .u-my-2 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-.u-mt-2 {
-  margin-top: 1.25rem;
 }
 .u-mb-2 {
   margin-bottom: 1.25rem;
@@ -610,7 +607,6 @@ img {
 .u-p-1 {
   padding: 1rem;
 }
-
 /* material icon colors */
 .material-icons .mi-white {
   color: #fff;
@@ -985,16 +981,6 @@ img {
   .c-card__ul {
     padding: 0.5rem 0.75rem;
   }
-  .u-my-2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  .u-mt-2 {
-    margin-top: 2rem;
-  }
-  .u-mb-2 {
-    margin-bottom: 2rem;
-  }
   .box-intro h1 {
     font-size: 3.074rem;
   }
@@ -1013,6 +999,13 @@ img {
   }
   .c-slick-dots .slick-dots {
     padding: 1rem 1rem 3.5rem;
+  }
+  .u-my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .u-mb-2 {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
