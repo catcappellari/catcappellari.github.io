@@ -610,14 +610,18 @@ img {
 .u-p-1 {
   padding: 1rem;
 }
-.u-py-2 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
 .u-px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.u-py-2 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.u-pt-2 {
+  padding-top: 1.25rem;
+}
+
 /* material icon colors */
 .material-icons .mi-white {
   color: #fff;
@@ -1024,6 +1028,9 @@ img {
   .u-py-2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .u-pt-2 {
+    padding-top: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
