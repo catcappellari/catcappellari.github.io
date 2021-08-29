@@ -36,6 +36,12 @@ a {
   line-height: 1.2;
   font-weight: 400;
 }
+a img {
+  transition: opacity 0.33s ease-out;
+}
+a:hover img {
+  opacity: 0.66;
+}
 h1,
 .h1 {
   font-size: 2.074rem;
@@ -487,6 +493,9 @@ img {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
+}
+.c-flex__item img {
+  align-self: center;
 }
 .c-card h2 {
   color: #217cb8;
@@ -1109,6 +1118,9 @@ img {
     color: #fff;
     border-bottom-color: #217cb8;
     background: transparent;
+  }
+  .c-flex__item-lg-6 {
+    width: 50%;
   }
   .box-presentation .c-contain_1400 {
     font-size: 0;
