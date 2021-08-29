@@ -587,6 +587,7 @@ img {
   color: #1f3a93;
   text-decoration: underline;
   font-weight: bold;
+  transition: color 0.33s ease-out;
 }
 .u-text-deco:hover {
   color: #217cb8;
