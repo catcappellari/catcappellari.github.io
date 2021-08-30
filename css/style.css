@@ -40,7 +40,7 @@ a img {
   transition: opacity 0.33s ease-out;
 }
 a:hover img {
-  opacity: 0.66;
+  opacity: 0.75;
 }
 h1,
 .h1 {
