@@ -329,8 +329,14 @@ img {
   position: relative;
   z-index: 5;
 }
+.c-contain_450 {
+  max-width: 450px;
+}
 .c-contain_660 {
   max-width: 660px;
+}
+.c-contain_800 {
+  max-width: 800px;
 }
 .c-contain_1200 {
   max-width: 1200px;
