@@ -654,6 +654,12 @@ img {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.u-pt-3 {
+  padding-top: 1.25rem;
+}
+.u-pb-3 {
+  padding-bottom: 1.25rem;
+}
 [class*="c-iframe-sizer"] {
   position: relative;
 }
@@ -1079,6 +1085,12 @@ img {
   }
   .u-py-3 {
     padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .u-pt-3 {
+    padding-top: 3rem;
+  }
+  .u-pb-3 {
     padding-bottom: 3rem;
   }
 }
