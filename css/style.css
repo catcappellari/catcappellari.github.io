@@ -650,6 +650,9 @@ img {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.u-p-2 {
+  padding: 1.25rem;
+}
 .u-py-3 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1092,6 +1095,9 @@ img {
   }
   .u-pb-3 {
     padding-bottom: 3rem;
+  }
+  .u-p-2 {
+    padding: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
