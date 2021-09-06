@@ -1646,19 +1646,20 @@ img {
   transform: translateX(calc(100vw - 200%));
 }
 .box-ux-hotel {
-  background-imagel: url("../../images/ux/deco.png");
+  background-image: url("../../images/ux/deco.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-color: #555;
-  padding-bottom: calc(50%);
+  padding-bottom: calc(50% + 1.5rem);
 }
 @media screen and (min-width: 768px) {
   .box-ux-hotel {
-    background-imagel: url("../../images/ux/deco-vert.png");
+    background-image: url("../../images/ux/deco-vert.png");
     background-position: right center;
     padding-bottom: 3rem;
-    padding-right: 50%;
+    padding-right: calc(50% + 3rem);
+    text-align: left;
   }
 }
 @-moz-keyframes flash {
