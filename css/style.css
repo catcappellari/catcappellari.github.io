@@ -1645,6 +1645,22 @@ img {
 .intersection__car_4.is-rolling {
   transform: translateX(calc(100vw - 200%));
 }
+.box-ux-hotel {
+  background-imagel: url("../../images/ux/deco.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: #555;
+  padding-bottom: calc(50%);
+}
+@media screen and (min-width: 768px) {
+  .box-ux-hotel {
+    background-imagel: url("../../images/ux/deco-vert.png");
+    background-position: right center;
+    padding-bottom: 3rem;
+    padding-right: 50%;
+  }
+}
 @-moz-keyframes flash {
   0% {
     opacity: 0.1;
