@@ -1660,6 +1660,10 @@ img {
     padding-bottom: 3rem;
     padding-right: calc(50% + 3rem);
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 32rem;
   }
 }
 @-moz-keyframes flash {
