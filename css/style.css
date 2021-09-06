@@ -1666,6 +1666,12 @@ img {
 .ux-hotel .u-bg-alt3 {
   background-color: #2f5061;
 }
+.ux-hotel .u-text-deco {
+  color: #2f5061;
+}
+.ux-hotel .u-text-deco:hover {
+  color: #33747b;
+}
 @media screen and (min-width: 768px) {
   .box-ux-hotel {
     background-image: url("../../images/ux/deco-vert.png");
