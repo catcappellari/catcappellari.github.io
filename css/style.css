@@ -1650,20 +1650,24 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-color: #555;
-  padding-bottom: calc(50% + 1.5rem);
+  background-color: #2f5061;
+  padding-top: 5rem;
+  padding-bottom: calc(50% + 5rem);
 }
 @media screen and (min-width: 768px) {
   .box-ux-hotel {
     background-image: url("../../images/ux/deco-vert.png");
     background-position: right center;
-    padding-bottom: 3rem;
-    padding-right: calc(50% + 3rem);
+    padding-bottom: 5rem;
+    padding-right: 20rem;
     text-align: left;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     min-height: 32rem;
+  }
+  .box-ux-hotel h1 {
+    font-size: 4rem;
   }
 }
 @-moz-keyframes flash {
