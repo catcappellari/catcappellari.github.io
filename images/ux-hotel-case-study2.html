@@ -23,7 +23,7 @@
 </head>
 
 <body class="index ux-hotel">
-	<!-- <div class="top" id="top" tabindex="-1">
+	<div class="top" id="top" tabindex="-1">
 		<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
 		<header class="header-main header-index">
 			<div class="c-contain">
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</header>
-	</div> -->
+	</div>
 	<main id="main-content" tabindex="-1">
 		<section class="u-px-1 u-text-center u-color-light box-ux-hotel">
 			<div class="c-contain c-contain_660">
@@ -64,18 +64,27 @@
 				<h2 class="u-color-alt3">Intro</h2>
 				<hr class="u-bg-alt3 hr-tall">
 				<div class="u-mt-2">
+					<h3 class="u-color-alt3">Scope</h3>
 					<p>This project was done through a course offered by <a href="https://www.uxdesigninstitute.com/"
-							target="_blank" rel="noopener" class="u-text-deco">UX Design Institute.</a> The goal of this project was
-						to create a mobile
-						booking app for a new hotel company that was hoping for a simple and accessible process that would allow
-						users to quickly find and reserve hotel rooms. The competitive landscape includes giant companies like
+							target="_blank" rel="noopener" class="u-text-deco">UX Design Institute.</a> The project lasted for six
+						months. My roles included: </p>
+					<ul>
+						<li><a href="#research">UX Research</a></li>
+						<li><a href="#design">UX Design</a></li>
+						<li><a href="#analysis">Analysis</a></li>
+						<li><a href="#prototype">Prototype</a></li>
+						<li><a href="#wireframes">Wireframe</a></li>
+					</ul>
+					<p>The goal was to <b>create a mobile
+							booking app for a new hotel company that was hoping for a simple and accessible process that would allow
+							users to quickly find and reserve hotel rooms</b>. The competitive landscape includes giant companies like
 						Hotels.com as well as brand-specific sites and apps like Best Western and Wyndham. Vacation rentals like
 						AirBnb are also part of the picture. The large group of competitors meant that usability and convenience
 						were key. This lead us to the research phase of the project.</p>
 				</div>
 			</div>
 		</section>
-		<section tabindex="-1" class="u-pt-3 u-px-1">
+		<section tabindex="-1" class="u-pt-3 u-px-1" id="research">
 			<div class="c-contain c-contain_800">
 				<h2 class="u-color-alt3">Research</h2>
 				<hr class="u-bg-alt3 hr-tall">
@@ -104,7 +113,7 @@
 				<div class="u-text-center">
 					<a href="images/ux/01-competitive-benchmark.pdf" target="_blank" rel="noopener" class="u-text-center">
 						<img src="images/ux/preview/01-competitive-benchmark.jpg"
-							alt="Annotated screens from Best Western booking app" width="1920" height="1080" />
+							alt="Annotated screens from Best Western booking app" width="1920" height="1251" />
 					</a>
 				</div>
 				<h3 class="u-color-alt2 u-mt-2">Usability Testing</h3>
@@ -229,14 +238,12 @@
 				</div>
 			</div>
 		</section>
-		<section tabindex="-1" class="u-pt-3 u-px-1">
+		<section tabindex="-1" class="u-pt-3 u-px-1" id="prototype">
 			<div class="c-contain c-contain_800">
 				<h2 class="u-color-alt3">Prototyping</h2>
 				<hr class="u-bg-alt3 hr-tall">
 				<p>The prototyping stage included a medium-fidelity
-					prototype as well as developer handoff materials. The medium-fidelity prototype was chosen because it
-					would
-					provide a close representation of the final product or testing while still having a fairly quick
+					prototype to provide a close representation of the final product or testing while still having a fairly quick
 					completion
 					time. While setting up the prototype, I ended up adding the map to the top of the results page and making
 					the filters a modal. I realized that a large frustration in the search process was not having a good idea
@@ -264,7 +271,12 @@
 					<img src="images/ux/preview/07-prototype.png" alt="Working prototype of hotel app" width="1606"
 						height="1077" />
 				</a>
-				<h3 class="u-color-alt2 u-mt-2">Developer Handoff</h3>
+			</div>
+		</section>
+		<section tabindex="-1" class="u-pt-3 u-px-1" id="wireframes">
+			<div class="c-contain c-contain_800">
+				<h2 class="u-color-alt3">Wireframes</h2>
+				<hr class="u-bg-alt3 hr-tall">
 				<div class="u-mb-2">
 					<p><a href="https://www.figma.com/file/1oHqjB5OIYz8jTsfHE0CM9/UX-Project-Hotels-Wireframe?node-id=0%3A1"
 							target="_blank" rel="noopener" class="u-text-deco">Developer handoff instructions</a> detail the various
@@ -279,7 +291,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="intro" tabindex="-1" class="u-py-3 u-px-1">
+		<section id="conclusion" tabindex="-1" class="u-py-3 u-px-1">
 			<div class="c-contain c-contain_800">
 				<h2 class="u-color-alt3">Conclusion</h2>
 				<hr class="u-bg-alt3 hr-tall">
@@ -341,9 +353,9 @@
 	<script type="text/javascript" src="js/lazysizes.min.js"></script>
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
-			// document.querySelector('body').classList.add('js-active');
-			// var menuButton = document.querySelector('.js-menu-button');
-			// var menuWrapper = document.querySelector('.js-mobile-menu');
+			document.querySelector('body').classList.add('js-active');
+			var menuButton = document.querySelector('.js-menu-button');
+			var menuWrapper = document.querySelector('.js-mobile-menu');
 
 			//debounce function - from underscores.js
 			function debounce(func, wait, immediate) {
