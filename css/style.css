@@ -1688,6 +1688,49 @@ img {
     font-size: 4rem;
   }
 }
+.u-img-view {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.u-img-view img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.u-img-view__btn {
+  display: block;
+  box-sizing: border-box;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #217cb8;
+  background: #217cb8;
+  width: 250px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  left: 0;
+  right: 0;
+}
+.u-img-view:hover__btn {
+  border: 2px solid #1f3a93;
+  background: #1f3a93;
+}
+.ux-hotel .u-img-view__btn {
+  border: 2px solid #33747b;
+  background: #33747b;
+}
+.ux-hotel .u-img-view:hover .u-img-view__btn {
+  border: 2px solid #2f5061;
+  background: #2f5061;
+}
 @-moz-keyframes flash {
   0% {
     opacity: 0.1;
