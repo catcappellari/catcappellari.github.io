@@ -1698,30 +1698,22 @@ img {
   margin: 0 auto;
   max-width: 100%;
 }
-.u-img-view__btn {
-  display: block;
-  box-sizing: border-box;
-  padding: 0.5rem 1.25rem;
-  border: 2px solid #217cb8;
-  background: #217cb8;
-  width: 250px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: bold;
-  transition: all 0.3s linear;
+.u-img-view:after {
   position: absolute;
-  top: 50%;
-  transform: translate(-50%);
+  content: "";
+  top: 0;
   left: 0;
-  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3rem auto;
+  background-image: url("../../images/icon-expand.svg");
+  transition: opacity 0.33s ease-out;
 }
-.u-img-view:hover__btn {
-  border: 2px solid #1f3a93;
-  background: #1f3a93;
+.u-img-view:hover:after {
+  opacity: 1;
 }
 .ux-hotel .u-img-view__btn {
   border: 2px solid #33747b;
