@@ -166,7 +166,6 @@ img {
 .header-main .h-block:nth-child(2) {
   text-align: right;
   z-index: 10;
-  width: 55%;
 }
 .header-main .logo {
   display: block;
@@ -1728,6 +1727,9 @@ img {
 .ux-hotel .u-img-view:hover .u-img-view__btn {
   border: 2px solid #2f5061;
   background: #2f5061;
+}
+.ux-hotel .mfp-iframe-holder .mfp-content {
+  max-width: 1440px;
 }
 @-moz-keyframes flash {
   0% {
