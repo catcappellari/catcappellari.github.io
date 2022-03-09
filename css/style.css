@@ -169,7 +169,7 @@ img {
 }
 .header-main .logo {
   display: block;
-  max-width: 35px;
+  width: 35px;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
