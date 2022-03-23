@@ -395,7 +395,8 @@ img {
   font-weight: bold;
   transition: all 0.3s linear;
 }
-.c-buttons a:hover {
+.c-buttons a:hover,
+.c-buttons a:focus {
   background: #217cb8;
   color: #fff;
 }
@@ -403,7 +404,42 @@ img {
   border-color: #fff;
   color: #fff;
 }
-.c-buttons_light a:hover {
+.c-buttons_light a:hover,
+.c-buttons_light a:focus {
+  border-color: #217cb8;
+}
+.c-button {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+  min-width: 15rem;
+  padding: 1.5rem 0 0;
+  margin: 0;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #217cb8;
+  width: 250px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: #217cb8;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+.c-button:hover,
+.c-button:focus {
+  background: #217cb8;
+  color: #fff;
+}
+.c-button_light {
+  border-color: #fff;
+  color: #fff;
+}
+.c-button_light:hover,
+.c-button_light:focus {
   border-color: #217cb8;
 }
 .c-list {

@@ -399,7 +399,7 @@ img {
         font-size: 18px;
         font-weight: bold;
         transition: all 0.3s linear;
-        &:hover {
+        &:hover, &:focus {
             background: #217cb8;
             color: #fff;
         }
@@ -408,9 +408,41 @@ img {
         a {
             border-color: #fff;
             color: #fff;
-            &:hover {
+            &:hover, &:focus {
                 border-color: #217cb8;
             }
+        }
+    }
+}
+.c-button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+    min-width: 15rem;
+    padding: 1.5rem 0 0;
+    margin: 0;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #217cb8;
+    width: 250px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    color: #217cb8;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    &:hover, &:focus {
+        background: #217cb8;
+        color: #fff;
+    }
+    &_light {
+        border-color: #fff;
+        color: #fff;
+        &:hover, &:focus {
+            border-color: #217cb8;
         }
     }
 }
