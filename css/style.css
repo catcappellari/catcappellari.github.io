@@ -971,6 +971,9 @@ img {
   list-style: none;
   text-align: left;
 }
+.box-resume .contact-info a {
+  color: #000;
+}
 .box-resume .contact-info p,
 .box-resume .contact-info a {
   padding: 0;
@@ -1108,6 +1111,7 @@ img {
   }
   .box-resume .sidebar {
     width: calc(300px + 2rem);
+    max-width: 100%;
     padding-left: 2rem;
     padding-top: 6.5rem;
     box-sizing: border-box;
@@ -1118,6 +1122,9 @@ img {
   }
   .box-resume .mainbar h2 {
     text-align: left;
+  }
+  .box-resume .c-buttons a {
+    margin-left: 0;
   }
   .c-slick-dots .slick-dots {
     padding: 1rem 1rem 3.5rem;
