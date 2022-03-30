@@ -965,12 +965,6 @@ img {
   margin: 0 auto;
   padding: 0;
 }
-.box-resume .contact-info {
-  padding: 1rem 0;
-  margin: 0;
-  list-style: none;
-  text-align: left;
-}
 .box-resume .contact-info a {
   color: #000;
 }
@@ -1035,6 +1029,9 @@ img {
 }
 .box-resume .titlelist .c-flex__item:nth-child(1) {
   text-align: left;
+}
+.box-resume .sidebar {
+  max-width: 100%;
 }
 @media screen and (min-width: 360px) {
   .c-buttons_ib li {
@@ -1111,7 +1108,6 @@ img {
   }
   .box-resume .sidebar {
     width: calc(300px + 2rem);
-    max-width: 100%;
     padding-left: 2rem;
     padding-top: 6.5rem;
     box-sizing: border-box;
