@@ -556,7 +556,7 @@ img {
   box-sizing: border-box;
 }
 .c-card__ul-simple {
-  margin: 0;
+  margin: 0.5rem 0 0;
   text-align: left;
   padding: 1rem;
   list-style: none;
@@ -925,6 +925,9 @@ img {
 .page-resume li {
   font-size: 0.9rem;
 }
+.page-resume .header-main .logo {
+  width: 8.5rem;
+}
 .box-resume h2 {
   padding-bottom: 0;
 }
@@ -966,12 +969,10 @@ img {
   padding: 1rem 0;
   margin: 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 .box-resume .contact-info p,
 .box-resume .contact-info a {
-  color: #555;
-  font-weight: bold;
   padding: 0;
 }
 .box-resume .contact-info a {
@@ -1022,6 +1023,9 @@ img {
   background-repeat: repeat-x;
   background-image: url("../images/dashes.svg");
   opacity: 0.25;
+}
+.box-resume .titlelist p {
+  padding: 0;
 }
 .box-resume .titlelist .c-flex__item:nth-child(2) {
   text-align: right;
@@ -1099,9 +1103,12 @@ img {
   .box-intro h1 {
     font-size: 3.074rem;
   }
+  .page-resume .header-main .logo {
+    width: 12rem;
+  }
   .box-resume .sidebar {
     width: calc(300px + 2rem);
-    padding-right: 2rem;
+    padding-left: 2rem;
     padding-top: 6.5rem;
     box-sizing: border-box;
     text-align: left;

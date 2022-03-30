@@ -564,7 +564,7 @@ img {
     box-sizing: border-box;
 }
 .c-card__ul-simple {
-    margin: 0;
+    margin: .5rem 0 0;
     text-align: left;
     padding: 1rem;
     list-style: none;
@@ -941,6 +941,9 @@ img {
     li {
         font-size: 0.9rem;
     }
+    .header-main .logo {
+        width: 8.5rem;
+    }
 }
 .box-resume {
     h2 {
@@ -984,10 +987,8 @@ img {
         padding: 1rem 0;
         margin: 0;
         list-style: none;
-        text-align: center;
+        text-align: left;
         p, a {
-            color: #555;
-            font-weight: bold;
             padding: 0;
         }
         a {
@@ -1044,6 +1045,9 @@ img {
         }
     }
     .titlelist {
+        p {
+            padding: 0;
+        }
         .c-flex__item:nth-child(2) {
             text-align: right;
         }
@@ -1133,10 +1137,15 @@ img {
             font-size: 3.074rem;
         }
     }
+    .page-resume {
+        .header-main .logo {
+            width: 12rem;
+        }
+    }
     .box-resume {
         .sidebar {
             width: calc(300px + 2rem);
-            padding-right: 2rem;
+            padding-left: 2rem;
             padding-top: 6.5rem;
             box-sizing: border-box;
             text-align: left;
