@@ -758,9 +758,6 @@ img {
   font-size: 1.5rem;
   padding-top: 0.75rem;
 }
-.box-presentation {
-  padding-bottom: 75px;
-}
 .presentation {
   position: relative;
 }
@@ -1101,8 +1098,14 @@ img {
   .c-flex__item-md-4 {
     flex-basis: 33.3333%;
   }
+  .c-flex__item-md-5 {
+    flex-basis: 41.6666%;
+  }
   .c-flex__item-md-6 {
     flex-basis: 50%;
+  }
+  .c-flex__item-md-7 {
+    flex-basis: 58.3333%;
   }
   .c-flex__item-md-8 {
     flex-basis: 66.6666%;
@@ -1206,6 +1209,9 @@ img {
   }
   .c-flex__item-lg-6 {
     width: 50%;
+  }
+  .box-presentation {
+    padding-bottom: 75px;
   }
   .box-presentation .c-contain_1400 {
     font-size: 0;
