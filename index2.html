@@ -42,7 +42,6 @@
               <span class="sr-only">Toggle menu</span>
             </button>
             <ul id="mainmenu" class="mobile-menu js-mobile-menu">
-              <li><a href="#work">Work</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="/projects">Code</a></li>
               <li><a href="/ux">UX</a></li>
@@ -73,17 +72,18 @@
     <section class="c-section c-section_center c-section_dark c-section_nopad box-presentation" id="work" tabindex="-1">
       <div class="c-contain c-contain_1400">
         <div class="presentation__wrapper presentation__wrapper_1">
-          <a href="/projects">
-            <img class="c-slide__image lazyload" data-src="images/projects.png" alt="Presentation of various projects">
-          </a>
-        </div>
-        <div class="presentation__wrapper presentation__wrapper_2">
-          <h2>Projects</h2>
-          <p>From building a map of Raleigh bike trails, to creating a random Bob Ross quote generator, to creating a
-            flashing neon sign, I like to try out new projects and ideas.</p>
-          <ul class="c-buttons c-buttons_light">
-            <li><a href="/projects">See All Projects</a></li>
-          </ul>
+          <div class="c-flex">
+            <div class="c-flex__item c-flex__item-auto c-pad">
+              <a href="/season" class="c-tile">
+                <span class="c-tile__img">
+                  <img class="lazyload" data-src="/images/sandbox-seasons.jpg"
+                    alt="Graphic of tree with green leaves on blue background">
+                </span>
+                <h2 class="c-tile__headline">Hotel Booking App</h2>
+                <p class="c-tile__text">A mobile hotel booking app that keeps the process quick and simple.</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -96,27 +96,14 @@
       </div>
       <div class="c-contain">
         <h2>About</h2>
-        <div class="c-list">
-          <p class="h4"><strong>When I'm designing or coding I'm:</strong></p>
-          <ul>
-            <li>Strategizing about using efficient components</li>
-            <li>Pondering ways in which to make the product more accessible</li>
-            <li>
-              <a href="https://github.com/users/catcappellari/projects/1" target="_blank" rel="noopener">Keeping a list
-                of things to research further</a>
-            </li>
-            <li>Enjoying some sweet tunes</li>
-          </ul>
-        </div>
-        <div class="c-list">
-          <p class="h4"><strong>When I'm not designing or coding I'm:</strong></p>
-          <ul>
-            <li>Riding my bike on a trail of some sort</li>
-            <li>Plotting an adventure</li>
-            <li>Finding a new UX course or class</li>
-            <li>Blissfully unaware that IE exists</li>
-          </ul>
-        </div>
+        <p>I've been a web developer with a focus on the user experience since 2016. I've learned a ton about
+          component-driven design, accessiblity, and usability. I'm not afraid to dive in and learn something new.
+          Whether it's testing out different ways to create reusable code, researching what makes a modal accessible (or
+          not), or doing some competitor benchmarking, I'm always busy looking into a new question.</p>
+        <p>When I'm not working, I really love getting out into nature, preferrably on a bike. It's a great way to hit
+          the reset button after a long day in front of a screen. A fun trivia fact about me is that I once pedaled
+          across the whole United States. I took a long break from biking after that. But I'm back in the saddle these
+          days!</p>
       </div>
     </section>
   </main>
