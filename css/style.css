@@ -801,12 +801,10 @@ img {
   transform: skewY(5deg);
   z-index: -1;
 }
-.box-about,
-.box-about2 {
+.box-about {
   position: relative;
 }
-.box-about:before,
-.box-about2:before {
+.box-about:before {
   position: absolute;
   height: 210px;
   width: 100%;
@@ -817,12 +815,29 @@ img {
   -webkit-transform: skewY(5deg);
   transform: skewY(5deg);
 }
-.box-about .about-svg,
-.box-about2 .about-svg {
+.box-about .about-svg {
   display: none;
 }
 .box-about2 {
-  margin-top: 11vw;
+  position: relative;
+  padding: 4rem 1rem;
+  margin-top: 0;
+}
+.box-about2:before {
+  display: none;
+}
+.box-about2 .about-svg {
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  overflow: hidden;
+}
+.box-about2 .about-svg-image {
+  height: 60px;
+  width: 100%;
 }
 .footer-main {
   position: relative;
@@ -1248,17 +1263,14 @@ img {
     -webkit-transform: skewY(9deg);
     transform: skewY(9deg);
   }
-  .box-about,
-  .box-about2 {
+  .box-about {
     padding: 4rem 1rem;
     margin-top: 0;
   }
-  .box-about:before,
-  .box-about2:before {
+  .box-about:before {
     display: none;
   }
-  .box-about .about-svg,
-  .box-about2 .about-svg {
+  .box-about .about-svg {
     display: block;
     position: absolute;
     top: -60px;
@@ -1267,8 +1279,7 @@ img {
     height: 60px;
     overflow: hidden;
   }
-  .box-about .about-svg-image,
-  .box-about2 .about-svg-image {
+  .box-about .about-svg-image {
     height: 60px;
     width: 100%;
   }

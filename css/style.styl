@@ -813,8 +813,7 @@ img {
         }
     }
 }
-.box-about,
-.box-about2 {
+.box-about {
     position: relative;
     &:before {
         position: absolute;
@@ -832,7 +831,25 @@ img {
     }
 }
 .box-about2 {
-    margin-top: 11vw;
+    position: relative;
+    padding: 4rem 1rem;
+    margin-top: 0;
+    &:before {
+        display: none;
+    }
+    .about-svg {
+        display: block;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+        height: 60px;
+        overflow: hidden;
+    }
+    .about-svg-image {
+        height: 60px;
+        width: 100%;
+    }
 }
 .footer-main {
     position: relative;
@@ -1289,8 +1306,7 @@ img {
             transform: skewY(9deg);
         }
     }
-    .box-about,
-    .box-about2 {
+    .box-about {
         padding: 4rem 1rem;
         margin-top: 0;
         &:before {
