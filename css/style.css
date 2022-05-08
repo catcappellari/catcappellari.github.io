@@ -758,6 +758,9 @@ img {
   font-size: 1.5rem;
   padding-top: 0.75rem;
 }
+.box-presentation {
+  padding-bottom: 75px;
+}
 .presentation {
   position: relative;
 }
@@ -768,11 +771,6 @@ img {
 }
 .presentation__wrapper_1 {
   padding: 2rem 1rem;
-}
-.presentation__wrapper_1 img {
-  display: block;
-  max-width: 80%;
-  margin: 0 auto;
 }
 .presentation__wrapper_2 {
   min-height: 15rem;
@@ -1100,8 +1098,14 @@ img {
   .c-card__ul {
     padding: 0.5rem 0.75rem;
   }
+  .c-flex__item-md-4 {
+    flex-basis: 33.3333%;
+  }
   .c-flex__item-md-6 {
     flex-basis: 50%;
+  }
+  .c-flex__item-md-8 {
+    flex-basis: 66.6666%;
   }
   .box-intro h1 {
     font-size: 3.074rem;
@@ -1233,7 +1237,7 @@ img {
     transform: skewY(9deg);
   }
   .box-about {
-    padding: 8rem 1rem 4rem 1rem;
+    padding: 4rem 1rem;
   }
   .box-about:before {
     display: none;
