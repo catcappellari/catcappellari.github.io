@@ -821,7 +821,7 @@ img {
 .box-about2 {
   position: relative;
   padding: 4rem 1rem;
-  margin-top: 0;
+  margin-top: 60px;
 }
 .box-about2:before {
   display: none;
@@ -1230,9 +1230,6 @@ img {
   }
   .c-flex__item-lg-6 {
     width: 50%;
-  }
-  .box-presentation {
-    padding-bottom: 75px;
   }
   .box-presentation .c-contain_1400 {
     font-size: 0;
