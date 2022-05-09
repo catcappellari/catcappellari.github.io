@@ -32,7 +32,6 @@
           <a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
         </div>
         <div class="h-block h-block2">
-          <a href="mailto:cat.cappellari@gmail.com" class="email material-icons mi-white">email</a>
           <nav class="mainmenu" role="navigation">
             <button id="mainmenu_button" class="menu-button js-menu-button" aria-expanded="false"
               aria-controls="mainmenu">
@@ -42,13 +41,13 @@
               <span class="sr-only">Toggle menu</span>
             </button>
             <ul id="mainmenu" class="mobile-menu js-mobile-menu">
-              <li><a href="#work">Work</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="/projects">Code</a></li>
               <li><a href="/ux">UX</a></li>
               <li><a href="/resume">Resume</a></li>
             </ul>
           </nav>
+          <a href="mailto:cat.cappellari@gmail.com" class="email material-icons mi-white">email</a>
         </div>
       </div>
     </header>
@@ -56,7 +55,7 @@
       <div class="c-contain c-contain_660">
         <h1>Welcome!</h1>
         <div class="text">
-          <p>Hi, I'm Cat. I focus on the importance of creating accessible, user-friendly, and robust digital
+          <p>Hi, I'm Cat. I create accessible, user-friendly, and robust digital
             experiences that are welcoming and help make the world a better place.</p>
         </div>
         <a href="#work" class="c-arrow-jump js__jump"><span class="sr-only">Jump to website examples</span></a>
@@ -73,21 +72,25 @@
     <section class="c-section c-section_center c-section_dark c-section_nopad box-presentation" id="work" tabindex="-1">
       <div class="c-contain c-contain_1400">
         <div class="presentation__wrapper presentation__wrapper_1">
-          <a href="/projects">
-            <img class="c-slide__image lazyload" data-src="images/projects.png" alt="Presentation of various projects">
-          </a>
-        </div>
-        <div class="presentation__wrapper presentation__wrapper_2">
-          <h2>Projects</h2>
-          <p>From building a map of Raleigh bike trails, to creating a random Bob Ross quote generator, to creating a
-            flashing neon sign, I like to try out new projects and ideas.</p>
-          <ul class="c-buttons c-buttons_light">
-            <li><a href="/projects">See All Projects</a></li>
+          <div class="c-flex">
+            <div class="c-flex__item c-flex__item-auto c-pad">
+              <a href="/ux-hotel-case-study" class="c-tile">
+                <span class="c-tile__img">
+                  <img class="lazyload" data-src="/images/ux-landing/hotel-thumb.jpg"
+                    alt="Search screen for app called 'Stay.'" width="375" height="306">
+                </span>
+                <h2 class="c-tile__headline">Hotel Booking App</h2>
+                <p class="c-tile__text">A mobile hotel booking app that keeps the process quick and simple.</p>
+              </a>
+            </div>
+          </div>
+          <ul class="c-buttons">
+            <li><a href="/ux">See All UX Projects</a></li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="c-section c-section_center c-section_dark c-section_alt2 box-about" id="about" tabindex="-1">
+    <section class="c-section c-section_dark c-section_alt2 box-about2" id="about" tabindex="-1">
       <div class="about-svg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 0.25" preserveAspectRatio="none"
           class="about-svg-image" fill="#217cb8">
@@ -95,29 +98,25 @@
         </svg>
       </div>
       <div class="c-contain">
-        <h2>About</h2>
-        <div class="c-list">
-          <p class="h4"><strong>When I'm designing or coding I'm:</strong></p>
-          <ul>
-            <li>Strategizing about using efficient components</li>
-            <li>Pondering ways in which to make the product more accessible</li>
-            <li>
-              <a href="https://github.com/users/catcappellari/projects/1" target="_blank" rel="noopener">Keeping a list
-                of things to research further</a>
-            </li>
-            <li>Enjoying some sweet tunes</li>
-          </ul>
+        <div class="c-flex c-flex_center">
+          <div class="c-flex__item c-flex__item-md-7 c-pad box-about2__text">
+            <h2>About</h2>
+            <hr class="u-bg-light hr-tall">
+            <p>I've been a web developer with a focus on the user experience since 2016. I'm not afraid to dive in and
+              learn something new.
+              Whether it's testing out different ways to create reusable code, researching accessible functionality, or
+              doing competitor benchmarking, I'm always busy looking into a new question.</p>
+            <p>When I'm not working, I love getting out into nature, preferably on a bike. It's a great way to
+              hit
+              the reset button after a long day in front of a screen. A fun fact about me is that I once pedaled
+              across the whole United States. I've got a lot of rides left on my bucket list!</p>
+          </div>
+          <div class="c-flex__item c-flex__item-md-5 c-pad">
+            <div class="c-contain c-contain_450">
+              <img src="images/bike.jpg" alt="Cat on a bike" width="768" height="1024">
+            </div>
+          </div>
         </div>
-        <div class="c-list">
-          <p class="h4"><strong>When I'm not designing or coding I'm:</strong></p>
-          <ul>
-            <li>Riding my bike on a trail of some sort</li>
-            <li>Plotting an adventure</li>
-            <li>Finding a new UX course or class</li>
-            <li>Blissfully unaware that IE exists</li>
-          </ul>
-        </div>
-      </div>
     </section>
   </main>
   <footer class="footer-main c-section c-section_center c-section_dark c-section_alt3">
@@ -142,13 +141,13 @@
               </a>
             </li>
             <li>
-              <a href="mailto:cat.cappellari@gmail.com">
-                <img src="images/icon-email.svg" alt="Email" />
+              <a href="https://github.com/catcappellari" target="_blank" rel="noopener">
+                <img src="images/icon-github.png" alt="GitHub" />
               </a>
             </li>
             <li>
-              <a href="https://github.com/catcappellari" target="_blank" rel="noopener">
-                <img src="images/icon-github.png" alt="GitHub" />
+              <a href="mailto:cat.cappellari@gmail.com">
+                <img src="images/icon-email.svg" alt="Email" />
               </a>
             </li>
           </ul>
