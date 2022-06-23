@@ -13,6 +13,7 @@ body {
   font-family: 'Gudea', sans-serif;
   font-size: 1.125rem;
   box-sizing: border-box;
+  color: #2f2f2f;
 }
 body * {
   box-sizing: inherit;
@@ -652,6 +653,7 @@ img {
 .hr-tall {
   height: 4px;
   border: none;
+  background: currentColor;
 }
 .u-text-left {
   text-align: left;
@@ -1743,24 +1745,6 @@ img {
   padding-top: 5rem;
   padding-bottom: calc(50% + 5rem);
 }
-.ux-hotel .u-color-alt2 {
-  color: #33747b;
-}
-.ux-hotel .u-bg-alt2 {
-  background-color: #33747b;
-}
-.ux-hotel .u-color-alt3 {
-  color: #2f5061;
-}
-.ux-hotel .u-bg-alt3 {
-  background-color: #2f5061;
-}
-.ux-hotel .u-text-deco {
-  color: #2f5061;
-}
-.ux-hotel .u-text-deco:hover {
-  color: #33747b;
-}
 @media screen and (min-width: 768px) {
   .box-ux-hotel {
     background-image: url("../../images/ux/deco-vert.png");
@@ -1807,14 +1791,6 @@ img {
 }
 .u-img-view_external:after {
   background-image: url("../../images/icon-external-link.svg");
-}
-.ux-hotel .u-img-view__btn {
-  border: 2px solid #33747b;
-  background: #33747b;
-}
-.ux-hotel .u-img-view:hover .u-img-view__btn {
-  border: 2px solid #2f5061;
-  background: #2f5061;
 }
 .ux-hotel .mfp-iframe-holder .mfp-content {
   max-width: 1440px;
