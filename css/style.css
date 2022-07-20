@@ -1757,18 +1757,20 @@ img {
 .intersection__car_4.is-rolling {
   transform: translateX(calc(100vw - 200%));
 }
-.box-ux-hotel {
-  background-image: url("../../images/ux/deco.png");
+.box-ux-hotel,
+.box-ux-pet {
+  background-image: url("../../images/ux-pet-adoption/petadopter-hero-m.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-color: #2f5061;
+  background-color: #dbf2ed;
+  color: #023b59;
   padding-top: 5rem;
   padding-bottom: calc(50% + 5rem);
 }
 @media screen and (min-width: 768px) {
   .box-ux-hotel {
-    background-image: url("../../images/ux/deco-vert.png");
+    background-image: url("../../images/ux-pet-adoption/petadopter-hero.png");
     background-position: right center;
     padding-bottom: 5rem;
     padding-right: 20rem;
