@@ -1759,7 +1759,7 @@ img {
 }
 .box-ux-hotel,
 .box-ux-pet {
-  background-image: url("../../images/ux-pet-adoption/petadopter-hero-m.png");
+  background-image: url("../../images/ux-pet-adoption/pet-hero-hor.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -1770,7 +1770,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .box-ux-hotel {
-    background-image: url("../../images/ux-pet-adoption/petadopter-hero.png");
+    background-image: url("../../images/ux-pet-adoption/pet-hero-vert.png");
     background-position: right center;
     padding-bottom: 5rem;
     padding-right: 20rem;
