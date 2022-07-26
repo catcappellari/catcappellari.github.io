@@ -1757,20 +1757,24 @@ img {
 .intersection__car_4.is-rolling {
   transform: translateX(calc(100vw - 200%));
 }
-.box-ux-hotel,
-.box-ux-pet {
-  background-image: url("../../images/ux-pet-adoption/pet-hero-hor.png");
+.ux-hero {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-color: #dbf2ed;
-  color: #023b59;
   padding-top: 5rem;
   padding-bottom: calc(50% + 5rem);
 }
+.box-ux-hotel {
+  background-image: url("../../images/ux/deco.png");
+  background-color: #2f5061;
+}
+.box-ux-pet {
+  background-image: url("../../images/ux-pet-adoption/pet-hero-hor.png");
+  background-color: #dbf2ed;
+  color: #023b59;
+}
 @media screen and (min-width: 768px) {
-  .box-ux-hotel {
-    background-image: url("../../images/ux-pet-adoption/pet-hero-vert.png");
+  .ux-hero {
     background-position: right center;
     padding-bottom: 5rem;
     padding-right: 20rem;
@@ -1780,8 +1784,14 @@ img {
     justify-content: flex-start;
     min-height: 32rem;
   }
-  .box-ux-hotel h1 {
+  .ux-hero h1 {
     font-size: 4rem;
+  }
+  .box-ux-hotel {
+    background-image: url("../../images/ux/deco-vert.png");
+  }
+  .box-ux-pet {
+    background-image: url("../../images/ux-pet-adoption/pet-hero-vert.png");
   }
 }
 .u-img-view {
