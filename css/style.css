@@ -641,6 +641,9 @@ img {
 .u-bg-light {
   background-color: #efefef;
 }
+.u-bg-white {
+  background-color: #fff;
+}
 .u-color-alt2 {
   color: #217cb8;
 }
