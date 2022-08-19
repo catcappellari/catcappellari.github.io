@@ -60,7 +60,7 @@
         <h1>Pet Adoption Case Study</h1>
       </div>
     </section>
-    <section id="intro" tabindex="-1" class="u-pt-3 u-px-1">
+    <section id="intro" tabindex="-1" class="u-pt-3 u-px-1 js-intersection">
       <div class="c-contain c-contain_800">
         <h2 class="u-color-alt3">Define</h2>
         <hr class="hr-tall u-bg-alt3">
@@ -102,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section tabindex="-1" class="u-pt-3 u-px-1" id="research">
+    <section tabindex="-1" class="u-pt-3 u-px-1 js-intersection" id="research">
       <div class="c-contain c-contain_800">
         <h2 class="u-color-alt3">Research</h2>
         <hr class="hr-tall u-bg-alt3">
@@ -127,7 +127,7 @@
         </div>
       </div>
     </section>
-    <section id="analysis" tabindex="-1" class="u-pt-3 u-px-1">
+    <section id="analysis" tabindex="-1" class="u-pt-3 u-px-1 js-intersection">
       <div class="c-contain c-contain_800">
         <h2 class="u-color-alt3">Analysis</h2>
         <hr class="hr-tall u-bg-alt3">
@@ -139,7 +139,7 @@
         </div>
       </div>
     </section>
-    <section id="design" tabindex="-1" class="u-pt-3 u-px-1">
+    <section id="design" tabindex="-1" class="u-pt-3 u-px-1 js-intersection">
       <div class="c-contain c-contain_800">
         <h2 class="u-color-alt3">Design</h2>
         <hr class="hr-tall u-bg-alt3">
@@ -192,7 +192,7 @@
         </div>
       </div>
     </section>
-    <section id="conclusion" tabindex="-1" class="u-py-3 u-px-1">
+    <section id="conclusion" tabindex="-1" class="u-py-3 u-px-1 js-intersection">
       <div class="c-contain c-contain_800">
         <h2 class="u-color-alt3">Conclusion</h2>
         <hr class="hr-tall u-bg-alt3">
@@ -344,6 +344,20 @@
         type: 'iframe'
         // other options
       });
+    });
+
+    // https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          // Add 'is-active' class if observation target is inside viewport
+          entry.target.classList.add('is-active');
+        })
+    }), { rootMargin: "20px 0px 0 0px" });
+
+    const targetElements = document.querySelectorAll('.js-intersection');
+    targetElements.forEach((el) => {
+      observer.observe(el);
     });
   </script>
 </body>
