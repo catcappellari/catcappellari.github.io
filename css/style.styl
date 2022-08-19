@@ -746,6 +746,18 @@ img {
     padding-top: 312%;
 }
 
+@media (prefers-reduced-motion: none) {
+   .u-visible {
+        transform: translateY(3rem);
+        opacity: .01;
+        transition: transform .33s ease-out, opacity .33s ease-out;
+    }
+    .u-visible.is-visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* material icon colors */
 .material-icons {
     .mi-white {
