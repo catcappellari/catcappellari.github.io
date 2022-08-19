@@ -746,11 +746,11 @@ img {
     padding-top: 312%;
 }
 
-@media (prefers-reduced-motion: none) {
+@media (prefers-reduced-motion: no-preference) {
    .u-visible {
-        transform: translateY(3rem);
+        transform: translateY(6rem);
         opacity: .01;
-        transition: transform .33s ease-out, opacity .33s ease-out;
+        transition: transform .66s ease-out, opacity .66s ease-out;
     }
     .is-visible .u-visible {
         transform: translateY(0);

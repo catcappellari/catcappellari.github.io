@@ -738,11 +738,11 @@ img {
 .c-iframe-sizer_312 {
   padding-top: 312%;
 }
-@media (prefers-reduced-motion: none) {
+@media (prefers-reduced-motion: no-preference) {
   .u-visible {
-    transform: translateY(3rem);
+    transform: translateY(6rem);
     opacity: 0.01;
-    transition: transform 0.33s ease-out, opacity 0.33s ease-out;
+    transition: transform 0.66s ease-out, opacity 0.66s ease-out;
   }
   .is-visible .u-visible {
     transform: translateY(0);
