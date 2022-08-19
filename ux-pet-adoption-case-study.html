@@ -352,13 +352,13 @@
         if (entry.intersectionRatio > 0) {
           // Add 'is-active' class if observation target is inside viewport
           entry.target.classList.add('is-active');
-        })
-    }), { rootMargin: "20px 0px 0 0px" });
+        }
+      }, { rootMargin: "20px 0px 0 0px" });
 
-    const targetElements = document.querySelectorAll('.js-intersection');
-    targetElements.forEach((el) => {
-      observer.observe(el);
-    });
+      const targetElements = document.querySelectorAll('.js-intersection');
+      targetElements.forEach((el) => {
+        observer.observe(el);
+      });
   </script>
 </body>
 
