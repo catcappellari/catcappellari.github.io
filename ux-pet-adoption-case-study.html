@@ -135,9 +135,6 @@
         <div class="u-mt-2">
           <p>I created an affinity diagram and customer journey map during the analysis. These provided additional insights into the animal adoption Research had revealed that people felt both <b>excitement as well as concerns about finding a good fit.</b>
           </p>
-        </div>
-        <h3>Sketches</h3>
-        <div class="u-mb-2">
           <p>During the sketch phase, I tried to reduce the number of steps for arranging a
             meeting as much as possible.</p>
         </div>
@@ -155,10 +152,8 @@
       <div class="c-contain c-contain_800 u-visible">
         <h2>Prototype & Testing</h2>
         <hr class="hr-tall">        
-        <h3 class="u-mt-2">Prototype</h3>
-        <p>I chose to create a medium-fidelity prototype. It provided a close representation of the final product for testing while still having a fairly quick turnaround time. I realized that I had a process that required registration and didn't give much info about the shelter. I created a <b>second version of the prototype with a “Continue as Guest” option and more info about the shelter</b>.</p>
-        <h3 class="u-mt-2">Testing</h3>
-        <p>I ran the first version of my prototype by the user first. He wasn't happy about having to create an account. I then showed him the second version, which had the guest option. He preferred this one. <b>The second prototype seemed to present fewer barriers, so I moved forward with that one.</b></p>
+        <p class="u-mt-2">I chose to create a medium-fidelity prototype. It provided a close representation of the final product for testing while still having a fairly quick turnaround time.</p>
+        <p>I ran the first version of my prototype by the user first. He wasn't happy about having to create an account. <b>The tester preferred the second version, which had a "Continue as Guest" option since it presented fewer barriers.</b></p>
         <div class="u-mt-2 u-p-2 u-bg-white">
           <p><b>"Oh there's the guest log in. Good. I have too many accounts for things already."</b></p>
           <p><i>Prototype Tester</i></p>
@@ -344,12 +339,11 @@
     // https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.intersectionRatio > 0) {
-          // Add 'is-active' class if observation target is inside viewport
+        if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
         }
       });
-    }, { rootMargin: "-48px 0px 0px 0px" });
+    }, { rootMargin: "-32px 0px 0px 0px" });
 
     const targetElements = document.querySelectorAll('.js-intersection');
     targetElements.forEach((el) => {

@@ -1287,9 +1287,6 @@ img {
     column-count: 2;
     gap: 1rem;
   }
-  .box-presentation .c-contain_1400 {
-    font-size: 0;
-  }
   .presentation__wrapper {
     font-size: 1rem;
     display: inline-block;
