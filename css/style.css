@@ -832,6 +832,9 @@ img {
   transform: skewY(5deg);
   z-index: -1;
 }
+.box-presentation__pad {
+  padding: 2rem 1rem;
+}
 .box-about {
   position: relative;
 }
