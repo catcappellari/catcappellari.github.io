@@ -62,8 +62,8 @@
     </section>
     <section id="intro" tabindex="-1" class="u-py-3 u-px-1 js-intersection">
       <div class="c-contain c-contain_800 u-visible">
-        <h2 class="u-color-alt3">Define</h2>
-        <hr class="hr-tall u-bg-alt3">
+        <h2>Define</h2>
+        <hr class="hr-tall">
         <div class="u-mt-2">
           <h3>Goals</h3>
           <p>A company wants to create a <b>digital animal adoption service</b>. This service will allow its users to
@@ -82,7 +82,7 @@
                 <li><a class="u-text-deco" href=" #research">Research</a></li>
                 <li><a class="u-text-deco" href=" #analysis">Analysis & Design</a></li>
                 <li><a class="u-text-deco" href=" #testing">Prototype & Testing</a></li>
-                <li><a class="u-text-deco" href=" #design">Design Finalization</a></li>
+                <li><a class="u-text-deco" href=" #design">Mockups</a></li>
               </ul>
             </div>
             <div class="c-flex__item c-flex__item-sm-6 c-flex__item-lg-8 u-p-2 u-bg-light">
@@ -105,8 +105,8 @@
     </section>
     <section tabindex="-1" class="u-py-3 u-px-1 u-bg-light js-intersection" id="research">
       <div class="c-contain c-contain_800 u-visible">
-        <h2 class="u-color-alt3">Research</h2>
-        <hr class="hr-tall u-bg-alt3">
+        <h2>Research</h2>
+        <hr class="hr-tall">
         <div class="u-mt-2">
           <p>Themes that appeared during the research phase were that: </p>
           <ul>
@@ -130,8 +130,8 @@
     </section>
     <section id="analysis" tabindex="-1" class="u-py-3 u-px-1 js-intersection">
       <div class="c-contain c-contain_800 u-visible">
-        <h2 class="u-color-alt3">Analysis & Design</h2>
-        <hr class="hr-tall u-bg-alt3">
+        <h2>Analysis & Design</h2>
+        <hr class="hr-tall">
         <div class="u-mt-2">
           <p>I created an affinity diagram and customer journey map during the analysis. These provided additional insights into the animal adoption Research had revealed that people felt both <b>excitement as well as concerns about finding a good fit.</b>
           </p>
@@ -153,8 +153,8 @@
     </section>
     <section id="testing" tabindex="-1" class="u-py-3 u-px-1 u-bg-light js-intersection">
       <div class="c-contain c-contain_800 u-visible">
-        <h2 class="u-color-alt3">Prototype & Testing</h2>
-        <hr class="hr-tall u-bg-alt3">        
+        <h2>Prototype & Testing</h2>
+        <hr class="hr-tall">        
         <h3 class="u-mt-2">Prototype</h3>
         <p>I chose to create a medium-fidelity prototype. It provided a close representation of the final product for testing while still having a fairly quick turnaround time. I realized that I had a process that required registration and didn't give much info about the shelter. I created a <b>second version of the prototype with a “Continue as Guest” option and more info about the shelter</b>.</p>
         <h3 class="u-mt-2">Testing</h3>
@@ -176,8 +176,9 @@
     </section>
 <section id="design" tabindex="-1" class="u-py-3 u-px-1 js-intersection">
     <div class="c-contain c-contain_800 u-visible">
-      <h2 class="u-color-alt3">Design Finalization</h2>
-        <h3 class="u-mt-2">Mockups</h3>
+      <h2>Mockups</h2>
+<hr class="hr-tall">
+        <h3 class="u-mt-2"></h3>
         <div class="u-text-right">
           <a href="https://www.figma.com/file/mU1C4c3UfFlqmcEUcmOarO/Pet-Adoption---Comp1.2?node-id=0%3A1"
             rel="noopener noreferrer" target="_blank" class="u-text-deco">
@@ -192,8 +193,8 @@
     </section>
     <section id="conclusion" tabindex="-1" class="u-py-3 u-px-1 u-bg-light js-intersection">
       <div class="c-contain c-contain_800 u-visible">
-        <h2 class="u-color-alt3">Conclusion</h2>
-        <hr class="hr-tall u-bg-alt3">
+        <h2>Conclusion</h2>
+        <hr class="hr-tall">
         <div class="u-mt-2">
           <p>I discovered that many of the existing animal adoption services do not have a smooth
             appointment setup experience. Since the user interviews revealed that meeting the animal was extremely important, <b>I focused on reducing the barriers to setting up a meeting</b>. I included:</p>
@@ -204,8 +205,13 @@
           </ul>
           <p>Hopefully these elements will help more people find their new best friend as well as help reduce costs for the shelters by helping move animals through more quickly.</p>
         </div>
-        <h3 class="u-mt-2">Retrospective</h3>
-        <p>The prototype tester mentioned that he would be likely to fill out the form to meet an animal if quickly taking his lunch break in his work truck, but would place a phone call instead if he was at home and had more time. This was an interesting comment and might be worth digging into further. <b>If the user's location does indeed have an impact on actions taken, it might be interesting to do testing in different settings</b>.</p>
+      </div>
+    </section>
+    <section id="retrospective" tabindex="-1" class="u-py-3 u-px-1 js-intersection">
+      <div class="c-contain c-contain_800 u-visible">
+        <h2>Retrospective</h2>
+        <hr class="hr-tall">
+        <p class="u-mt-2">The prototype tester mentioned that he would be likely to fill out the form to meet an animal if quickly taking his lunch break in his work truck, but would place a phone call instead if he was at home and had more time. This was an interesting comment and might be worth digging into further. <b>If the user's location does indeed have an impact on actions taken, it might be interesting to do testing in different settings</b>.</p>
         <p>A potential opportunity for improvement might be an <b>additional focus on animals who are being fostered</b>. Foster homes may be able to add behavioral insights that could help pet adopters make their decision.</p>
       </div>
     </section>
@@ -343,7 +349,7 @@
           entry.target.classList.add('is-visible');
         }
       });
-    });
+    }, { rootMargin: "48px 0px 0px 0px" });
 
     const targetElements = document.querySelectorAll('.js-intersection');
     targetElements.forEach((el) => {
