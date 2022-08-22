@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="images/favicon/android-chrome-256x256.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#217cb8">
+
+	<title>Intersection Observer</title>
+	<meta name="description" content="Tiny cars demo IntersectionObserver">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="landing-intersection">
+	<section class="c-table box-intersection-hero">
+		<div class="c-table__cell c-pad intersection-hero__cell">
+			<div class="c-pad intersection-hero__title">
+				<h1>Traffic and Intersection Observer</h1>
+			</div>
+			<div class="c-pad u-color-light">
+				<p><strong>Cars start rolling when their intersection observer is triggered.</strong></p>
+			</div>
+		</div>
+	</section>
+	<section class="box-intersection js-intersection">
+		<div class="intersection">
+			<div class="intersection__car_1 js-intersection-car1">
+				<i class="material-icons">airport_shuttle</i>
+			</div>
+			<div class="intersection__car_2 js-intersection-car2">
+				<i class="material-icons">airport_shuttle</i>
+			</div>
+			<div class="intersection__car_3 js-intersection-car3">
+				<i class="material-icons">airport_shuttle</i>
+			</div>
+			<div class="intersection__car_4 js-intersection-car4">
+				<i class="material-icons">airport_shuttle</i>
+			</div>
+		</div>
+	</section>
+	<footer class="footer-main footer-main_simple">
+		<div class="c-contain">
+			<div class="c-flex">
+				<div class="c-flex__item f-block f-block2">
+					<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+				</div>
+			</div>
+			<p><small>This site brought to you by Cat Cappellari. All rights reserved. <span id="copywrite"></span>.</small>
+			</p>
+		</div>
+	</footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.querySelector('body').classList.add('js-active');
+			var menuButton = document.querySelector('.js-menu-button');
+			var menuWrapper = document.querySelector('.js-mobile-menu');
+
+
+			//copywrite
+			function updateDate() {
+				var date = new Date().getFullYear();
+				document.getElementById('copywrite').innerHTML = date;
+			}
+			updateDate();
+
+			//intersection
+			//resource: https://alligator.io/js/intersection-observer/
+			//resource: https://css-tricks.com/a-few-functional-uses-for-intersection-observer-to-know-when-an-element-is-in-view/
+			var targetElement = document.querySelector('.js-intersection');
+
+			observer = new IntersectionObserver(function (entries, observer) {
+
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						if (entry.intersectionRatio >= .75) {
+							document.querySelector('.js-intersection-car4').classList.add('is-rolling');
+						} else if (entry.intersectionRatio >= 0.5) {
+							document.querySelector('.js-intersection-car3').classList.add('is-rolling');
+						} else if (entry.intersectionRatio >= 0.25) {
+							document.querySelector('.js-intersection-car2').classList.add('is-rolling');
+						} else if (entry.intersectionRatio >= 0) {
+							document.querySelector('.js-intersection-car1').classList.add('is-rolling');
+						}
+					}
+				});
+			}, { rootMargin: "0px 0px -64px 0px", threshold: [0, 0.25, 0.5, 0.75] });
+			observer.observe(targetElement);
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+#nav ul { display: none; } /* Hide before plugin loads */
+#nav ul.dropit-submenu {
+    border: 1px solid orange;
+    padding: 6px 0;
+    margin: 3px 0 0 1px;
+    border-radius: 3px;
+}          
+#nav ul.dropit-submenu a {
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a868e;
+    padding: 0 18px;
+}
+#nav ul.dropit-submenu a:hover {
+    background: #248fc1;
+    color: #fff;
+    text-decoration: none;
+}

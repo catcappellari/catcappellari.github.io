@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Billing</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    
+        <header>
+            <section class="upper_nav clearfix">
+                <img class="print_icon" src="images/print.png" alt="print logo">
+                <div class="availability">
+                    
+                    <form method="post" action="demoform.asp">
+                       
+                        <label for="sliderLabel">Available?</label>
+                        <label id="sliderLabel">
+                            <input type="checkbox" />
+                            <span id="slider"></span>
+                            <span id="sliderOff">NO</span>
+                            <span id="sliderOn">YES</span>
+                        </label>
+                    </form>
+                </div>
+                <h1><a href="#" class="button" id="dropdown_button">MENU</a></h1>
+
+                <nav class="main_navigation clearfix" id="dropdown_menu">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1"><a class="button" href="index_projects.html">Projects</a></li>
+
+                        <li class="tab-link" data-tab="tab-2"><a class="button" href="index_history.html">History</a></li>
+                        
+                        <li class="tab-link" data-tab="tab-3"><a class="button" href="index_profile.html">Profile</a></li>
+                        
+                        <li class="tab-link current" data-tab="tab-4"><a class="button" href="index_billing_echeck.html">Billing</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="lower_nav clearfix">
+                <header class="page_header">
+                <!--    <img src="images/profile_icon.png"> -->
+                    <h1>BILLING</h1>
+                </header>
+                
+            </section>
+
+        </header>
+
+        <div class="wrapper">
+            <div class="main_window">
+
+            
+                <div class="content clearfix">
+                    
+                    <form method="post" action="#">
+                                    
+                        <header>
+                            <ul>
+                                <li>
+                                    <img src="images/check_icon.png" alt="check icon">
+                                    <h1><a href="index_billing_echeck.html">eCheck</h1>
+                                </li>
+                                <li class="active">
+                                    <img src="images/paypal_icon.png" alt="paypal icon">
+                                    <h1><a href="index_billing_paypal.html">PayPal</a></h1>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="card clearfix paypal">
+                            <div class="details first">
+                                <div class="form_field">
+                                    <label for="paypal">PayPal Email</label>
+                                    <input type="text" placeholder="artist@print.com" id="paypal" name="paypal">
+                                </div>
+                            </div>
+                            
+                            <div class="details second">
+                                <div class="form_field">
+                                    <label for="currency">Currency</label>
+                                    <select name="currency">
+                                      <option value="us_dollars">US Dollars</option>
+                                      <option value="canadian_dollars">Canadian Dollars</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                         <button type="submit" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="attribution">
+                <h1>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a></h1> 
+                <h1>from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></h1> 
+                <h1>is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></h1>
+            </div>
+        </footer>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

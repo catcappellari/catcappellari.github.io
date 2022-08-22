@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="images/favicon/android-chrome-256x256.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#217cb8">
+
+	<title>Raleigh Bike Trails</title>
+	<meta name="description" content="Raleigh Bicycle Map">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
+</head>
+
+<body class="landing-bike-raleigh">
+	<section class="c-section c-section_alt2 c-section_dark c-section_center c-section_image c-section_tall box-trail">
+		<div class="c-contain c-contain_660">
+			<i class="material-icons u-font-size-84">explore</i>
+			<h1 class="u-font-size-84 u-text-shadow">Raleigh Bike Trails</h1>
+			<div class="text u-text-shadow">
+				<p class="h3">Wanna go for a spin? Raleigh's full of bike-adventure potential! Here are some of your options:
+				</p>
+			</div>
+			<div class="c-pad_top">
+				<a href="#pedal" class="c-arrow-jump"><span class="sr-only">Two-Wheeled Adventure Spots</span></a>
+			</div>
+		</div>
+	</section>
+	<section class="c-section c-section_center c-section_tall c-section_dark c-section_topo" id="pedal">
+		<div class="c-contain c-contain_1400">
+			<h2 class="h1">Trail Map</h2>
+			<div class="c-pad_top">
+				<div id="bike-map" class="bike-map c-leaflet"></div>
+			</div>
+		</div>
+	</section>
+	<!-- 		<section class="c-section c-section_center box-trail-details">
+			<div class="c-contain c-contain-1400">
+				<h2 class="h1">Trail Details</h2>
+				<ul class="c-unlist">
+					<li></li>
+				</ul>
+			</div>
+		</section> -->
+	<footer class="footer-main footer-main_simple">
+		<div class="c-contain">
+			<div class="c-flex">
+				<div class="c-flex__item f-block f-block2">
+					<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+				</div>
+			</div>
+			<p><small>This site brought to you by Cat Cappellari. All rights reserved. <span id="copywrite"></span>.</small>
+			</p>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+		integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+		crossorigin=""></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.querySelector('body').classList.add('js-active');
+			var menuButton = document.querySelector('.js-menu-button');
+			var menuWrapper = document.querySelector('.js-mobile-menu');
+
+			//map initialization
+			var map = L.map('bike-map', {
+				zoomControl: false,
+				scrollWheelZoom: false
+			}).setView([35.857791, -78.749762], 12);
+
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+
+			//add zoom control with your options
+			L.control.zoom({
+				position: 'bottomleft'
+			}).addTo(map);
+
+			function checkMapSize() {
+				if (window.matchMedia('min-width: 768px').matches) {
+					map.setView([35.857791, -78.749762], 11.25);
+				} else {
+					map.setView([35.857791, -78.749762], 9.25);
+				}
+			}
+			window.addEventListener('load', checkMapSize);
+			window.addEventListener('resize', checkMapSize);
+
+			var placeIcon = L.icon({
+				iconUrl: 'images/icon-place.svg',
+				iconSize: [36, 36],
+				iconAnchor: [18, 36],
+				popupAnchor: [0, -36]
+			});
+
+			L.marker([35.857791, -78.749762], { icon: placeIcon }).addTo(map)
+				.bindPopup('<div class="c-leaflet__popup"><h3 class="c-leaflet__popupheadline">Umstead State Park</h3><div class="c-leaflet__popupcontent"><p class="c-leaflet__popupcopy">Double-track gravel paths</p><a href="https://www.ncparks.gov/william-b-umstead-state-park/trails" target="_blank" rel="noopener" class="c-leaflet__popuplink">Trail Info</a></div></div>')
+				.openPopup();
+			L.marker([35.843986, -78.795039], { icon: placeIcon }).addTo(map)
+				.bindPopup('<div class="c-leaflet__popup"><h3 class="c-leaflet__popupheadline">Lake Crabtree County Park</h3><div class="c-leaflet__popupcontent"><p class="c-leaflet__popupcopy">Single-track hiking and biking trails</p><a href="https://www.trianglemtb.com/crabtree.php" target="_blank" rel="noopener" class="c-leaflet__popuplink">Trail Info</a></div></div>');
+			L.marker([35.852846, -78.888013], { icon: placeIcon }).addTo(map)
+				.bindPopup('<div class="c-leaflet__popup"><h3 class="c-leaflet__popupheadline">RTP Mountain Bike Trail</h3><div class="c-leaflet__popupcontent"><p class="c-leaflet__popupcopy">Single-track biking trails</p><a href="https://www.mtbproject.com/trail/5389662/rtp" target="_blank" rel="noopener" class="c-leaflet__popuplink">Trail Info</a></div></div>');
+			L.marker([35.778790, -78.662605], { icon: placeIcon }).addTo(map)
+				.bindPopup('<div class="c-leaflet__popup"><h3 class="c-leaflet__popupheadline">Rocky Branch Trail</h3><div class="c-leaflet__popupcontent"><p class="c-leaflet__popupcopy">Paved biking/walking trail</p><a href="https://localwiki.org/raleigh/Rocky_Branch_Greenway" target="_blank" rel="noopener"  class="c-leaflet__popuplink">Trail Info</a></div></div>');
+
+
+			//copywrite
+			function updateDate() {
+				var date = new Date().getFullYear();
+				document.getElementById('copywrite').innerHTML = date;
+			}
+			updateDate();
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="images/favicon/android-chrome-256x256.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#217cb8">
+
+	<title>Neon Sign</title>
+	<meta name="description" content="A neon sign flickers in the night">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="landing-neon">
+	<div class="top" id="top">
+		<section class="c-section c-section_nopad c-section_image c-section_dark c-section_center c-table box-neon">
+			<div class="c-table__cell">
+				<div class="c-contain c-contain_1200">
+					<div class="e-neon js-neon">
+						<div class="e-neon__corners">
+							<div class="e-neon__horizontal">
+								<div class="e-neon__vertical">
+									<h1 class="e-neon__headline">
+										<span>W</span>
+										<span>a</span>
+										<span>n</span>
+										<span>d</span>
+										<span>e</span>
+										<span>r</span>
+										<span>l</span>
+										<span>u</span>
+										<span>s</span>
+										<span>t</span>
+										<span>.</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer-main footer-main_minimal">
+		<div class="c-contain">
+			<div class="c-flex">
+				<div class="c-flex__item f-block f-block2">
+					<a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+				</div>
+			</div>
+			<p><small>This site brought to you by Cat Cappellari. All rights reserved. <span id="copywrite"></span>.</small>
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+			document.querySelector('body').classList.add('js-active');
+
+			//neon active
+			document.querySelector('.js-neon').classList.add('is-active');
+
+
+			//copywrite
+			function updateDate() {
+				var date = new Date().getFullYear();
+				document.getElementById('copywrite').innerHTML = date;
+			}
+			updateDate();
+		});
+	</script>
+</body>
+
+</html>

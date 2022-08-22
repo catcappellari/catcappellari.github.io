@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Profile</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    
+                <header>
+            <section class="upper_nav clearfix">
+                <img class="print_icon" src="images/print.png" alt="print logo">
+                <div class="availability">
+                    
+                    <form method="post" action="demoform.asp">
+                       
+                        <label for="sliderLabel">Available?</label>
+                        <label id="sliderLabel">
+                            <input type="checkbox" />
+                            <span id="slider"></span>
+                            <span id="sliderOff">NO</span>
+                            <span id="sliderOn">YES</span>
+                        </label>
+                    </form>
+                </div>
+                <h1><a href="#" class="button" id="dropdown_button">MENU</a></h1>
+
+                <nav class="main_navigation clearfix" id="dropdown_menu">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1"><a class="button" href="index_projects.html">Projects</a></li>
+
+                        <li class="tab-link" data-tab="tab-2"><a class="button" href="index_history.html">History</a></li>
+                        
+                        <li class="tab-link current" data-tab="tab-3"><a class="button" href="index_profile.html">Profile</a></li>
+                        
+                        <li class="tab-link" data-tab="tab-4"><a class="button" href="index_billing_echeck.html">Billing</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="lower_nav  clearfix">
+                <header class="page_header">
+                <!--    <img src="images/profile_icon.png"> -->
+                    <h1>PROFILE</h1>
+                </header>
+                
+            </section>
+
+        </header>
+
+        <div class="wrapper clearfix" id="tab-1" class="tab-content current">
+            <div class="content clearfix">
+
+                    <form method="post" action="#">
+
+                        <header>
+                            <img src="images/person_icon.png">
+                            <h1>Personal Information</h1>
+                        </header>
+
+                        <div class="card personal_info clearfix">
+
+                            <div class="details first">
+                                <div class="form_field">
+                                    <label for="fname">First name</label>
+                                    <input type="text"placeholder="Suzie" id="fname" name="first_name">
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="lname">Last name</label>
+                                    <input type="text" placeholder="Smith" id="lname" name="last_name">
+                                </div>
+                            </div>
+
+                            <div class="details second">
+                                <div class="form_field">
+                                    <label for="email">Email</label>
+                                    <input type="text" placeholder="artist@print.com" id="email" name="email">
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="hourly" >Hourly rate</label>
+                                    <input type="text" placeholder="" id="hourly" name="rate">
+                                </div>
+                            </div>
+
+                            <div class="details third">
+                                <div class="inset">
+                                    <img src="images/blank_profile.png" alt="blank profile picture">
+
+                                    <div class="submit_img">
+                                        <input type="file" class="custom-file-input" id="profile">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <header>
+                            <img src="images/location_icon.png">
+                            <h1>Location Information</h1>
+                        </header>
+
+                        <div class="card clearfix">
+                            <div class="details first">
+                                <div class="form_field">
+                                    <label for="address">Address</label>
+                                    <input type="text" placeholder="123 Main St" id="address" name="address">
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="city">City</label>
+                                    <input type="text" placeholder="New York" id="city" name="city">
+                                </div>
+                            </div>
+
+                            <div class="details second">
+                                <div class="form_field">
+                                    <label for="states">State</label>
+                                <!--      <select id="states" name="states">
+                                        <option value="nc">North Carolina</option>
+                                        <option value="sc">South Carolina</option>
+                                        <option value="va">Virginia</option>
+                                        <option value="md">Maryland</option>
+                                    </select> -->
+                        
+                                 <div class="styled-select">
+                                       <select>
+                                          <option>North Dakota</option>
+                                          <option>South Dakota</option>
+                                       </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="country">Country</label>
+                                    <div class="styled-select">
+                                        <select name="country" id="country">
+                                            <option value="canada">Canada</option>
+                                            <option value="usa">USA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="details third">    
+                                <div class="form_field">
+                                    <label for="phone">Phone number</label>
+                                    <input type="number" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    <header>
+                        <img src="images/portfolio_icon.png">
+                        <h1>Portfolio Information</h1>
+                    </header>
+
+                    <div class="card clearfix">
+                        <div class="details first clearfix">
+                            <div class="form_field">
+                                    <label for="port_1">Portfolio 1</label>
+                                    <input type="text" id="port_1" name="port_1">
+
+                                    <label for="port_2">Portfolio 2</label>
+                                    <input type="text" id="port_2" name="port_2">
+                            </div>
+                            
+                        </div> 
+                        <div class="inset details second">
+                            <h3>Use your personal website, Demo Reel, Behance, Deviant Art, etc... to show us your work.</h3>
+                        </div> 
+                    </div>  
+                            <button type="submit" value="Submit">Submit</button>
+                        </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="attribution">
+                <h1>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a></h1> 
+                <h1>from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></h1> 
+                <h1>is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></h1>
+            </div>
+        </footer>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>MG Practice Areas</title>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+          function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+              center: new google.maps.LatLng(44.5403, -78.5463),
+              zoom: 8,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <!--<script src="js/dropit.js"></script>
+        <script type="text/javascript">
+            ( function($) {$(document).ready(function() {
+                $('.menu').dropit();
+                });
+            } ) ( jQuery );
+        </script>-->
+
+        <script src="js/script.js"></script>
+
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700|Source+Sans+Pro:400,400italic,600,600italic,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+    <body>
+        <header class="clearfix">
+            <a class="logo" href="index.html"><img src="images/logo1.svg" alt="Miller Goodman Logo"></a>
+
+            <a href="#" class="button_menu" id="dropdown_button"><h3>MENU</h3></a>
+
+            <nav class="main_navigation" id="dropdown_menu">
+
+                <ul class="dropmenu">
+                    <li><a href="index.html"><h3>Home</h3></a></li>
+                    <li><a href="attorney.html"><h3>Attorney</h3></a></li>
+                    <li><a href="practice.html"><h3>Practice Areas</h3></a></li>
+                    <li><a href="contact.html"><h3>Contact Us</h3></a></li>
+                </ul>
+          
+            </nav>
+            <div class="emphasis">
+                <em><h1>We are committed to Integrity, Quality, Diligence, Service, and Efficiency</h1></em>
+            </div>
+        </header>
+        <section class="banner clearfix">
+            <wrapper>
+                  <h2>CONTACT</h2>
+
+                <div class="area_basic">
+                    <p>For more information about Murphy & Grantland, please contact us:</p>
+                </div>
+            </wrapper>
+        </section>
+        
+        <section class="banner clearfix">
+            <wrapper> 
+
+                <form action="action_page.php" method="post">
+
+                <div class="area">
+                
+                    <p>Name</p>
+                    <input type="text" name="name" value="">
+                    <p>Email</p>
+                    <input type="text" name="email" value="">
+                </div>
+
+                <div class="area">
+                    <p>Company</p>
+                    <input type="text" name="company" value="">
+                    <p>Phone</p>
+                    <input class="tel" type="tel" size="3"> - <input class="tel" type="tel" size="3"> - <input class="tel" type="tel" size="4">
+
+                </div>
+
+                <div class="area_basic">
+                    <p>Message</p>
+                    <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+                    <button><input class="submit" type="submit" value="Submit"></button>
+                </div>
+                </form>
+                
+            </wrapper>
+        </section>
+
+        <section class="dark clearfix">
+            <wrapper>
+                <h2>Miller & Goodman Information</h2>
+                <div class="area_basic">
+                    <h6>Miller & Goodman, P.A.</h6>
+                    <p>Post Office Box 60</p>
+                    <p>Columbia, SC 29260</p>
+
+                    <p>Phone:  888-723-1111</p>
+
+                    <p>info@millergoodman.com
+                    </p>
+                </div>
+            </wrapper>
+        </section>
+        
+        <section class="light clearfix">
+            <wrapper>
+                <h2>Directions</h2>
+
+                <div class="area_basic">
+                    <p>The Miller & Goodman offices are located at 4000 Sandlot Drive in Columbia, SC.</p>
+
+                    <div id="map"></div>
+                </div>
+                
+            </wrapper>
+        </section>
+
+        <footer>
+            <nav class="main_navigation clearfix" id="dropdown_menu">
+               
+                <ul class="dropmenu">
+                    <li><a href="index.html"><h3>Home</h3></a></li>
+                    <li><a href="attorney.html"><h3>Attorney</h3></a></li>
+                    <li><a href="practice.html"><h3>Practice Areas</h3></a></li>
+                    <li><a href="contact.html"><h3>Contact Us</h3></a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    
+    </body>
+</html>

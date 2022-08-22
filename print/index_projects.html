@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Projects</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dropit.css" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <header>
+            <section class="upper_nav clearfix">
+                <img class="print_icon" src="images/print.png" alt="print logo">
+                <div class="availability">
+                    
+                    <form method="post" action="demoform.asp">
+                       
+                        <label for="sliderLabel">Available?</label>
+                        <label id="sliderLabel">
+                            <input type="checkbox" />
+                            <span id="slider"></span>
+                            <span id="sliderOff">NO</span>
+                            <span id="sliderOn">YES</span>
+                        </label>
+                    </form>
+                </div>
+                <h1><a href="#" class="button" id="dropdown_button">MENU</a></h1>
+
+                <nav class="main_navigation clearfix" id="dropdown_menu">
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1"><a class="button" href="index_projects.html">Projects</a></li>
+
+                        <li class="tab-link" data-tab="tab-2"><a class="button" href="index_history.html">History</a></li>
+                        
+                        <li class="tab-link" data-tab="tab-3"><a class="button" href="index_profile.html">Profile</a></li>
+                        
+                        <li class="tab-link" data-tab="tab-4"><a class="button" href="index_billing_echeck.html">Billing</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="lower_nav  clearfix">
+                <header class="page_header">
+                <!--    <img src="images/profile_icon.png"> -->
+                    <h1>PROJECTS</h1>
+                </header>
+                
+            </section>
+
+        </header>
+
+        <div class="wrapper">
+                <div class="content">
+                    <header class="page_header clearfix">
+                        <div class="sub_header">
+                            <img class="icon" src="images/project_icon.png">
+                            <h1>Project</h1>
+                        </div>
+
+                        <div class="sub_header line">
+                            <img class="icon" src="images/calendar_icon.png">
+                            <h1>Date due</h1>
+                        </div>
+
+                        <div class="sub_header line">
+                            <img class="icon" src="images/stopwatch_icon.png">
+                            <h1>Hours</h1>
+                        </div>
+                    </header>
+                
+                    <div class="project clearfix light_blue">
+                        <h2>3D Logo</h2>
+                        <h2 class="line">8.11.15</h2>
+                        <h2 class="line">8-11</h2>
+                        <a href="#" class="project_button" id="project_button"><img class="down_arrow" src="images/down_arrow.png"></a>
+                    </div>
+                    <!--3d logo bar^^-->
+                    <div class="dropdown_project" id="dropdown_project">
+                        <header>
+            
+                            <form class="avail_form clearfix" method="post" action="demoform.asp">
+                                <label id="accept" for="acceptLabel"><h3>Accept Assignment: </h3></label>
+                                <div class="decision">    
+                                    <a href=""><img src="images/trash.png"></a>
+                                    <label id="acceptLabel">
+                                        <input type="checkbox" />
+                                        <span id="accept_slider"></span>
+                                        <span id="sliderNo">No</span>
+                                        <span id="sliderYes">Yes</span>
+                                    </label>
+                                </div>
+                            </form>
+                        </header>
+
+                        <div class="card accept clearfix">
+                            
+                                <div class="file_circles clearfix">
+                                    <div class="circle_box">
+                                        <div class="circle"><h1><a href="#">brief.docx</a></h1></div>
+                                    </div>
+                                      
+                                    <div class="circle_box">
+                                        <div class="circle"><h1><a href="#">info.pdf</a></h1></div>
+                                    </div>
+
+                                    <div class="circle_box">
+                                        <div class="circle"><h1><a href="#">imgs.png</a></h1></div>
+                                    </div>
+                                </div>
+
+                                <form method="post" action="#">
+                                    <div class="end">
+                                        <div class="inset clearfix">
+                                            <label for="hours"><h3>Hours Worked</h3></label>
+                                            <input type="number" id="hours" name="hours_worked">
+                    
+                                            <input class="button" type="submit">
+                                        </div>
+                                    </div>
+                                </form>
+                           
+                        </div>
+
+                        <header>
+                            <img src="images/clipboard.png">
+                            <h1>Project Details</h1>
+                        </header>
+                           
+                        <div class="card project accept clearfix">
+                            <h3>Dynamically optimize fully researched results before stand-alone human capital. Completely predominate seamless synergy via interoperable methodologies. Dramatically provide access to fully researched infrastructures.</h3>
+                        </div>
+                       
+                        
+                            <header>
+                                <img src="images/email_icon.png">
+                                <h1>Messages</h1>
+                            </header>
+
+                            <div class="card clearfix messages">
+                                    <h3>Aaron G</h3>
+                                    <div class="message l_bubble">
+                                        <h3>Hey Folks,
+                                            Hope you all are doing well!
+                                            Checking in to see if you have an official date to launch. We will need to change over one thing when your hosting guy changes everything over - so we'll need to know that day to schedule our work. (It's a database name change so that links go to the right place - that you can't do until the URL is live).
+                                        </h3>
+                                        <h3 class="date">28 Sept 2015 at 9:14am
+                                        </h3>
+                                    </div>
+
+                                    <h3>Collete D</h3>
+                                    <div class="message r_bubble">
+                                        <h3>We are aiming for 8/5 or 8/6 for a soft launch. I am out of the office at a work conference for the remainder of the week. Wes and I will both be in the office starting next week and should be able to add the finishing touches before launching later in the week. I expect that payment will follow directly after the launch, but I will confirm.</h3>
+                                        <h3 class="date"> Tue, 28 Sept 2015 at 10:14am</h3>
+                                    </div>
+                                
+                                <div class="messages clearfix end">
+                                    <form method="post" action="demoform.asp">
+                                        <label for="messages"><h1>Compose:</h1></label>
+                                        <input type="text" placeholder="..." id="messages" name="msg">
+
+                                        <div class="email_upload">    
+                                            <label for="attach"><img src="images/paperclip.png"><h1>Attach file</h1>
+                                            <input type="file" name="img" id="attach"></label>
+                                            <input type="hidden" name="paperclip" value="paperclip">   
+                                        </div>
+    
+                                        <div class="email_upload"> 
+                                            <img src="images/email_save.png">
+                                            <h1>Save to Email</h1>
+                                        </div>
+                                        <button class="button" type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project clearfix light_gray">
+                            <h2>3D Logo</h2>
+                            <h2 class="line">8.11.15</h2>
+                            <h2 class="line last">24-20</h2>
+                            <a href="#" class="project_button" id="project_button"><img class="down_arrow" src="images/down_arrow.png"></a>
+                        </div>    
+
+                        <div class="project clearfix light_blue">
+                            <h2>Free Sculpt a Face</h2>
+                            <h2 class="line">11.02.15</h2>
+                            <h2 class="line last">4-8</h2>
+                            <a href="#" class="project_button" id="project_button"><img class="down_arrow" src="images/down_arrow.png"></a>
+                        </div>    
+
+                        <div class="project clearfix light_gray">
+                            <h2>Tall Football Player Statue</h2>
+                            <h2 class="line">12.15.15</h2>
+                            <h2 class="line last">8</h2>
+                            <a href="#" class="project_button" id="project_button"><img class="down_arrow" src="images/down_arrow.png"></a>
+                        </div>    
+                
+                    <footer class="content_end">
+                    </footer>
+                </div>
+
+        </div>
+
+        <footer>
+            <div class="attribution">
+                <h1>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a></h1> 
+                <h1>from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></h1> 
+                <h1>is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></h1>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/project.js"></script>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    </body>
+</html>
+
+
+

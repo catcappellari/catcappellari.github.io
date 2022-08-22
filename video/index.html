@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	    <meta name="theme-color" content="#3498db">
+
+	    <title>Video Page</title>
+	    <meta name="description" content="Videe hero page with various cool things happening">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	    <link rel="stylesheet" href="../../css/normalize.css">
+	    <link rel="stylesheet" href="../../css/style.css">
+	</head>
+
+	<body class="index">
+		<body class="index">
+		<div class="top" id="top">
+			<a href="#main-content" class="focus-only js-focus-only js__jump">Skip to main content</a>
+		    <header class="header-main header-index">
+		    	<div class="c-contain c-contain_1400">
+		    		<div class="h-block h-block1">
+			            <a href="index.html" class="logo"><img src="images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+			        </div>
+			        <div class="h-block h-block2">
+			        	<a href="mailto:cat.cappellari@gmail.com" class="email material-icons mi-white">email</a>
+			            <nav class="mainmenu" role="navigation">
+			                <button id="mainmenu_button" class="menu-button js-menu-button" aria-expanded="false" aria-controls="mainmenu">
+			                	<span></span>
+			                	<span></span>
+			            		<span></span>
+			            	</button>
+			                <ul id="mainmenu" class="mobile-menu js-mobile-menu">
+			                    <li><a href="/index#work">Work</a></li>
+			                    <li><a href="/index#about">About</a></li>
+			                    <li><a href="/sandbox">Sandbox</a></li>
+			                    <li><a href="/resume">Resume</a></li>
+			                </ul>
+			            </nav>
+			        </div>
+		    	</div>
+		    </header>
+		    <div class="mid">
+		    	<div class="hero-video-wrapper js-video-wrapper">
+		    		<div class="c-table">
+		    			<div class="c-table__cell">
+		    				
+		    			</div>
+		    		</div>
+		    		<div class="c-neon">
+		    			<h1 class="c-neon__title">
+			    			<span>W</span>
+			    			<span>a</span>
+			    			<span>n</span>
+			    			<span>d</span>
+			    			<span>e</span>
+			    			<span>r</span>
+			    			<span>l</span>
+			    			<span>u</span>
+			    			<span>s</span>
+			    			<span>t</span>
+			    			<span>.</span>
+			    		</h1>
+		    		</div>
+		    		
+		    		<video width="320" height="240" autoplay loop muted>
+			    		<source src="/video/resources/video-bridge.mp4" type="video/mp4">
+			    		Your browser does not support the video tag.
+			    	</video>
+		    	</div>
+		    </div>
+		    <div id="main-content"></div>
+		</div>
+		<section>
+			
+		</section>
+	    <footer class="footer-main">
+	    	<div class="c-contain">
+	    		<a href="https://catcappellari.github.io/" class="logo"><img src="../../images/logo2.svg" alt="Logo - Cat Cappellari"></a>
+	    		<div class="footer-rights">
+	    			<p><small>This site brought to you by Cat Cappellari. All rights reserved. <script>document.write(new Date().getFullYear())</script>.</small></p>
+	    		</div>
+	    	</div>
+	    </footer>
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	    <script>
+		document.addEventListener('DOMContentLoaded', function(){ 
+			//loading screen
+			var acornScreen = document.querySelector('.js-acorn-overlay');
+			
+			//results message
+			function loadingScreen() {
+				var delay = 1000 * (Math.floor(Math.random() * (2) + 3));
+				var timeout = false;
+
+				//clear the timeout
+		        window.clearTimeout(timeout);				
+
+				//set time out
+				window.setTimeout(hideLoadingScreen, delay);
+			}
+
+			function hideLoadingScreen() {
+				//hide loading screen
+				acornScreen.classList.add('is-loaded');
+			}
+
+			loadingScreen();
+			
+		}, false);
+		</script>
+		<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			//button quote change
+			//find all selectors in a document
+			//loop over each of them
+			//access elements that relate to those selectors
+			//match media element as well
+			//https://toddmotto.com/ditch-the-array-foreach-call-nodelist-hack/
+
+			function newQuote(event) {
+				event.stopPropagation();
+				event.preventDefault();
+
+				var item = event.currentTarget;
+				item.classList.toggle('is-flipped');
+
+				var randomNumber = Math.floor(Math.random() * 10);
+				var quoteHeadline = document.querySelector('.js-text');
+
+
+				jQuery.getJSON("js/quotes-br.json", function(json) {
+					//replace headline
+					quoteHeadline.innerText = json[randomNumber].quote;
+				});
+			}
+
+			var forEach = function (array, callback, scope) {
+				for (var i = 0; i < array.length; i++) {
+					callback.call(scope, i, array[i]);
+				}
+			};
+
+			//buttons list
+			var buttonList = document.querySelectorAll('.js-quote-btn');
+			forEach(buttonList, function (index, value) {
+			    value.addEventListener('click', newQuote, false);
+			    	
+			});
+
+		});
+		</script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	    <script>
+	    WebFont.load({
+	        google: {
+	            families: ['Comfortaa:300,400,700']
+	        }
+	    });
+	    </script>
+
+	</body>
+</html>

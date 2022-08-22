@@ -1,0 +1,590 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 4, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 6, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 10, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 18, ../scss/style.scss */
+.main_navigation {
+  /*display: block;*/
+  opacity: 1;
+  height: auto;
+  transition: opacity 1s;
+}
+
+/* line 25, ../scss/style.scss */
+.main_navigation.hidden {
+  /*display: none;*/
+  opacity: 0;
+  height: 0;
+}
+
+/* line 31, ../scss/style.scss */
+.button_menu {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 39, ../scss/style.scss */
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 44, ../scss/style.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 48, ../scss/style.scss */
+body {
+  background: #fff;
+}
+
+/* line 56, ../scss/style.scss */
+header {
+  background-image: url(..//images/columns_edit.jpg);
+  background-size: cover;
+  padding: 20px;
+}
+
+/* line 62, ../scss/style.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+/* line 66, ../scss/style.scss */
+ul a {
+  color: #000;
+}
+
+/* line 71, ../scss/style.scss */
+li {
+  text-align: center;
+}
+
+/* line 75, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 79, ../scss/style.scss */
+h2 {
+  font-family: 'Merriweather', serif;
+}
+
+/* line 83, ../scss/style.scss */
+p, h1, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 88, ../scss/style.scss */
+.emphasis {
+  padding-top: 20px;
+}
+
+/* line 92, ../scss/style.scss */
+em {
+  text-align: center;
+  display: block;
+}
+/* line 95, ../scss/style.scss */
+em h1 {
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px 2px #dadada;
+  font-weight: normal;
+  padding: 6px 20px;
+  line-height: 2.2em;
+  display: inline;
+  font-size: 1.4em;
+  font-style: normal;
+}
+
+/* line 108, ../scss/style.scss */
+button, .button_menu {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 3px;
+  border: 2px solid #000;
+  background: none;
+}
+
+/* line 116, ../scss/style.scss */
+.button_menu {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+/* line 121, ../scss/style.scss */
+.button_menu:hover {
+  background: #000;
+}
+
+/* line 125, ../scss/style.scss */
+nav {
+  position: relative;
+}
+
+/* line 131, ../scss/style.scss */
+.logo img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 139, ../scss/style.scss */
+.dropmenu li {
+  border-radius: 3px;
+  border: 2px #000 solid;
+  max-width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 147, ../scss/style.scss */
+.dropmenu a {
+  color: #fff;
+}
+/* line 150, ../scss/style.scss */
+.dropmenu h3 {
+  font-weight: normal;
+}
+/* line 153, ../scss/style.scss */
+.dropmenu li:hover {
+  background: #000;
+}
+
+/* line 159, ../scss/style.scss */
+.dropit-submenu h3 {
+  font-weight: normal;
+}
+
+/* line 164, ../scss/style.scss */
+section {
+  padding: 20px;
+  padding-bottom: 0;
+}
+/* line 167, ../scss/style.scss */
+section h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* line 172, ../scss/style.scss */
+section h3 {
+  display: inline;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* line 177, ../scss/style.scss */
+section h4 {
+  display: inline;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+/* line 182, ../scss/style.scss */
+section h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 189, ../scss/style.scss */
+section h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* line 195, ../scss/style.scss */
+section button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 202, ../scss/style.scss */
+.banner {
+  background-image: url(..//images/brickwall.png);
+  /* Background pattern from subtlepatterns.com */
+}
+/* line 205, ../scss/style.scss */
+.banner a {
+  color: #000;
+}
+/* line 208, ../scss/style.scss */
+.banner button:hover {
+  background: #fff;
+}
+
+/* line 213, ../scss/style.scss */
+.area_basic {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* line 218, ../scss/style.scss */
+.light {
+  /* Background pattern from subtlepatterns.com */
+  color: #323232;
+}
+/* line 223, ../scss/style.scss */
+.light a {
+  color: #323232;
+}
+/* line 226, ../scss/style.scss */
+.light button:hover {
+  background: #dadada;
+}
+
+/* line 235, ../scss/style.scss */
+.dark {
+  background-image: url(..//images/lodyas_bg.png);
+  /* Background pattern from subtlepatterns.com */
+  color: #f3f3f3;
+}
+/* line 239, ../scss/style.scss */
+.dark a {
+  color: #f3f3f3;
+}
+/* line 242, ../scss/style.scss */
+.dark button {
+  border: 2px solid #f3f3f3;
+}
+/* line 245, ../scss/style.scss */
+.dark button:hover {
+  background: #000;
+}
+
+/* line 250, ../scss/style.scss */
+.area {
+  padding-bottom: 20px;
+}
+/* line 252, ../scss/style.scss */
+.area img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 3px;
+}
+/* line 261, ../scss/style.scss */
+.area ul {
+  margin: 0;
+  list-style: disc;
+  padding-left: 25px;
+}
+/* line 266, ../scss/style.scss */
+.area li {
+  text-align: left;
+}
+/* line 269, ../scss/style.scss */
+.area.dark {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 276, ../scss/style.scss */
+.area_basic ul {
+  margin: 0;
+  text-align: center;
+  padding-left: 10%;
+  padding-top: 10px;
+}
+/* line 281, ../scss/style.scss */
+.area_basic ul a {
+  font-style: italic;
+}
+/* line 284, ../scss/style.scss */
+.area_basic ul a:hover {
+  background: #dadada;
+}
+/* line 288, ../scss/style.scss */
+.area_basic li {
+  list-style: disc;
+  text-align: left;
+}
+
+/* line 294, ../scss/style.scss */
+.img_space {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* line 300, ../scss/style.scss */
+.indent {
+  text-indent: 10px;
+  margin-bottom: 5px;
+}
+
+/* line 306, ../scss/style.scss */
+.icon img {
+  display: inline;
+  height: .8em;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: initial;
+}
+
+/* line 315, ../scss/style.scss */
+.inline {
+  display: inline;
+}
+
+/* line 319, ../scss/style.scss */
+input, textarea {
+  border-radius: 3px;
+  border: none;
+  border: #000 solid 2px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+/* line 326, ../scss/style.scss */
+input.submit, textarea.submit {
+  padding: 0;
+  border: none;
+  background: none;
+  margin-bottom: 0;
+}
+/* line 332, ../scss/style.scss */
+input.tel, textarea.tel {
+  width: initial;
+}
+
+/* line 338, ../scss/style.scss */
+form p {
+  margin-bottom: 5px;
+}
+/* line 341, ../scss/style.scss */
+form .area_basic {
+  text-align: left;
+}
+/* line 344, ../scss/style.scss */
+form .area {
+  padding-bottom: 0;
+}
+
+/* line 349, ../scss/style.scss */
+#map {
+  height: 400px;
+  background-color: #CCC;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+/* line 357, ../scss/style.scss */
+footer {
+  background: #000;
+  padding: 20px;
+}
+/* line 360, ../scss/style.scss */
+footer ul {
+  margin: 0;
+}
+/* line 364, ../scss/style.scss */
+footer .dropmenu li {
+  border: none;
+}
+/* line 369, ../scss/style.scss */
+footer .dropmenu li:hover {
+  background: #323232;
+}
+/* line 372, ../scss/style.scss */
+footer .dropmenu h3 {
+  font-size: 1em;
+}
+/* line 376, ../scss/style.scss */
+footer .attribution {
+  color: #f3f3f3;
+  font-size: .6em;
+}
+/* line 379, ../scss/style.scss */
+footer .attribution a {
+  color: #f3f3f3;
+}
+
+@media (min-width: 350px) {
+  /* line 387, ../scss/style.scss */
+  .dropmenu li {
+    width: 40%;
+    display: inline-block;
+  }
+
+  /* line 394, ../scss/style.scss */
+  .area.dark {
+    padding: 20px;
+  }
+}
+@media (min-width: 400px) {
+  /* line 401, ../scss/style.scss */
+  header, section {
+    padding: 30px;
+  }
+
+  /* line 405, ../scss/style.scss */
+  .area_basic {
+    padding-bottom: 0;
+  }
+
+  /* line 410, ../scss/style.scss */
+  section h2 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+  }
+  /* line 414, ../scss/style.scss */
+  section h3 {
+    font-size: 1.4em;
+  }
+  /* line 417, ../scss/style.scss */
+  section h4 {
+    font-size: 1.2em;
+  }
+  /* line 420, ../scss/style.scss */
+  section h5 {
+    font-size: 1.1em;
+  }
+  /* line 423, ../scss/style.scss */
+  section h6 {
+    font-size: 1.1em;
+  }
+  /* line 426, ../scss/style.scss */
+  section button {
+    margin-top: 30px;
+  }
+
+  /* line 431, ../scss/style.scss */
+  p, input {
+    font-size: 1.05em;
+    line-height: 1.3em;
+  }
+}
+@media (min-width: 550px) {
+  /* line 439, ../scss/style.scss */
+  .area {
+    float: left;
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 0;
+  }
+
+  /* line 447, ../scss/style.scss */
+  .img_space {
+    margin-top: 10px;
+  }
+
+  /* line 452, ../scss/style.scss */
+  form .area_basic {
+    text-align: left;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  /* line 463, ../scss/style.scss */
+  .emphasis {
+    float: right;
+    width: 100%;
+  }
+
+  /* line 469, ../scss/style.scss */
+  .area_basic ul {
+    padding-left: 30%;
+  }
+}
+@media (min-width: 650px) {
+  /* line 477, ../scss/style.scss */
+  .logo img {
+    float: left;
+    max-width: 100px;
+  }
+
+  /* line 483, ../scss/style.scss */
+  .main_navigation.hidden {
+    display: block;
+    opacity: 1;
+  }
+
+  /* line 488, ../scss/style.scss */
+  .button_menu {
+    display: none;
+  }
+
+  /* line 492, ../scss/style.scss */
+  .dropmenu {
+    display: block;
+    float: right;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  /* line 497, ../scss/style.scss */
+  .dropmenu li {
+    margin-bottom: 0;
+    width: auto;
+    background: none;
+    border: none;
+    text-shadow: 2px 2px 10px #000;
+  }
+
+  /* line 507, ../scss/style.scss */
+  footer .dropmenu {
+    float: none;
+  }
+  /* line 509, ../scss/style.scss */
+  footer .dropmenu li {
+    border: none;
+  }
+}
+@media (min-width: 800px) {
+  /* line 517, ../scss/style.scss */
+  em h1 {
+    font-weight: bold;
+    padding: 15px 30px;
+    line-height: 2.8em;
+    font-size: 1.5em;
+    font-style: normal;
+  }
+
+  /* line 525, ../scss/style.scss */
+  p {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 530, ../scss/style.scss */
+  wrapper {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 537, ../scss/style.scss */
+  .dropmenu h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 543, ../scss/style.scss */
+  form p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
