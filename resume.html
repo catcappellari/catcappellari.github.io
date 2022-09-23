@@ -99,11 +99,11 @@
                   </div>
                 </div>
                 <ul class="c-card__ul c-card__ul-simple">
-                  <li>Conduct competitor benchmarking and create mockups for approval</li>
-                  <li>Implement updates for software products</li>
                   <li>Advocate for accessibility, performance, and componentization optimizations</li>
-                  <li>Create HTML, CSS, and JavaScript code snippets/utilities for team re-use</li>
-                  <li>Completed over 140 custom websites and 4 themes to-date</li>
+                  <li>Create & document HTML, CSS, and JavaScript code snippets/utilities for efficiency</li>
+                  <li>Completed over 140 custom websites and 4 themes on a custom CMS</li>
+                  <li>Conduct competitor benchmarking and create mockups for CRM and IDX software</li>
+                  <li>Implement updates for software products using JavaScript, React, and PHP</li>
                 </ul>
               </li>
             </ul>
@@ -199,7 +199,7 @@
                 </div>
                 <ul class="c-card__ul c-card__ul-simple">
                   <li>Researched subject area using competitive benchmarking and usability testing</li>
-                  <li>Analyzed research findings using affinity diagram and customer journey map</li>
+                  <li>Analyzed research and designed solutions using flow charting and sketchesp</li>
                   <li>Designed solution using flow charting and sketches</li>
                   <li>Created prototypes and wireframes with notes for developer</li>
                 </ul>
@@ -229,7 +229,7 @@
                 <ul class="c-card__ul c-card__ul-simple">
                   <li>Learned the design process, beginning with the creative brief and moving to creating wireframes,
                     thumbnail sketches, and mockups</li>
-                  <li>Coded mockups as responsive websites once they received instructor approva</li>
+                  <li>Coded mockups as responsive websites once they received instructor approval</li>
                 </ul>
               </li>
             </ul>
@@ -324,12 +324,12 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('body').classList.add('js-active');
-      var menuButton = document.querySelector('.js-menu-button');
-      var menuWrapper = document.querySelector('.js-mobile-menu');
+      const menuButton = document.querySelector('.js-menu-button');
+      const menuWrapper = document.querySelector('.js-mobile-menu');
 
       //debounce function - from underscores.js
       function debounce(func, wait, immediate) {
-        var timeout;
+        let timeout;
         return function () {
           var context = this, args = arguments;
           var later = function () {
@@ -369,7 +369,7 @@
       }
 
       //hide or show menu based on screen size and button status
-      var menuWidthCheck = debounce(function () {
+      const menuWidthCheck = debounce(function () {
         if (window.matchMedia("(min-width: 992px)").matches) {
           //menuButton.style.display = 'none';
           if (menuButton.classList.contains('active')) {
@@ -391,7 +391,7 @@
 
       //copywrite
       function updateDate() {
-        var date = new Date().getFullYear();
+        const date = new Date().getFullYear();
         document.getElementById('copywrite').innerHTML = date;
       }
       updateDate();
