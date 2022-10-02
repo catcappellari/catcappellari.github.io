@@ -74,11 +74,8 @@
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			document.querySelector('body').classList.add('js-active');
-			var menuButton = document.querySelector('.js-menu-button');
-			var menuWrapper = document.querySelector('.js-mobile-menu');
-
 			//map initialization
-			var map = L.map('bike-map', {
+			const map = L.map('bike-map', {
 				zoomControl: false,
 				scrollWheelZoom: false
 			}).setView([35.857791, -78.749762], 12);
@@ -102,7 +99,7 @@
 			window.addEventListener('load', checkMapSize);
 			window.addEventListener('resize', checkMapSize);
 
-			var placeIcon = L.icon({
+			const placeIcon = L.icon({
 				iconUrl: 'images/icon-place.svg',
 				iconSize: [36, 36],
 				iconAnchor: [18, 36],
@@ -122,7 +119,7 @@
 
 			//copywrite
 			function updateDate() {
-				var date = new Date().getFullYear();
+				const date = new Date().getFullYear();
 				document.getElementById('copywrite').innerHTML = date;
 			}
 			updateDate();

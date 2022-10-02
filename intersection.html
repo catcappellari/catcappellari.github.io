@@ -63,14 +63,9 @@
 	</footer>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			document.querySelector('body').classList.add('js-active');
-			var menuButton = document.querySelector('.js-menu-button');
-			var menuWrapper = document.querySelector('.js-mobile-menu');
-
-
 			//copywrite
 			function updateDate() {
-				var date = new Date().getFullYear();
+				const date = new Date().getFullYear();
 				document.getElementById('copywrite').innerHTML = date;
 			}
 			updateDate();
@@ -78,7 +73,7 @@
 			//intersection
 			//resource: https://alligator.io/js/intersection-observer/
 			//resource: https://css-tricks.com/a-few-functional-uses-for-intersection-observer-to-know-when-an-element-is-in-view/
-			var targetElement = document.querySelector('.js-intersection');
+			const targetElement = document.querySelector('.js-intersection');
 
 			observer = new IntersectionObserver(function (entries, observer) {
 
