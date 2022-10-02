@@ -257,7 +257,7 @@
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
       //copywrite
-      function updateDate() {
+      const updateDate = () => {
         const date = new Date().getFullYear();
         document.getElementById('copywrite').innerHTML = date;
       }

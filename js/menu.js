@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (menuWrapper.classList.contains('active')) {
         menuWrapper.classList.remove('active');
       }
-
     }
   }, 250);
 
